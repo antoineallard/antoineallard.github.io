@@ -1,12 +1,12 @@
 /* unvisited link */
 a:link {
-  color: #C8C8C8;
+  color: #F8F8F8;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #C8C8C8;
+  color: #F8F8F8;
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: #C8C8C8;
+  color: #F8F8F8;
   text-decoration:none;
 }
 
