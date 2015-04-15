@@ -26,12 +26,12 @@ body {
   color: #272727; /* Anciennement #C8C8C8 */
   font-family: arial,sans-serif;
   font-size: 14px;
-  background-color: #F2F2F3; /* Anciennement #272727 ou #DFE2DB */
+  background-color: #FAFAFA; /* Anciennement #272727 ou #DFE2DB */
 }
 
 h2 {
   color: #272727;
   font-size: 16px;
   /*font-weight: normal;*/
-  background-color: #F2F2F3;
+  background-color: #FAFAFA;
 }
