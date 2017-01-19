@@ -1,0 +1,8 @@
+---
+layout: single
+title:  "Nature Physics' News &amp; Views"
+date:   2016-11-04
+categories: coverage
+---
+
+[Thillo Gross](http://www.reallygross.de/) has made us a great honor with his beautifully written [News &amp; Views](http://dx.doi.org/10.1038/nphys3939) piece about our paper titled [The effect of a prudent adaptive behaviour on disease transmission](/publications/#Teleportation) recently published in Nature Physics.

@@ -1,0 +1,8 @@
+---
+layout: single
+title:  "CSS2016"
+date:   2016-09-18
+categories: conferences
+---
+
+I will attend the [2016 Conference on Complex Systems](http://www.ccs2016.org/) taking place in Amsterdam, The Netherlands, on September 19-22 2016. On the 20, I will present the latest results regarding our project on weighted networks in hidden metric space.

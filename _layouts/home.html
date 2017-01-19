@@ -1,0 +1,38 @@
+---
+layout: archive
+---
+
+<h3 class="archive__subtitle">About Me</h3>
+
+<section class="page__content" itemprop="text">
+  <p>
+    I am a postdoctoral fellow at the Physics Department at the University of Barcelona, Spain, affiliated to the <a href="http://complex.ffn.ub.es/~clabb/index.php">Complexity Lab Barcelona</a> and to the Universitat de Barcelona Institute of Complex Systems (UBICS). I obtained a PhD in Physics from Universit&eacute; Laval in Qu&eacute;bec City, Canada, in 2014 under the supervision of <a href="http://dynamica.phy.ulaval.ca">Louis J. Dub&eacute;</a>.
+  </p>
+</section>
+
+
+<h3 class="archive__subtitle">Research Interests</h3>
+
+<section class="page__content" itemprop="text">
+  <p>
+    Complex systems are composed of many <i>microscopic</i> elements whose interactions lead to emergent <i>macroscopic</i> behaviours. These systems can be of diverse nature: biological (e.g., food webs of ecosystems), technological (e.g., Internet, power grids), or social (e.g., contact/social networks). Examples of emergent properties are the robustness/stability to perturbations of ecosystems, the navigability of the Internet without an explicit knowledge of its global structure, and the susceptibility of a population in regard to large-scale epidemics of emerging infectious diseases.
+  </p>
+
+  <p>
+    Understanding the behaviour, or <i>function</i>, of complex systems is achieved through the study of the <i>structure</i> of the interactions between their constituting elements. This in turn is achieved through a network&#8212;or graph&#8212;paradigm in which the elements are represented by nodes linked together if they interact in the original system. Statistical mechanics, graph theory, geometry and non-linear dynamics then offer a well developed set of concepts and mathematical tools to study and to model the interplay between the structure and the function of complex systems.
+  </p>
+
+  <p>
+    See the <a href="/publications/">Publications</a> page for further details.
+  </p>
+</section>
+
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<a id="News"></a>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}

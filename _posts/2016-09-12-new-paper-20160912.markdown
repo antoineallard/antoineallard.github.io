@@ -1,0 +1,8 @@
+---
+layout: single
+title:  "Two new papers in Physical Review E and Scientific Reports"
+date:   2016-09-18
+categories: publications
+---
+
+The ultimate paper from my time in Qu&eacute;bec City, [Growing networks of overlapping communities with internal structure](/publications/#overlapping), has been published in Phys. Rev. E and the result of my collaboration with [Laurent H&eacute;bert-Dufresne](http://laurenthebertdufresne.github.io) and [Josh Grochow](http://tuvalu.santafe.edu/~jgrochow) titled <a href="publications.html#OD">Multi-scale structure and topological anomaly detection via a new network statistic: The onion decomposition</a> has been published in Scientific Reports.
