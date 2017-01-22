@@ -117,7 +117,7 @@
 
       {% if author.github %}
         <li>
-          <a href="https://github.com/{{ author.github }}" itemprop="sameAs">
+          <a href="https://github.com/{{ author.github }}" itemprop="sameAs" target="_blank">
             <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
@@ -125,7 +125,7 @@
 
       {% if author.google_scholar %}
         <li>
-          <a href="http://scholar.google.ca/citations?{{ author.google_scholar }}" itemprop="sameAs">
+          <a href="http://scholar.google.ca/citations?{{ author.google_scholar }}" itemprop="sameAs" target="_blank">
             <i class="fa fa-fw fa-university" aria-hidden="true"></i> Google Scholar
           </a>
         </li>
@@ -221,7 +221,7 @@
 
       {% if author.twitter %}
         <li>
-          <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs">
+          <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs" target="_blank">
             <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
           </a>
         </li>
