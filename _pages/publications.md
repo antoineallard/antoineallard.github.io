@@ -197,14 +197,14 @@ Europhysics Letters (EPL) 98, 16001 (2012)<br>
 **Propagation on networks: An exact alternative perspective**<br>
 Pierre-Andr&eacute; No&euml;l, **AA**, Laurent H&eacute;bert-Dufresne, Vincent Marceau, and Louis J. Dub&eacute;<br>
 Physical Review E 85, 031118 (2012)<br>
-  [Full text](http://dx.doi.org/10.1103/PhysRevE.85.031118")
+  [Full text](http://dx.doi.org/10.1103/PhysRevE.85.031118)
   &#124;
   [arXiv.org](http://arxiv.org/abs/1102.0987)
 
 **Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems**<br>
 Laurent H&eacute;bert-Dufresne, **AA**, Vincent Marceau, Pierre-Andr&eacute; No&euml;l, and Louis J. Dub&eacute;<br>
 Physical Review E 85, 026108 (2012)<br>
-  [Full text](http://dx.doi.org/10.1103/PhysRevE.85.026108")
+  [Full text](http://dx.doi.org/10.1103/PhysRevE.85.026108)
   &#124;
   [arXiv.org](http://arxiv.org/abs/1109.0034) 
 
@@ -214,7 +214,7 @@ Physical Review E 85, 026108 (2012)<br>
 **Structural Preferential Attachment: Network Organization beyond the Link**<br>
 Laurent H&eacute;bert-Dufresne, **AA**, Vincent Marceau, Pierre-Andr&eacute; No&euml;l, and Louis J. Dub&eacute;<br>
 Physical Review Letters 107, 158702 (2011)<br>
-  [Full text](http://dx.doi.org/10.1103/PhysRevLett.107.158702")
+  [Full text](http://dx.doi.org/10.1103/PhysRevLett.107.158702)
   &#124;
   [arXiv.org](http://arxiv.org/abs/1105.5980)
   &#124;
@@ -223,7 +223,7 @@ Physical Review Letters 107, 158702 (2011)<br>
 **Modeling the dynamical interaction between epidemics on overlay networks**<br>
 Vincent Marceau, Pierre-Andr&eacute; No&euml;l, Laurent H&eacute;bert-Dufresne, **AA**, and Louis J. Dub&eacute;<br>
 Physical Review E 84, 026105 (2011)<br>
-  [Full text](http://dx.doi.org/10.1103/PhysRevE.84.026105")
+  [Full text](http://dx.doi.org/10.1103/PhysRevE.84.026105)
   &#124;
   [arXiv.org](http://arxiv.org/abs/1103.4059)
 
@@ -233,7 +233,7 @@ Physical Review E 84, 026105 (2011)<br>
 **Propagation dynamics on networks featuring complex topologies**<br>
 Laurent H&eacute;bert-Dufresne, Pierre-Andr&eacute; No&euml;l, Vincent Marceau, **AA**, and Louis J. Dub&eacute;<br>
 Physical Review E 82, 036115 (2010)<br>
-  [Full text](http://dx.doi.org/10.1103/PhysRevE.82.036115")
+  [Full text](http://dx.doi.org/10.1103/PhysRevE.82.036115)
   &#124;
   [arXiv.org](http://arxiv.org/abs/1005.1397)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 20 (2010)
@@ -242,7 +242,7 @@ Physical Review E 82, 036115 (2010)<br>
 **Adaptive networks: Coevolution of disease and topology**<br>
 Vincent Marceau, Pierre-Andr&eacute; No&euml;l, Laurent H&eacute;bert-Dufresne, **AA**, and Louis J. Dub&eacute;<br>
 Physical Review E 82, 036116 (2010)<br>
-  [Full text](http://dx.doi.org/10.1103/PhysRevE.82.036116")
+  [Full text](http://dx.doi.org/10.1103/PhysRevE.82.036116)
   &#124;
   [arXiv.org](http://arxiv.org/abs/1005.1299)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 20 (2010)
@@ -253,7 +253,7 @@ Physical Review E 82, 036116 (2010)<br>
 **Heterogeneous Bond Percolation on Multitype Networks with an Application to Epidemic Dynamics**<br>
 **AA**, Pierre-Andr&eacute; No&euml;l, Louis J. Dub&eacute; and B. Pourbohloul<br>
 Physical Review E 79, 036113 (2009)<br>
-  [Full text](http://dx.doi.org/10.1103/PhysRevE.79.036113")
+  [Full text](http://dx.doi.org/10.1103/PhysRevE.79.036113)
   &#124;
   [arXiv.org](http://arxiv.org/abs/0811.2349)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 17 (2009)
