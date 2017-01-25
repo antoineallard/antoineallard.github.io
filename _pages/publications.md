@@ -395,7 +395,7 @@ Ph.D. Thesis, Universit&eacute; Laval (2014)<br>
 **Mod&eacute;lisation Math&eacute;matique en Epid&eacute;miologie par R&eacute;seaux de Contacts: Introduction de l'H&eacute;t&eacute;rog&eacute;n&eacute;it&eacute; dans la Transmissibilit&eacute;**<br>
 (Mathematical Modelling in Contact Networks for Epidemiology: Introduction of Heterogenity in Transmissibility)<br>
 M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
-  [Full text](/files/dissertations/Allard2008_MScThesis.pdf)
+  [Full text](/Allard2008_MScThesis.pdf)
 
 
 ### Other Publications
