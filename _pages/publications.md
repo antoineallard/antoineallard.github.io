@@ -52,6 +52,8 @@ Nat. Commun. 8, 14103 (2017)<br>
   [Full text](http://dx.doi.org/10.1038/ncomms14103)
   &#124;
   [arXiv](http://arxiv.org/abs/1601.03891)
+  &#124;
+  [Nature Phys. Research Highlights](http://dx.doi.org/10.1038/nphys4046)
 
 
 #### 2016
@@ -82,7 +84,7 @@ Nature Physics 12, 1042-1046 (2016)<br>
   &#124;
   [Media coverage](https://www.altmetric.com/details/10184598/news)
   &#124;
-  [News &amp; Views](http://dx.doi.org/10.1038/nphys3939)<br>
+  [Nature Phys. News &amp; Views](http://dx.doi.org/10.1038/nphys3939)<br>
 &#x2605; In the top 5% of all research outputs scored by Altmetric.
 
 <a id="Growth"></a>
