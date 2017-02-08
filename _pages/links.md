@@ -32,6 +32,7 @@ permalink: /links/
 
 [The Colorado Index of Complex Networks](http://icon.colorado.edu)<br>
 [The Koblenz Network Collection](http://konect.uni-koblenz.de/)<br>
+[Network repository](http://networkrepository.com)<br>
 [Mark Newman's network datasets](http://www-personal.umich.edu/~mejn/netdata/)<br>
 [Tore Opsahl's network datasets](http://toreopsahl.com/datasets/)<br>
 [Stanford Network Analysis Project](https://snap.stanford.edu)<br>
