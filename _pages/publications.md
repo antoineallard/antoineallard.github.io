@@ -21,19 +21,25 @@ Most of the publications below can also be found on [arXiv](http://www.arxiv.org
 **Directed networks in hidden metric space**<br>
 **AA**, M. &Aacute;ngeles Serrano, Guillermo Garc&iacute;a-P&eacute;rez, and Mari&aacute;n Bogu&ntilde;&aacute;
 
-
 **On the spatial organisation of connectomes**<br>
 **AA**, and M. &Aacute;ngeles Serrano
 
 
 #### Submitted manuscripts
 
+**Asymmetric percolation drives a double transition in sexual contact networks**<br>
+**AA**, Benjamin M. Althouse, and Laurent H&eacute;bert-Dufresne<br>
+*Submitted for publication*<br>
+  Full text
+  &#124;
+  [arXiv](https://arxiv.org/abs/1702.06224)
+
 **The risk of sustained sexual transmission of Zika is underestimated**<br>
 **AA**\*, Benjamin M. Althouse\*, Laurent H&eacute;bert-Dufresne\*, and Samuel V. Scarpino\*<br>
 *Submitted for publication*<br>
   Full text
   &#124;
-  [arXiv](http://dx.doi.org/10.1101/090324)
+  [bioRxiv](http://dx.doi.org/10.1101/090324)
 
 **Strategic tradeoffs in competitor dynamics on adaptive networks**<br>
 Laurent H&eacute;bert-Dufresne, **AA**, Pierre-Andr&eacute; No&euml;l, Jean-Gabriel Young, and Eric Libby<br>
