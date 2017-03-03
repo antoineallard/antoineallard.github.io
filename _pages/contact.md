@@ -4,14 +4,18 @@ permalink: /contact/
 
 ### Affiliations
 
-Departament de F&iacute;sica de la Mat&egrave;ria Condensada<br>
+<!-- Departament de F&iacute;sica de la Mat&egrave;ria Condensada<br>
 Carrer de Mart&iacute; i Franqu&egrave;s, 1<br>
 Universitat de Barcelona<br>
 08028 Barcelona, Spain<br>
 
 Institute of Complex Systems (UBICS)<br>
 Universitat de Barcelona<br>
-Barcelona, Spain<br>
+Barcelona, Spain<br> -->
+
+Centre de Recerca Matem&agrave;tica<br>
+Campus de Bellaterra, Edifici C<br>
+08193 Bellaterra (Barcelona), Spain
 
 D&eacute;partement de physique, de g&eacute;nie physique et d'optique<br>
 1045, avenue de la M&eacute;decine<br>
