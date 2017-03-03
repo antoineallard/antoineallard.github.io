@@ -18,6 +18,15 @@ Most of the publications below can also be found on [arXiv](http://www.arxiv.org
 
 #### Manuscripts in preparation
 
+**Graphicality, structure and size of constrained random graph ensembles**<br>
+Laurent H&eacute;bert-Dufresne, and *AA*
+
+**Effective random ensembles of complex networks**<br>
+**AA**, and Laurent H&eacute;bert-Dufresne
+
+**The distribution and stability of life cycles across environments**<br>
+Eric Libby, **AA**, Jean-Gabriel Young, and Laurent H&eacute;bert-Dufresne
+
 **Directed networks in hidden metric space**<br>
 **AA**, M. &Aacute;ngeles Serrano, Guillermo Garc&iacute;a-P&eacute;rez, and Mari&aacute;n Bogu&ntilde;&aacute;
 
@@ -54,7 +63,7 @@ Laurent H&eacute;bert-Dufresne, **AA**, Pierre-Andr&eacute; No&euml;l, Jean-Gabr
 <a id="wS1"></a>
 **The geometric nature of weights in real complex networks**<br>
 **AA**, M. &Aacute;ngeles Serrano, Guillermo Garc&iacute;a-P&eacute;rez, and Mari&aacute;n Bogu&ntilde;&aacute;<br>
-Nat. Commun. 8, 14103 (2017)<br>
+Nature Communications 8, 14103 (2017)<br>
   [Full text](http://dx.doi.org/10.1038/ncomms14103)
   &#124;
   [arXiv](http://arxiv.org/abs/1601.03891)<br>
