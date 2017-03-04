@@ -201,28 +201,28 @@ Scientific Reports 3, 2171 (2013)<br>
 Journal of Physics A 45, 405005 (2012)<br>
   [Full text](http://dx.doi.org/10.1088/1751-8113/45/40/405005)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1201.4602")
+  [arXiv](http://arxiv.org/abs/1201.4602")
 
 **Exact solution of bond percolation on small arbitrary graphs**<br>
 **AA**, Laurent H&eacute;bert-Dufresne, Pierre-Andr&eacute; No&euml;l, Vincent Marceau, and Louis J. Dub&eacute;<br>
 Europhysics Letters (EPL) 98, 16001 (2012)<br>
   [Full text](http://dx.doi.org/10.1209/0295-5075/98/16001)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1201.4369)
+  [arXiv](http://arxiv.org/abs/1201.4369)
 
 **Propagation on networks: An exact alternative perspective**<br>
 Pierre-Andr&eacute; No&euml;l, **AA**, Laurent H&eacute;bert-Dufresne, Vincent Marceau, and Louis J. Dub&eacute;<br>
 Physical Review E 85, 031118 (2012)<br>
   [Full text](http://dx.doi.org/10.1103/PhysRevE.85.031118)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1102.0987)
+  [arXiv](http://arxiv.org/abs/1102.0987)
 
 **Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems**<br>
 Laurent H&eacute;bert-Dufresne, **AA**, Vincent Marceau, Pierre-Andr&eacute; No&euml;l, and Louis J. Dub&eacute;<br>
 Physical Review E 85, 026108 (2012)<br>
   [Full text](http://dx.doi.org/10.1103/PhysRevE.85.026108)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1109.0034) 
+  [arXiv](http://arxiv.org/abs/1109.0034) 
 
 
 #### 2011
@@ -232,7 +232,7 @@ Laurent H&eacute;bert-Dufresne, **AA**, Vincent Marceau, Pierre-Andr&eacute; No&
 Physical Review Letters 107, 158702 (2011)<br>
   [Full text](http://dx.doi.org/10.1103/PhysRevLett.107.158702)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1105.5980)
+  [arXiv](http://arxiv.org/abs/1105.5980)
   &#124;
   [Supplemental Material](http://www.dynamica.phy.ulaval.ca/fileadmin/publications/hebertdufresne11_prl_sm.pdf)<br>
 
@@ -241,7 +241,7 @@ Vincent Marceau, Pierre-Andr&eacute; No&euml;l, Laurent H&eacute;bert-Dufresne, 
 Physical Review E 84, 026105 (2011)<br>
   [Full text](http://dx.doi.org/10.1103/PhysRevE.84.026105)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1103.4059)
+  [arXiv](http://arxiv.org/abs/1103.4059)
 
 
 #### 2010
@@ -251,7 +251,7 @@ Laurent H&eacute;bert-Dufresne, Pierre-Andr&eacute; No&euml;l, Vincent Marceau, 
 Physical Review E 82, 036115 (2010)<br>
   [Full text](http://dx.doi.org/10.1103/PhysRevE.82.036115)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1005.1397)<br>
+  [arXiv](http://arxiv.org/abs/1005.1397)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 20 (2010)
 
 <a id="Marceau2010"></a>
@@ -260,7 +260,7 @@ Vincent Marceau, Pierre-Andr&eacute; No&euml;l, Laurent H&eacute;bert-Dufresne, 
 Physical Review E 82, 036116 (2010)<br>
   [Full text](http://dx.doi.org/10.1103/PhysRevE.82.036116)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/1005.1299)<br>
+  [arXiv](http://arxiv.org/abs/1005.1299)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 20 (2010)
 
 
@@ -271,7 +271,7 @@ Physical Review E 82, 036116 (2010)<br>
 Physical Review E 79, 036113 (2009)<br>
   [Full text](http://dx.doi.org/10.1103/PhysRevE.79.036113)
   &#124;
-  [arXiv.org](http://arxiv.org/abs/0811.2349)<br>
+  [arXiv](http://arxiv.org/abs/0811.2349)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 17 (2009)
 
 
