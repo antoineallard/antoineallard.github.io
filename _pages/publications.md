@@ -19,7 +19,7 @@ Most of the publications below can also be found on [arXiv](http://www.arxiv.org
 #### Manuscripts in preparation
 
 **Graphicality, structure and size of constrained random graph ensembles**<br>
-Laurent H&eacute;bert-Dufresne, and *AA*
+Laurent H&eacute;bert-Dufresne, and **AA**
 
 **Effective random ensembles of complex networks**<br>
 **AA**, and Laurent H&eacute;bert-Dufresne
