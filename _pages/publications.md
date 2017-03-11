@@ -287,6 +287,14 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 ### Selected Presentations
 <a id="SelectedPresentations"></a>
 
+**Towards an effective structure of complex networks and its contributions to epidemiology and neuroscience**<br>
+**_AA_**<br>
+Network Science Institute, Northeastern University<br>
+Boston Massachusetts (2015)<br>
+  [Abstract](https://www.networkscienceinstitute.org/events/antoine-allard)
+  &#124;
+  [Oral presentation](files/presentations/Allard_20170309_NetSI_EffectiveStructure.pdf)
+
 **The geometric nature of weights in real complex networks**<br>
 **_AA_**, M. &Aacute;ngeles Serrano, Guillermo Garc&iacute;a-P&eacute;rez, and Mari&aacute;n Bogu&ntilde;&aacute;<br>
 Conference on Complex Systems (CCS 2016)<br>
