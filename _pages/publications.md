@@ -116,7 +116,7 @@ Scientific Reports 6, 33441 (2016)<br>
   [Full text](http://dx.doi.org/10.1038/srep33441)
   &#124;
   [arXiv](http://arxiv.org/abs/1512.02233)<br>
-&#x2605; Featured in the section [*Econom\'ia* of the newspaper *El Peri\'odico*.](http://www.elperiodico.com/es/noticias/economia/globalizacion-refuerza-grandes-potencias-comercio-mundial-5844783)
+&#x2605; Featured in the section [*Econom&iacute;a* of the newspaper *El Peri&oacute;dico*.](http://www.elperiodico.com/es/noticias/economia/globalizacion-refuerza-grandes-potencias-comercio-mundial-5844783)
 
 
 #### 2015
