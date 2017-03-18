@@ -82,7 +82,7 @@ Physical Review E 94, 022317 (2016)<br>
 
 <a id="OD"></a>
 **Multi-scale structure and topological anomaly detection via a new network statistic: The onion decomposition**<br>
-Laurent H&eacute;bert-Dufresne, Josh Grochow, and **AA**<br>
+Laurent H&eacute;bert-Dufresne, Josh A. Grochow, and **AA**<br>
 Scientific Reports 6, 31708 (2016)<br>
   [Full text](http://dx.doi.org/10.1038/srep31708)
   &#124;
