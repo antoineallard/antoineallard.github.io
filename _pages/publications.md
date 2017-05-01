@@ -275,7 +275,7 @@ Physical Review E 79, 036113 (2009)<br>
 
 <br><br><br>
 <a id="BookChapters"></a>
-<hr>
+<hr style="background:#7a8288; border:0; height:2px">
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
@@ -290,7 +290,7 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 
 
 <br><br><br>
-<hr>
+<hr style="background:#7a8288; border:0; height:2px">
 <a id="SelectedPresentations"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
@@ -300,7 +300,7 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 ### Selected Presentations
 
 **The effective navigable geometry of the brain**<br>
-**_AA_** and M. &Aacute;. Serrano<br>
+**_AA_** and M. &Aacute;ngeles Serrano<br>
 International School and Conference on Network Science (NetSci 2017)<br>
 Indianapolis, Indiana (2017)<br>
   Abstract
@@ -429,7 +429,7 @@ Abstract
 
 
 <br><br><br>
-<hr>
+<hr style="background:#7a8288; border:0; height:2px">
 <a id="Dissertations"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
@@ -450,7 +450,7 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
 
 
 <br><br><br>
-<hr>
+<hr style="background:#7a8288; border:0; height:2px">
 <a id="OtherPublications"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
