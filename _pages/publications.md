@@ -314,7 +314,7 @@ Indianapolis, Indiana (2017)<br>
 **Towards an effective structure of complex networks and its contributions to epidemiology and neuroscience**<br>
 **_AA_**<br>
 Network Science Institute, Northeastern University<br>
-Boston, Massachusetts (2015)<br>
+Boston, Massachusetts (2017)<br>
   [Abstract](https://www.networkscienceinstitute.org/events/antoine-allard)
   &#124;
   [Oral presentation](files/presentations/Allard_20170309_NetSI_EffectiveStructure.pdf)
