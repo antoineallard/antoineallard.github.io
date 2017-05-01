@@ -2,13 +2,13 @@
 permalink: /publications/
 ---
 
+<a id="ResearchPublications"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
 ### Research Publications
-<a id="ResearchPublications"></a>
 
 Listed in inverse chronological order; equal contributions are denoted by *.<br>
 Most of the publications below can also be found on [arXiv](http://www.arxiv.org/a/allard_a_1) or on [Google Scholar](http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en).
@@ -274,13 +274,14 @@ Physical Review E 79, 036113 (2009)<br>
 
 
 <br><br><br>
+<a id="BookChapters"></a>
+---
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
 ### Book Chapters
-<a id="BookChapters"></a>
 
 **The Social Zombie: Modelling undead outbreaks on social networks**<br>
 Laurent H&eacute;bert-Dufresne, Vincent Marceau, Pierre-Andr&eacute; No&euml;l, **AA**, and Louis J. Dub&eacute;<br>
@@ -289,13 +290,14 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 
 
 <br><br><br>
+<a id="SelectedPresentations"></a>
+---
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
 ### Selected Presentations
-<a id="SelectedPresentations"></a>
 
 **Towards an effective structure of complex networks and its contributions to epidemiology and neuroscience**<br>
 **_AA_**<br>
@@ -419,13 +421,14 @@ Abstract
 
 
 <br><br><br>
+<a id="Dissertations"></a>
+---
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
 ### Dissertations
-<a id="Dissertations"></a>
 
 **Percolation sur graphes al&eacute;atoires: Mod&eacute;lisation et description analytique**<br>
 (Percolation on random graphs: Modelling and analytical description)<br>
@@ -439,13 +442,14 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
 
 
 <br><br><br>
+---
+<a id="OtherPublications"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
 ### Other Publications
-<a id="OtherPublications"></a>
 
 **Des Ponts d'Euler &agrave; la Grippe Aviaire: De l'abstraction math&eacute;matique &agrave; la r&eacute;alit&eacute; sociale des &eacute;pid&eacute;mies**<br>
 (From Euler Bridges to the Avian Flu: From Mathematical Abstraction to the Social Reality of Epidemics)<br>
