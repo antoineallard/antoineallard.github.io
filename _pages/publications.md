@@ -274,14 +274,18 @@ Physical Review E 79, 036113 (2009)<br>
 
 
 <br><br><br>
-<a id="BookChapters"></a>
 <hr style="background:#7a8288; border:0; height:2px">
+<a id="BookChapters"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
 ### Book Chapters
+
+**A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013**<br>
+Guillermo Garc&iacute;a-P&eacute;rez, Mari&aacute;n Bogu&ntilde;&aacute;, **AA**, and M. &Aacute;ngeles Serrano<br>
+_In press_
 
 **The Social Zombie: Modelling undead outbreaks on social networks**<br>
 Laurent H&eacute;bert-Dufresne, Vincent Marceau, Pierre-Andr&eacute; No&euml;l, **AA**, and Louis J. Dub&eacute;<br>
