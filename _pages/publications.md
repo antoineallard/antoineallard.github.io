@@ -275,8 +275,7 @@ Physical Review E 79, 036113 (2009)<br>
 
 <br><br><br>
 <a id="BookChapters"></a>
----
-
+<hr>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
@@ -292,8 +291,7 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 
 <br><br><br>
 <a id="SelectedPresentations"></a>
----
-
+<hr>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
@@ -304,7 +302,7 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 **Towards an effective structure of complex networks and its contributions to epidemiology and neuroscience**<br>
 **_AA_**<br>
 Network Science Institute, Northeastern University<br>
-Boston Massachusetts (2015)<br>
+Boston, Massachusetts (2015)<br>
   [Abstract](https://www.networkscienceinstitute.org/events/antoine-allard)
   &#124;
   [Oral presentation](files/presentations/Allard_20170309_NetSI_EffectiveStructure.pdf)
@@ -424,8 +422,7 @@ Abstract
 
 <br><br><br>
 <a id="Dissertations"></a>
----
-
+<hr>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
@@ -445,8 +442,7 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
 
 
 <br><br><br>
----
-
+<hr>
 <a id="OtherPublications"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
