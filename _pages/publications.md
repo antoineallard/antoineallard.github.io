@@ -7,8 +7,6 @@ permalink: /publications/
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
-
-
 ### Research Publications
 <a id="ResearchPublications"></a>
 
@@ -275,6 +273,11 @@ Physical Review E 79, 036113 (2009)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 17 (2009)
 
 
+[Research Publications](#ResearchPublications){: .btn}
+[Book Chapters](#BookChapters){: .btn}
+[Presentations](#SelectedPresentations){: .btn}
+[Dissertations](#Dissertations){: .btn}
+[Other Publications](#OtherPublications){: .btn}
 ### Book Chapters
 <a id="BookChapters"></a>
 
@@ -284,6 +287,11 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 [Table of contents](http://www.press.uottawa.ca/mathematical-modelling-of-zombies)
 
 
+[Research Publications](#ResearchPublications){: .btn}
+[Book Chapters](#BookChapters){: .btn}
+[Presentations](#SelectedPresentations){: .btn}
+[Dissertations](#Dissertations){: .btn}
+[Other Publications](#OtherPublications){: .btn}
 ### Selected Presentations
 <a id="SelectedPresentations"></a>
 
@@ -408,6 +416,11 @@ Abstract
 &#124; Poster
 
 
+[Research Publications](#ResearchPublications){: .btn}
+[Book Chapters](#BookChapters){: .btn}
+[Presentations](#SelectedPresentations){: .btn}
+[Dissertations](#Dissertations){: .btn}
+[Other Publications](#OtherPublications){: .btn}
 ### Dissertations
 <a id="Dissertations"></a>
 
@@ -422,6 +435,11 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
   [Full text](dissertations/Allard2008_MScThesis.pdf)
 
 
+[Research Publications](#ResearchPublications){: .btn}
+[Book Chapters](#BookChapters){: .btn}
+[Presentations](#SelectedPresentations){: .btn}
+[Dissertations](#Dissertations){: .btn}
+[Other Publications](#OtherPublications){: .btn}
 ### Other Publications
 <a id="OtherPublications"></a>
 
