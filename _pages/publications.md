@@ -290,14 +290,22 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 
 
 <br><br><br>
-<a id="SelectedPresentations"></a>
 <hr>
+<a id="SelectedPresentations"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
 ### Selected Presentations
+
+**The effective navigable geometry of the brain**<br>
+**_AA_** and M. &Aacute;. Serrano<br>
+International School and Conference on Network Science (NetSci 2017)<br>
+Indianapolis, Indiana (2017)<br>
+  Abstract
+  &#124;
+  Oral presentation
 
 **Towards an effective structure of complex networks and its contributions to epidemiology and neuroscience**<br>
 **_AA_**<br>
@@ -421,8 +429,8 @@ Abstract
 
 
 <br><br><br>
-<a id="Dissertations"></a>
 <hr>
+<a id="Dissertations"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
