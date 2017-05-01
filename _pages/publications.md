@@ -276,6 +276,7 @@ Physical Review E 79, 036113 (2009)<br>
 <br><br><br>
 <a id="BookChapters"></a>
 ---
+
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
@@ -292,6 +293,7 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 <br><br><br>
 <a id="SelectedPresentations"></a>
 ---
+
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
@@ -423,6 +425,7 @@ Abstract
 <br><br><br>
 <a id="Dissertations"></a>
 ---
+
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
@@ -443,6 +446,7 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
 
 <br><br><br>
 ---
+
 <a id="OtherPublications"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
