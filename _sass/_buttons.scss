@@ -100,7 +100,9 @@
   &--current {
     background-color: $current-color;
 
-    &:hover {}
+    &:hover {
+      background-color: $current-color;
+    }
   }
 
   /* danger */
