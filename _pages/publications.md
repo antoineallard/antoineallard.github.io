@@ -4,7 +4,7 @@ permalink: /publications/
 
 <a id="ResearchPublications"></a>
 {Research Publications: .btn}
-[Book Chapters](#BookChapters){: .btn--success}
+[Book Chapters](#BookChapters){: .btn .btn--success}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
