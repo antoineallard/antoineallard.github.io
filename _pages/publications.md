@@ -13,7 +13,7 @@ Listed in inverse chronological order; equal contributions are denoted by *.<br>
 Most of the publications below can also be found on [arXiv](http://www.arxiv.org/a/allard_a_1) or on [Google Scholar](http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en).
 
 
-#### Manuscripts in preparation
+### Manuscripts in preparation
 
 **Graphicality, structure and size of constrained random graph ensembles**<br>
 Laurent H&eacute;bert-Dufresne, and **AA**
@@ -31,7 +31,7 @@ Eric Libby, **AA**, Jean-Gabriel Young, and Laurent H&eacute;bert-Dufresne
 **AA**, and M. &Aacute;ngeles Serrano
 
 
-#### Submitted manuscripts
+### Submitted manuscripts
 
 **Asymmetric percolation drives a double transition in sexual contact networks**<br>
 **AA**, Benjamin M. Althouse, and Laurent H&eacute;bert-Dufresne<br>
@@ -55,7 +55,7 @@ Laurent H&eacute;bert-Dufresne, **AA**, Pierre-Andr&eacute; No&euml;l, Jean-Gabr
   [arXiv](http://arxiv.org/abs/1607.04632)
 
 
-#### 2017
+### 2017
 
 <a id="wS1"></a>
 **The geometric nature of weights in real complex networks**<br>
@@ -67,7 +67,7 @@ Nature Communications 8, 14103 (2017)<br>
 &#x2605; [Nature Phys. Research Highlights](http://dx.doi.org/10.1038/nphys4046)
 
 
-#### 2016
+### 2016
 
 <a id="overlapping"></a>
 **Growing networks of overlapping communities with internal structure**<br>
@@ -116,7 +116,7 @@ Scientific Reports 6, 33441 (2016)<br>
 &#x2605; Featured in the section [*Econom&iacute;a* of the newspaper *El Peri&oacute;dico*.](http://www.elperiodico.com/es/noticias/economia/globalizacion-refuerza-grandes-potencias-comercio-mundial-5844783)
 
 
-#### 2015
+### 2015
 
 <a id="HPA"></a>
 **Complex networks as an emerging property of hierarchical preferential attachment**<br>
@@ -145,7 +145,7 @@ PLOS ONE 10, e0140133 (2015)<br>
   [Software](https://github.com/jg-you/cascading_detection)
 
 
-#### 2014
+### 2014
 
 <a id="Noel2014"></a>
 **Spreading dynamics on complex networks: a general stochastic approach**<br>
@@ -171,7 +171,7 @@ Physical Review E 89, 022801 (2014)<br>
 &#x2605; In the *Editors' Suggestions* section of Physical Review E.
 
 
-#### 2013
+### 2013
 
 <a id="Hebert-Dufresne2013b"></a>
 **Percolation on random networks with arbitrary k-core structure**<br>
@@ -191,7 +191,7 @@ Scientific Reports 3, 2171 (2013)<br>
 
 
 
-#### 2012
+### 2012
 
 **Bond percolation on a class of correlated and clustered random graphs**<br>
 **AA**, Laurent H&eacute;bert-Dufresne, Pierre-Andr&eacute; No&euml;l, Vincent Marceau, and Louis J. Dub&eacute;<br>
@@ -222,7 +222,7 @@ Physical Review E 85, 026108 (2012)<br>
   [arXiv](http://arxiv.org/abs/1109.0034) 
 
 
-#### 2011
+### 2011
 
 **Structural Preferential Attachment: Network Organization beyond the Link**<br>
 Laurent H&eacute;bert-Dufresne, **AA**, Vincent Marceau, Pierre-Andr&eacute; No&euml;l, and Louis J. Dub&eacute;<br>
@@ -241,7 +241,7 @@ Physical Review E 84, 026105 (2011)<br>
   [arXiv](http://arxiv.org/abs/1103.4059)
 
 
-#### 2010
+### 2010
 
 **Propagation dynamics on networks featuring complex topologies**<br>
 Laurent H&eacute;bert-Dufresne, Pierre-Andr&eacute; No&euml;l, Vincent Marceau, **AA**, and Louis J. Dub&eacute;<br>
@@ -261,7 +261,7 @@ Physical Review E 82, 036116 (2010)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 20 (2010)
 
 
-#### 2009
+### 2009
 
 **Heterogeneous Bond Percolation on Multitype Networks with an Application to Epidemic Dynamics**<br>
 **AA**, Pierre-Andr&eacute; No&euml;l, Louis J. Dub&eacute; and B. Pourbohloul<br>
