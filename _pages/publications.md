@@ -3,12 +3,11 @@ permalink: /publications/
 ---
 
 <a id="ResearchPublications"></a>
-[Research Publications](){: .btn .btn--current}
+<button class="btn btn--current">Research Publications</button>
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
-### Research Publications
 
 Listed in inverse chronological order; equal contributions are denoted by *.<br>
 Most of the publications below can also be found on [arXiv](http://www.arxiv.org/a/allard_a_1) or on [Google Scholar](http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en).
@@ -277,11 +276,10 @@ Physical Review E 79, 036113 (2009)<br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="BookChapters"></a>
 [Research Publications](#ResearchPublications){: .btn}
-<button class="btn btn--current">Book Chapters</button>button>
+<button class="btn btn--current">Book Chapters</button>
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
-### Book Chapters
 
 **A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013**<br>
 Guillermo Garc&iacute;a-P&eacute;rez, Mari&aacute;n Bogu&ntilde;&aacute;, **AA**, and M. &Aacute;ngeles Serrano<br>
@@ -298,10 +296,9 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 <a id="SelectedPresentations"></a>
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
-[Presentations](#SelectedPresentations){: .btn}
+<button class="btn btn--current">Presentations</button>
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
-### Selected Presentations
 
 **The effective navigable geometry of the brain**<br>
 **_AA_** and M. &Aacute;ngeles Serrano<br>
@@ -438,9 +435,8 @@ Abstract
 [Research Publications](#ResearchPublications){: .btn}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
-[Dissertations](#Dissertations){: .btn}
+<button class="btn btn--current">Dissertations</button>
 [Other Publications](#OtherPublications){: .btn}
-### Dissertations
 
 **Percolation sur graphes al&eacute;atoires: Mod&eacute;lisation et description analytique**<br>
 (Percolation on random graphs: Modelling and analytical description)<br>
@@ -460,8 +456,7 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
-[Other Publications](#OtherPublications){: .btn}
-### Other Publications
+<button class="btn btn--current">Other Publications</button>
 
 **Des Ponts d'Euler &agrave; la Grippe Aviaire: De l'abstraction math&eacute;matique &agrave; la r&eacute;alit&eacute; sociale des &eacute;pid&eacute;mies**<br>
 (From Euler Bridges to the Avian Flu: From Mathematical Abstraction to the Social Reality of Epidemics)<br>
