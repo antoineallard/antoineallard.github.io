@@ -272,7 +272,7 @@ Physical Review E 79, 036113 (2009)<br>
   &#x2605; Also in the *Virtual Journal of Biological Physics Research*, issue 7, vol. 17 (2009)
 
 
-<br><br><br>
+<br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="BookChapters"></a>
 [Research Publications](#ResearchPublications){: .btn}
@@ -291,7 +291,7 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 [Table of contents](http://www.press.uottawa.ca/mathematical-modelling-of-zombies)
 
 
-<br><br><br>
+<br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="SelectedPresentations"></a>
 [Research Publications](#ResearchPublications){: .btn}
@@ -429,7 +429,7 @@ Abstract
 &#124; Poster
 
 
-<br><br><br>
+<br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="Dissertations"></a>
 [Research Publications](#ResearchPublications){: .btn}
@@ -449,7 +449,7 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
   [Full text](dissertations/Allard2008_MScThesis.pdf)
 
 
-<br><br><br>
+<br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="OtherPublications"></a>
 [Research Publications](#ResearchPublications){: .btn}
