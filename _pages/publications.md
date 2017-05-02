@@ -273,6 +273,11 @@ Physical Review E 79, 036113 (2009)<br>
 
 
 <br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="BookChapters"></a>
 [Research Publications](#ResearchPublications){: .btn}
@@ -292,6 +297,11 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 [Table of contents](http://www.press.uottawa.ca/mathematical-modelling-of-zombies)
 
 
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="SelectedPresentations"></a>
@@ -432,6 +442,11 @@ Abstract
 
 
 <br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="Dissertations"></a>
 [Research Publications](#ResearchPublications){: .btn}
@@ -452,6 +467,11 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
   [Full text](dissertations/Allard2008_MScThesis.pdf)
 
 
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <br><br><br><br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="OtherPublications"></a>
