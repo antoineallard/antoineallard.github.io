@@ -3,7 +3,7 @@ permalink: /publications/
 ---
 
 <a id="ResearchPublications"></a>
-[Research Publications](#ResearchPublications){: .btn}
+[Research Publications]{: .btn2}
 [Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
@@ -277,7 +277,7 @@ Physical Review E 79, 036113 (2009)<br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="BookChapters"></a>
 [Research Publications](#ResearchPublications){: .btn}
-[Book Chapters](#BookChapters){: .btn}
+Book Chapters{: .btn2}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
