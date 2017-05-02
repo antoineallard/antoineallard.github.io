@@ -501,3 +501,5 @@ Accromath 4, 24-29 (2009)<br>
   [Full text](http://accromath.uqam.ca/accro/wp-content/uploads/2013/04/ponts-euler.pdf)
 
 <br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
