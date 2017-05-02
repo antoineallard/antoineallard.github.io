@@ -280,6 +280,7 @@ Physical Review E 79, 036113 (2009)<br>
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
+<br>
 
 **A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013**<br>
 Guillermo Garc&iacute;a-P&eacute;rez, Mari&aacute;n Bogu&ntilde;&aacute;, **AA**, and M. &Aacute;ngeles Serrano<br>
@@ -299,6 +300,7 @@ Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
 <button class="btn btn--current">Presentations</button>
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
+<br>
 
 **The effective navigable geometry of the brain**<br>
 **_AA_** and M. &Aacute;ngeles Serrano<br>
@@ -437,6 +439,7 @@ Abstract
 [Presentations](#SelectedPresentations){: .btn}
 <button class="btn btn--current">Dissertations</button>
 [Other Publications](#OtherPublications){: .btn}
+<br>
 
 **Percolation sur graphes al&eacute;atoires: Mod&eacute;lisation et description analytique**<br>
 (Percolation on random graphs: Modelling and analytical description)<br>
@@ -457,6 +460,7 @@ M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 <button class="btn btn--current">Other Publications</button>
+<br>
 
 **Des Ponts d'Euler &agrave; la Grippe Aviaire: De l'abstraction math&eacute;matique &agrave; la r&eacute;alit&eacute; sociale des &eacute;pid&eacute;mies**<br>
 (From Euler Bridges to the Avian Flu: From Mathematical Abstraction to the Social Reality of Epidemics)<br>
