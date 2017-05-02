@@ -41,9 +41,6 @@
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
-
-  &:hover {
-    background-color: mix(white, #000, 20%);
   }
 
   .icon {
