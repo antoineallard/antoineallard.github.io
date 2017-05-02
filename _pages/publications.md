@@ -276,8 +276,8 @@ Physical Review E 79, 036113 (2009)<br>
 <br><br><br>
 <hr style="background:#7a8288; border:0; height:2px">
 <a id="BookChapters"></a>
-[Research Publications](#ResearchPublications){: .btn.--success}
-{Book Chapters}{: .btn}
+[Research Publications](#ResearchPublications){: .btn}
+<button class="btn btn--current">Book Chapters</button>button>
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
