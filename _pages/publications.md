@@ -28,7 +28,7 @@ Eric Libby, **AA**, Jean-Gabriel Young, and Laurent H&eacute;bert-Dufresne
 **Directed networks in hidden metric space**<br>
 **AA**, M. &Aacute;ngeles Serrano, Guillermo Garc&iacute;a-P&eacute;rez, and Mari&aacute;n Bogu&ntilde;&aacute;
 
-**On the spatial organisation of connectomes**<br>
+**The effective navigable geometry of the brain**<br>
 **AA**, and M. &Aacute;ngeles Serrano
 
 
