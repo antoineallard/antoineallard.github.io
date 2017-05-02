@@ -3,8 +3,8 @@ permalink: /publications/
 ---
 
 <a id="ResearchPublications"></a>
-{Research Publications: .btn}
-[Book Chapters](#BookChapters){: .btn .btn--current}
+[Research Publications](){: .btn .btn--current}
+[Book Chapters](#BookChapters){: .btn}
 [Presentations](#SelectedPresentations){: .btn}
 [Dissertations](#Dissertations){: .btn}
 [Other Publications](#OtherPublications){: .btn}
