@@ -65,7 +65,7 @@ Nature Communications 8, 14103 (2017)<br>
   &#124;
   [arXiv](http://arxiv.org/abs/1601.03891)<br>
 &#x2605; [Nature Phys. Research Highlights](http://dx.doi.org/10.1038/nphys4046)<br>
-&#x2605; [Part of the Nature Communications' web collection on complex systems](https://www.nature.com/collections/ycjylwzvmz/)
+&#x2605; [Features in Nature Communications' web collection on complex systems](https://www.nature.com/collections/ycjylwzvmz/)
 
 
 ### 2016
