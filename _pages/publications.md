@@ -96,7 +96,7 @@ Nature Physics 12, 1042-1046 (2016)<br>
   &#124;
   [Media coverage](https://www.altmetric.com/details/10184598/news)<br>
 &#x2605; [Nature Phys. News &amp; Views](http://dx.doi.org/10.1038/nphys3939)<br>
-&#x2605; In the top 5% of all research outputs scored by Altmetric.
+&#x2605; In the top 5% of all research outputs scored by [Altmetric](https://www.altmetric.com/details/10184598/news).
 
 <a id="Growth"></a>
 **Constrained growth of complex scale-independent systems**<br>
