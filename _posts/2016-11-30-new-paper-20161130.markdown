@@ -1,8 +1,0 @@
----
-layout: single
-title:  "New paper in Nature Communications"
-date:   2017-01-18
-categories: publications
----
-
-Our paper about the weighted organization of complex networks, [The geometric nature of weights in real complex networks](/publications/#wS1), has finally seen the light of day and has been published in Nature Communications. In this paper, we unveil a geometric signature in the weights of real weighted complex networks and show how it can be leveraged to generate realistic network surrogates.
