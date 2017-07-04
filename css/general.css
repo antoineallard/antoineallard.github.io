@@ -372,6 +372,13 @@ color: #ECEBEB;
 	height: 100%;  /* AA */
 }
 
+.content-section-b-short-header-small {  /* AA */
+	border-top: 1px solid #e7e7e7;  /* AA */
+	border-bottom: 1px solid #e7e7e7;  /* AA */
+	padding: 50px 0;  /* AA */
+	height: 100%;  /* AA */
+}
+
 .section-heading {
 	margin-bottom: 30px;
 }
