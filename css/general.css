@@ -103,6 +103,11 @@ p.news-par {
   margin-bottom: 1.0em;
 }
 
+p.news-par-archive {
+  line-height: 1.25;
+  margin-bottom: 2.0em;
+}
+
 p.subsubtitle {
 	line-height: 1.25;
   margin-top: -1.0em;
@@ -377,6 +382,12 @@ color: #ECEBEB;
 	border-bottom: 1px solid #e7e7e7;  /* AA */
 	padding: 50px 0;  /* AA */
 	height: 100%;  /* AA */
+}
+
+.content-section-b-short-header {  /* AA */
+	border-top: 1px solid #e7e7e7;  /* AA */
+	border-bottom: 1px solid #e7e7e7;  /* AA */
+	padding: 50px 0;  /* AA */
 }
 
 .section-heading {
