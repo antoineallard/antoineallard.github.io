@@ -14,8 +14,10 @@ body, html {
 	overflow-x:hidden;
 }
 
+/*::-moz-selection{background:#d6edfc;color:white}*/
 ::-moz-selection{background:#1abc9c;color:white}
 
+/*::selection{background:#d6edfc;color:white}*/
 ::selection{background:#1abc9c;color:white}
 
 .abcen{position: absolute;bottom: 8%;}
