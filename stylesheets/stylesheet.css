@@ -41,10 +41,10 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
+/*table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+}*/
 
 /* LAYOUT STYLES */
 body {
@@ -158,6 +158,7 @@ em {
 
 table {
   width: 100%;
+  border-collapse: collapse;
   border: 0px solid #ebebeb;      /* AA */
 }
 
