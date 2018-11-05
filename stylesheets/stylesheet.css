@@ -136,6 +136,12 @@ p.ref-par {
   margin-bottom: 0.5em;/* AA */
 }                      /* AA */
 
+p.menu {
+  text-align: center;
+  font-size:1.2em;
+  margin-top: -2em;
+  margin-bottom: -1.5em;
+}
 
 /* COMMON STYLES */
 
@@ -160,12 +166,14 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 0px solid #ebebeb;      /* AA */
+  margin-bottom: -2em;
 }
 
 td {
   border: 0px solid #ebebeb;      /* AA */
   text-align: left;               /* AA */ 
-  vertical-align: middle;         /* AA */
+  vertical-align: top;         /* AA */
+  /*vertical-align: middle;         /* AA */*/
 }
 
 #hpadding                /* AA */
