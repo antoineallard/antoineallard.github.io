@@ -145,6 +145,42 @@ p.menu {
 
 /* COMMON STYLES */
 
+.column {
+  float: left;
+}
+
+.members {
+  width: 33.33%;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.headerleft {
+  width: 33.33%;
+  padding-right: 1.66%;
+}
+
+.headerright {
+  width: 65%%;
+  display:block;
+  word-break:break-all;
+}
+
+/*.row {
+  padding-top: 3em;
+}*/
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.onlymobile {
+  display: none;
+}
+
 hr {
   height: 1px;
   line-height: 1px;
@@ -243,6 +279,23 @@ p {
   .inner {
     width: 94%;
     margin: 0 auto;
+  }
+}
+
+ /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+  .members {
+    text-align: left;
+    padding-top: 0em;
+  }
+  .nomobile {
+    display: none;
+  }
+  .onlymobile {
+    display: block;
   }
 }
 
