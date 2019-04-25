@@ -134,7 +134,14 @@ p.ref-par {
   text-align: center;  /* AA */
   font-size: 1.05em;   /* AA */
   margin-bottom: 0.5em;/* AA */
-}                      /* AA */
+}
+
+.current_members {      /* AA */
+  text-align: left;     /* AA */
+  font-size: 1.05em;    /* AA */
+  margin-bottom: 0em;/* AA */
+  font-weight: bold;    /* AA */
+}                       /* AA */
 
 p.menu {
   text-align: center;
