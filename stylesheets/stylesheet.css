@@ -143,6 +143,13 @@ p.ref-par {
   font-weight: bold;    /* AA */
 }                       /* AA */
 
+.previous_members {      /* AA */
+  text-align: left;     /* AA */
+  font-size: 1.05em;    /* AA */
+  margin-bottom: 0.5em;/* AA */
+  font-weight: bold;    /* AA */
+}                       /* AA */
+
 p.menu {
   text-align: center;
   font-size:120%;
