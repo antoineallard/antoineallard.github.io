@@ -50,9 +50,12 @@ q:before, q:after {
 body {
   font-size: 1em;
   line-height: 1.5;
-  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  /* background: #f0f0f0; */
+  background: #fafaff;
+  /* background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat; */
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, serif; */
+  /* text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); */
   color: #3a3a3a;
   font-weight: normal;
 }
@@ -66,7 +69,8 @@ header a:hover {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: transparent;
+  /* background: transparent url('../images/hr.png') 0 0 no-repeat; */
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -75,18 +79,25 @@ footer {
 }
 
 footer a {
-  color: #aaa;
+  /* color: #084594; */
+  color:inherit;
+  /* color: #aaa; */
 }
 footer a:hover {
-  color: #aaa;
+  /* color: #084594; */
+  /* color: #aaa; */
+  color:inherit;
+  text-decoration: none;
 }
 
 a {
-  color: #006ebf;
+  color: #084594;
+  /* color: #006ebf; */
   text-decoration: none;
 }
 a:hover {
-  color: #006ebf;
+  color: #084594;
+  /* color: #006ebf; */
   text-decoration: underline;
 }
 
@@ -100,7 +111,8 @@ header h1 {
 }
 
 #container {
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  background: transparent;
+  /* background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat; */
   min-height: 595px;
 }
 
