@@ -2,3 +2,5 @@ old_versions/
 images/local/
 *.DS_Store
 files/update_cv.py
+website_perso.sublime-project
+website_perso.sublime-workspace
