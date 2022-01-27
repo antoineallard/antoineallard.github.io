@@ -1,986 +1,1001 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" /> -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="academicons/css/academicons.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<style>
+    body {
+        font-size:160% !important;
+        color: #545454 !important;
+    }
+    a {
+        color: #4C72B0 !important;
+    }
+    a:hover {
+        color: #4C72B0 !important;
+    }
+    nav a {
+        color: #9D9D9D !important;
+    }
+    nav a:hover {
+        color: #FFFFFF !important;
+    }
+    header a {
+        color: #3a3a3a !important;
+    }
+    header a:hover {
+        color: #3a3a3a !important;
+    }
+    h4 {
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    p {
+        line-height: 135%;
+    }
+</style>
+
+
+
+<html lang="en">
+
+
+
+<head>
     <title>Antoine Allard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
 
-    <!--Google Analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-36569647-2', 'auto');
-      ga('send', 'pageview');
-    </script>
 
-    <!-- Dimensions.ai -->
-    <!-- <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script> -->
-    <!-- Altmetric -->
-    <!-- <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script> -->
 
-  </head>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<body>
 
-        <header>
-          <div class="row">
-            <div class="column headerleft nomobile">
-              <img src="images/allard2_centered_rescaled.jpg" height="200px"><br><br style="line-height: 1em">
-              <i class="fa fa-envelope-square fa-size"></i> [first].[last]@phy.ulaval.ca<br>
-              <i class="fa fa-building fa-size"></i> VCH-3205<br>
-              <i class="fa fa-twitter-square fa-size"></i> <a href="http://twitter.com/all_are">@all_are</a><br>
-              <i class="fa fa-github fa-size"></i> <a href="http://github.com/antoineallard">antoineallard</a><br>
-              <i class="ai ai-google-scholar-square ai-small"></i> <a href="http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en">Google Scholar</a><br>
-              <i class="ai ai-orcid-square ai-small"></i> <a href="http://orcid.org/0000-0002-8208-9920">ORCID</a>
+    <!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <div class="column headerright">
-              <h1>Antoine Allard</h1>
-              <strong>Assistant Professor</strong><br><br style="line-height: 1em">
-              <a href="files/ChaireATHENA_en.pdf">Director, Sentinelle Nord Research Chair on Applications<br>and Theory of Network Analysis</a><br><br style="line-height: 1em">
-              <a href="http://dynamica.phy.ulaval.ca">Codirector, Dynamica Research Lab on the structure and the dynamics<br>of complex systems</a><br><br style="line-height: 1em">
-              <a href="http://cimmul.fsg.ulaval.ca">Board member, Centre Interdisciplinaire en Modélisation Mathématique<br>de l’Université Laval (CIMMUL)</a><br><br style="line-height: 1em">
-              <a href="https://vermontcomplexsystems.org">External faculty, Vermont Complex Systems Center (UVM)</a><br><br style="line-height: 1em">
-              <a href="http://phy.ulaval.ca">D&eacute;partement de physique, de g&eacute;nie physique et d'optique</a><br>
-              Pavillon Alexandre-Vachon<br>
-              1045 avenue de la M&eacute;decine<br>
-              <a href="http://www.ulaval.ca">Universit&eacute; Laval</a><br>
-              Qu&eacute;bec (Qu&eacute;bec) G1V 0A6, Canada
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#researchgroup">Research group</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="files/allard_cv_e.pdf">Curriculum vitae</a></li>
+                </ul>
             </div>
-            <div class="column headerright onlymobile">
-              <br style="line-height: 1em">
-              <i class="fa fa-envelope-square fa-size"></i> [first].[last]@phy.ulaval.ca<br>
-              <i class="fa fa-building fa-size"></i> VCH-3205<br>
-              <i class="fa fa-twitter-square fa-size"></i> <a href="http://twitter.com/all_are">@all_are</a><br>
-              <i class="fa fa-github fa-size"></i> <a href="http://github.com/antoineallard">antoineallard</a><br>
-              <i class="ai ai-google-scholar-square ai-small"></i> <a href="http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en">Google Scholar</a><br>
-              <i class="ai ai-orcid-square ai-small"></i> <a href="http://orcid.org/0000-0002-8208-9920">ORCID</a>
-            </div>
-          </div>
-
-          <hr>
-          <p class="menu">
-            <a href="#News">News</a>
-            &nbsp; &#124; &nbsp;
-            <a href="#GroupMembers">Research group</a>
-            &nbsp; &#124; &nbsp;
-            <a href="#Code">Code</a>
-            &nbsp; &#124; &nbsp;
-            <a href="#Publications">Publications</a>
-            &nbsp; &#124; &nbsp;
-            <a href="files/allard_cv_e.pdf">Curriculum vitae</a>
-          </p>
-          <hr>
-        </header>
-
-
-
-        <!-- <section id="main_content"> -->
-        <a id="News"></a>
-        <h1>News</h1>
-
-        <p class="news-par">
-          <strong>2022.01.17</strong> &mdash; New paper in Commun. Phys.: <a href="#GuillaumeSimplagion"><em>Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs</em></a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.11.16</strong> &mdash; New manuscript on the arXiv: <a href="#Ebola"><em>The network epidemiology of an Ebola epidemic</em></a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.10.06</strong> &mdash; New paper in Phys. Rev. Lett.: <a href="#GuillaumeBursty"><em>Universal Nonlinear Infection Kernel from Heterogeneous Exposure on Higher-Order Networks</em></a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.08.05</strong> &mdash; New paper in Nat. Commun.: <a href="#dynalearn"><em>Deep learning of contagion dynamics on complex networks</em></a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.07.07</strong> &mdash; New manuscript on the arXiv: <a href="#DiversityEarlyStage"><em>Predicting the diversity of early epidemic spread on networks</em></a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.07.05</strong> &mdash; Patrick Desrosiers, Charles Murphy, Guillaume St-Onge, Vincent Thibeault, Marina Vegu&eacute; Llorente and myself are presenting our latest results at the <a href="https://networks2021.net">Networks 2021</a> conference.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.05.23</strong> &mdash; Charles Murphy, Guillaume St-Onge, Vincent Thibeault and Marina Vegu&eacute; Llorente are presenting our latest results at the <a href="https://www.siam.org/conferences/cm/conference/ds21">SIAM Conference on Applications of Dynamical Systems (DS21)</a>.
-        </p>
-
-        <!-- <p class="news-par">
-          <strong>2021.05.18</strong> &mdash; New manuscript on the arXiv: <a href="#GuillaumeSimplagion"><em>Influential groups for seeding and sustaining hypergraph contagions</em></a>.
-        </p> -->
-
-        <p class="news-par">
-          <strong>2021.05.03</strong> &mdash; Olivier Lapointe-Gagn&eacute;, Pierre-Luc Larouche and J&eacute;r&eacute;mi Lesage join the group as summer interns.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.04.09</strong> &mdash; Immensely honored to have been awarded the 2021 ADEPUL prize for ``Teacher of the year'' (elected by the Physics undergraduate students).
-        </p>
-
-        <p class="news-par">
-          <strong>2021.04.01</strong> &mdash; Guillaume St-Onge, Vincent Thibeault and Marina Vegu&eacute; Llorente are presenting our latest results at the <a href="https://nerccs2021.github.io">Fourth Northeast Regional Conference on Complex Systems (NERCCS 2021)</a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.03.01</strong> &mdash; New paper in Phys. Rev. Lett.: <a href="#GuillaumePRL"><em>Social confinement and mesoscopic localization of epidemics on networks</em></a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.03.01</strong> &mdash; New paper in Phys. Rev. E: <a href="#GuillaumePRE"><em>Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks</em></a>.
-        </p>
-
-        <p class="news-par">
-          <strong>2021.02.11</strong> &mdash; Immensely honored to have been nominated as an <a href="https://vermontcomplexsystems.org/people/external-faculty/">external faculty</a> member of the <a href="https://vermontcomplexsystems.org">Vermont Complex Systems Center</a> at the University of Vermont.
-        </p>
-
-        <!-- <p class="news-par">
-          <strong>2021.01.19</strong> &mdash; New manuscript on the arXiv: <a href="#GuillaumeBursty"><em>Universal nonlinear infection kernel from heterogeneous exposure on higher-order networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.11.12</strong> &mdash; New paper in PLOS Biol.: <a href="#BeyondR0_3"><em>Superspreading events in the transmission dynamics of SARS-CoV-2: Opportunities for interventions and control</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.11.04</strong> &mdash; New paper in J. R. Soc. Interface: <a href="#BeyondR0"><em>Beyond <em>R<sub>0</sub></em>: heterogeneity in secondary infections and probabilistic epidemic forecasting</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.11.02</strong> &mdash; Dr. Ilhem Bouderbala joins the group as postdoctoral fellow.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.09.23</strong> &mdash; Just published an essay in <a href="#ACFAS">ACFAS Magazine</a> on the role mathematical modeling plays in understanding the behavior of complex systems.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.08.31</strong> &mdash; Fran&ccedil;ois Thibault and Olivier Ribordy join the group as MSc students.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.08.06</strong> &mdash; New paper in PNAS: <a href="#BrainGR"><em>Geometric renormalization unravels self-similarity of the multiscale human connectome</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.06.29</strong> &mdash; New manuscript on the arXiv: <a href="#juni"><em>Distributed consent and its impact on privacy and observability in social networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.06.10</strong> &mdash; New manuscript on the arXiv: <a href="#dynalearn"><em>Deep learning of stochastic contagion dynamics on complex networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.05.28</strong> &mdash; New manuscript on the arXiv: <a href="#BeyondR0_3"><em>Stochasticity and heterogeneity in the transmission dynamics of SARS-CoV-2</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.05.23</strong> &mdash; New manuscript on the arXiv: <a href="#BeyondR0_2"><em>The role of directionality, heterogeneity and correlations in epidemic risk and spread</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.05.04</strong> &mdash; Simon Lizotte joins the group as a MSc student.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.04.22</strong> &mdash; New manuscript on the arXiv: <a href="#GuillaumePRE"><em>Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.03.14</strong> &mdash; Just published an essay on <a href="#GuillaumeMedium">medium.com</a> on event cancellations due to the COVID-19 pandemic.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.03.12</strong> &mdash; New manuscript on the arXiv: <a href="#GuillaumePRL"><em>Social confinement and mesoscopic localization of epidemics on networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.02.10</strong> &mdash; New manuscript on the arXiv: <a href="#BeyondR0"><em>Beyond R<sub>0</sub>: the importance of contact tracing when predicting epidemics</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.02.03</strong> &mdash; New paper in PLOS Comput. Biol.: <a href="#Brain2020"><em>Navigable maps of structural brain networks across species</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2020.01.20</strong> &mdash; Dr. Marina Vegu&eacute; Llorente joins the group as postdoctoral fellow.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.12.16</strong> &mdash; New paper in New J. Phys.: <a href="#Mercator"><em>Mercator: uncovering faithful hyperbolic embeddings of complex networks</em></a>. Associated code is available on <a href="#MercatorCode">Github</a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.12.15</strong> &mdash; Kick-off of the second edition of <a href="https://sentinellenord.ulaval.ca/en/cnww-2019"> Complex Networks Winter Workshop</a>, a week-long international school offering a unique opportunity for participants to engage in rigorous transdisciplinary complexity science research alongside some of the top researchers in the field of networks. Organized jointly by <a href="https://sentinellenord.ulaval.ca">Sentinelle Nord</a> and by the <a href="http://www.vermontcomplexsystems.org">Vermont Complex Systems Center</a>. Hashtag: <a href="https://twitter.com/hashtag/CNWW19?src=hash">#CNWW19</a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.10.29</strong> &mdash; Invited seminar <a href="images/seminar_ubics.png"><em>Deep learning of dynamical epidemic processes on complex networks</em></a> at the Universitat de Barcelona Institute of Complex Systems.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.08.28</strong> &mdash; Official inauguration of the Sentinelle Nord Research Chair on Applications and Theory of Network Analysis (details in French <a href="https://www.lefil.ulaval.ca/repondre-aux-enjeux-nordiques-et-de-sante-mentale/"><em>here</em></a>).
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.08.05</strong> &mdash; New paper in Phys. Rev. Research: <a href="#LHD2018"><em>Smeared phase transitions in percolation on real complex networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.06.26</strong> &mdash; New manuscript on the arXiv: <a href="#TAMPA"><em>On the accuracy of message-passing approaches to percolation in complex networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.06.14</strong> &mdash; [CLOSED] Open call for a postdoctoral fellow. More details <a href="files/2019_postdoc_sn1p1.pdf"><em>here</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.06.14</strong> &mdash; Onion decomposition as introduced <a href="#HebertDufresne2016b"><em>here</em></a> (and used <a href="#Allard2019"><em>here</em></a> and <a href="#Mercator"><em>here</em></a>) will be included in <a href="https://networkx.github.io">NetworkX 2.4</a> (<a href="https://networkx.github.io/documentation/latest/reference/algorithms/generated/networkx.algorithms.core.onion_layers.html#networkx.algorithms.core.onion_layers">preview</a>).
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.06.05</strong> &mdash; I am now a member of the <a href="https://cimmul.fsg.ulaval.ca/"><em>Centre Interdisciplinaire en Modélisation Mathématique de l’Université Laval</em></a> (CIMMUL; Interdisciplinary Center for Mathematical Modeling).
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.04.29</strong> &mdash; New manuscript on the arXiv: <a href="#BrainGR"><em>Geometric renormalization unravels self-similarity of the multiscale human connectome</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.04.25</strong> &mdash; New manuscript on the arXiv: <a href="#Mercator"><em>Mercator: uncovering faithful hyperbolic embeddings of complex networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.04.16</strong> &mdash; Funding: Awarded a NSERC Discovery grant for the 2019&ndash;2024 period.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.03.27</strong> &mdash; Distinction: Honored to have been elected teacher of the year by the undergraduate Physics students (details in French <a href="https://www.fsg.ulaval.ca/nouvelle/article/des-etudiants-et-enseignants-exceptionnels-1/"><em>here</em></a>).
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.03.20</strong> &mdash; Invited talk at Complenet'19: Honored to have been given the opportunity to present recent work done in collaboration with <a href="http://laurenthebertdufresne.github.io">Laurent H&eacute;bert-Dufresne</a> (published <a href="#Allard2019"><em>here</em></a>, <a href="#LHD2018"><em>here</em></a> and in another forthcoming paper) at this year's edition of Complenet in Tarragona.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2019.02.05</strong> &mdash; New paper in Phys. Rev. X: <a href="#Allard2019"><em>Percolation and the Effective Structure of Complex Networks</em></a>.
-        </p> -->
-
-        <!-- <p class="news-par">
-          <strong>2018.12.15</strong> &mdash; First edition of <a href="https://sentinellenord.ulaval.ca/en/complex-networks-workshop-2018"> Complex Networks Winter Workshop</a>, a week-long international school offering an extraordinary opportunity for participants to engage in rigorous transdisciplinary complexity science research alongside some of the top researchers in the field of networks. Organized jointly by <a href="https://sentinellenord.ulaval.ca">Sentinelle Nord</a>, the <a href="http://www.vermontcomplexsystems.org">Vermont Complex Systems Center</a> and the <a href="https://www.networkscienceinstitute.org">Network Science Institute</a>. Hashtag: <a href="https://twitter.com/hashtag/CNWW18?src=hash">#CNWW18</a>.
-        </p> -->
-
-        <!-- <p class="news-par"> -->
-          <!-- <strong>2018.10.01</strong> &mdash; New manuscript on the arXiv: <a href="#LHD2018"><em>Smeared phase transitions in percolation on real complex networks</em></a>. -->
-            <!-- In the course of a different project, Laurent H&eacute;bert-Dufresne and I have encountered unexpected behavior of the typical methods used to detect the position of the percolation threshold on finite-size real complex networks. This led us to formulate  -->
-        <!-- </p> -->
-
-
-        <hr>
-
-
-
-        <a id="GroupMembers"></a>
-        <h1>Research group</h1>
-
-        <p class="news-par">
-          My Research Chair is part of the <a href="http://dynamica.phy.ulaval.ca">Dynamica Research Lab on Complex Systems</a> that I lead alongside Patrick Desrosiers and Louis J. Dub&eacute;. I also co-supervise students or postdoctoral researchers affiliated with other research groups.
-        </p>
-
-        <!-- <h5 class="subtitle">&mdash; Current members &mdash;</h5> -->
-        <h5 class="current_members">Students/postdocs currently under my (co-)supervision</h5>
-        <div class="row">
-          <div class="column members"><img class="nomobile" src="images/marina.jpg" height="100px"><br><strong>Marina Vegu&eacute; Llorente</strong><br>Postdoctoral fellow</div>
-          <div class="column members"><img class="nomobile" src="images/ilhem.jpg" height="100px"><br><strong>Ilhem Bouderbala</strong><br>Postdoctoral fellow</div>
-          <div class="column members"><img class="nomobile" src="images/murphy.jpg" height="100px"><br><strong>Charles Murphy</strong><br>PhD student</div>
-          <div class="column members"><img class="nomobile" src="images/guillaume.jpg" height="100px"><br><strong>Guillaume St-Onge</strong><br>PhD student</div>
-          <div class="column members"><img class="nomobile" src="images/vincent_thibeault.png" height="100px"><br><strong>Vincent Thibeault</strong><br>PhD student</div>
-          <div class="column members"><img class="nomobile" src="images/francisn.jpg" height="100px"><br><strong>Francis Normand</strong><br>MSc student</div>
-          <div class="column members"><img class="nomobile" src="images/beatrice.jpg" height="100px"><br><strong>B&eacute;atrice D&eacute;sy</strong><br>MSc student</div>
-          <div class="column members"><img class="nomobile" src="images/simon.png" height="100px"><br><strong>Simon Lizotte</strong><br>MSc student</div>
-          <div class="column members"><a href="https://www.freepik.com/free-vector/geometrical-brain-background-yellow-color_880855.htm"><img class="nomobile" src="images/cerveau.png" height="100px"></a><br><strong>Fran&ccedil;ois Thibault</strong><br>MSc student</div>
-          <div class="column members"><img class="nomobile" src="images/olivier.png" height="100px"></a><br><strong>Olivier Ribordy</strong><br>MSc student</div>
-          <div class="column members"><img class="nomobile" src="images/heikel.jpg" height="100px"><br><strong>Heikel Jarras</strong><br>MSc student</div>
-          <!-- <div class="column members"><a href="https://www.freepik.com/free-vector/geometrical-brain-background-yellow-color_880855.htm"><img class="nomobile" src="images/cerveau.png" height="100px"></a><br><strong>Olivier Lapointe-Gagn&eacute;</strong><br>Undergraduate intern</div> -->
-          <!-- <div class="column members"><img class="nomobile" src="images/pierreluc.jpg" height="100px"><br><strong>Pierre-Luc Larouche</strong><br>Undergraduate intern</div> -->
-          <!-- <div class="column members"><img class="nomobile" src="images/jeremi.jpg" height="100px"><br><strong>J&eacute;r&eacute;mi Lesage</strong><br>Undergraduate intern</div> -->
         </div>
-        <br>
-        <h5 class="previous_members">Former members</h5>
-        Olivier Lapointe-Gagn&eacute;, Undergraduate intern (summer 2021)<br>
-        Pierre-Luc Larouche, Undergraduate intern (summer 2021)<br>
-        J&eacute;r&eacute;mi Lesage, Undergraduate intern (summer 2021)<br>
-        Bastian Raulier, Undergraduate intern (summer-fall 2020)<br>
-        Simon Lizotte, Undergraduate intern (winter 2020)<br>
-        Olivier Ribordy, Undergraduate intern (summer 2019)<br>
-        Fran&ccedil;ois Thibault, Undergraduate intern (summer 2019, winter 2020)
-        <!-- <div class="row"> -->
-          <!-- <div class="column members"><a href="https://www.freepik.com/free-vector/geometrical-brain-background-yellow-color_880855.htm"><img class="nomobile" src="images/cerveau.png" height="100px"></a><br><strong>Olivier Ribordy</strong><br>Summer intern (2019)<br>Dynamica Lab</div>
-          <div class="column members"><a href="https://www.freepik.com/free-vector/geometrical-brain-background-yellow-color_880855.htm"><img class="nomobile" src="images/cerveau.png" height="100px"></a><br><strong>Fran&ccedil;ois Thibault</strong><br>Summer intern (2019)<br>Dynamica Lab</div> -->
-        <!-- </div> -->
-<!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Harryarts - www.freepik.com</a> -->
+	</nav>
 
 
 
-        <hr>
 
 
+    <!-- Page Content -->
+    <div class="container">
 
-        <a id="Code"></a>
-        <h1>Code</h1>
+        <div class="row">
 
-        <p class="news-par">
-          <a id="MercatorCode"></a>
-          <strong>Mercator</strong><br>
-          A C++/Python code embedding real complex netwoks in hyperbolic space. The algorithm is presented <a href="#Mercator"><em>here</em></a> and can be downloaded <a href="https://github.com/networkgeometry/mercator"><em>here</em></a>.
-        </p>
+            <!-- Home -->
+            <header>
 
-        <p class="news-par">
-          <a id="OnionDecomposition"></a>
-          <strong>Onion Decomposition</strong><br>
-          A C++ code extracting the Onion Decomposition of a graph as introduced <a href="#HebertDufresne2016b"><em>here</em></a> (and used <a href="#Allard2019"><em>here</em></a> and <a href="#Mercator"><em>here</em></a>) can be downloaded <a href="files/onion_decomposition.tar.gz"><em>here</em></a>.
-        </p>
+                <!-- Info -->
+                <div class="col-lg-9 col-lg-push-3 col-md-9 col-md-push-3 col-sm-8 col-sm-push-4 col-xs-12">
 
+                    <div style="font-size: 200%;"><b>Antoine Allard</b></div>
+                    <p><b>Assistant professor</b></p>
 
-
-        <hr>
-
-
-
-        <a id="Publications"></a>
-        <h1>Publications</h1>
-
-        <p class="subsubtitle">
-          Listed in inverse chronological order; equal contributions are denoted by *.<br>
-          Most of the publications below can also be found on <a href="http://www.arxiv.org/a/allard_a_1">arXiv</a>
-          or on <a href="http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en">Google Scholar</a>.
-        </p>
-
-
-
-      <h5 class="subtitle">&mdash; Submitted manuscripts &mdash;</h5>
-
-      <a id="Ebola"></a>
-      <p class="ref-par">
-        <strong>The network epidemiology of an Ebola epidemic</strong><br>
-        L. Hébert-Dufresne, J.-G. Young, J. Bedson, L. A. Skrip, D. Pedi, M. F. Jalloh, B. Raulier, O. Lapointe-Gagné, A. Jambai, <strong>A. Allard</strong> and B. M. Althouse<br>
-        <a href="https://arxiv.org/abs/2111.08686">arXiv</a>
-      </p>
-
-      <a id="DiversityEarlyStage"></a>
-      <p class="ref-par">
-        <strong>Predicting the diversity of early epidemic spread on networks</strong><br>
-        A. J. Allen, M. C. Boudreau, N. J. Roberts, <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
-        <a href="https://arxiv.org/abs/2107.03334">arXiv</a>
-      </p>
-
-      <a id="cloSIR"></a>
-      <p class="ref-par">
-        <strong>The unintended consequences of inconsistent pandemic control policies</strong><br>
-        B. M. Althouse, B. Case, S. V. Scarpino, <strong>A. Allard</strong>, A. M. Berdahl, E. R. White and L. H&eacute;bert-Dufresne<br>
-        <a href="https://doi.org/10.1101/2020.08.21.20179473">medRxiv</a>
-      </p>
-
-      <a id="juni"></a>
-      <p class="ref-par">
-        <strong>Limits of individual consent and models of distributed consent in online social networks</strong><br>
-        J. Lovato, <strong>A. Allard</strong>, R. Harp and L. H&eacute;bert-Dufresne<br>
-        <a href="https://arxiv.org/abs/2006.16140">arXiv</a>
-      </p>
-
-      <a id="BeyondR0_2"></a>
-      <p class="ref-par">
-        <strong>The role of directionality, heterogeneity and correlations in epidemic risk and spread</strong><br>
-        <strong>A. Allard</strong>, C. Moore, S. V. Scarpino, B. M. Althouse and L. H&eacute;bert-Dufresne<br>
-        <a href="https://arxiv.org/abs/2005.11283">arXiv</a>
-      </p>
-
-      <a id="TAMPA"></a>
-      <p class="ref-par">
-        <strong>On the accuracy of message-passing approaches to percolation in complex networks</strong><br>
-        <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
-        <a href="https://arxiv.org/abs/1906.10377">arXiv</a>
-      </p>
-
-      <!-- <a id="ZikaEdito"></a> -->
-      <!-- <p class="ref-par"> -->
-        <!-- <strong>Assessing the threat of Zika virus as a sexually transmitted infection</strong><br> -->
-        <!-- <strong>A. Allard</strong>*, B. M. Althouse*, L. H&eacute;bert-Dufresne* and S. V. Scarpino*<br> -->
-      <!-- </p> -->
-
-
-
-      <h5 class="subtitle">&mdash; 2022 &mdash;</h5>
-
-      <a id="GuillaumeSimplagion"></a>
-      <p class="ref-par">
-        <strong>Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs</strong><br>
-        G. St-Onge, I. Iacopini, V. Latora, A. Barrat, G. Petri, <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
-        Communications Physics 5, 25 (2022)<br>
-        <a href="https://doi.org/10.1038/s42005-021-00788-w">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/2105.07092">arXiv</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2021 &mdash;</h5>
-
-      <a id="GuillaumeBursty"></a>
-      <p class="ref-par">
-        <strong>Universal Nonlinear Infection Kernel from Heterogeneous Exposure on Higher-Order Networks</strong><br>
-        G. St-Onge, H. Sun, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne and G. Bianconi<br>
-        Physical Review Letters 127, 158301 (2021)<br>
-        <a href="https://doi.org/10.1103/PhysRevLett.127.158301">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/2101.07229">arXiv</a>
-      </p>
-
-      <a id="dynalearn"></a>
-      <p class="ref-par">
-        <strong>Deep learning of contagion dynamics on complex networks</strong><br>
-        C. Murphy, E. Laurence and <strong>A. Allard</strong><br>
-        Nature Communications 12, 4720 (2021)<br>
-        <a href="https://doi.org/10.1038/s41467-021-24732-2">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/2006.05410">arXiv</a>
-        &#124;
-        <a href="https://github.com/DynamicaLab/code-dynalearn">code</a>
-        &#124;
-        <a href="https://github.com/DynamicaLab/data-dynalearn">data</a>
-      </p>
-
-      <a id="GuillaumePRL"></a>
-      <p class="ref-par">
-        <strong>Social confinement and mesoscopic localization of epidemics on networks</strong><br>
-        G. St-Onge, V. Thibeault, <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
-        Physical Review Letters 126, 098301 (2021)<br>
-        <a href="https://doi.org/10.1103/PhysRevLett.126.098301">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/2003.05924">arXiv</a>
-      </p>
-
-      <a id="GuillaumePRE"></a>
-      <p class="ref-par">
-        <strong>Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks</strong><br>
-        G. St-Onge, V. Thibeault, <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
-        Physical Review E 103, 032301 (2021)<br>
-        <a href="https://doi.org/10.1103/PhysRevE.103.032301">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/2004.10203">arXiv</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2020 &mdash;</h5>
-
-      <a id="ACFAS"></a>
-      <p class="ref-par">
-        <strong>La mod&eacute;lisation math&eacute;matique pour cartographier le complexe et l'inconnu</strong><br>
-        (Mapping the complex and the unknown with mathematical modeling)<br>
-        <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
-        <a href="https://www.acfas.ca/publications/magazine/2019/09/modelisation-mathematique-cartographier-complexe-inconnu">ACFAS Magazine (2020)</a>
-      </p>
-
-      <a id="BeyondR0_3"></a>
-      <p class="ref-par">
-        <strong>Superspreading events in the transmission dynamics of SARS-CoV-2: Opportunities for interventions and control</strong><br>
-        B. M. Althouse, E. A. Wenger, J. C. Miller, S. V. Scarpino, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne and H. Hu<br>
-        PLOS Biology 18, e3000897 (2020)<br>
-        <a href="https://doi.org/10.1371/journal.pbio.3000897">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/2005.13689">arXiv</a>
-      </p>
-
-      <a id="BeyondR0"></a>
-      <p class="ref-par">
-        <strong>Beyond <em>R<sub>0</sub></em>: heterogeneity in secondary infections and probabilistic epidemic forecasting</strong><br>
-        L. H&eacute;bert-Dufresne, B. M. Althouse, S. V. Scarpino and <strong>A. Allard</strong><br>
-        Journal of the Royal Society Interface 17, 20200393 (2020)<br>
-        <a href="https://doi.org/10.1098/rsif.2020.0393">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/2002.04004">arXiv</a>
-        &#124;
-        <a href="https://doi.org/10.1101/2020.02.10.20021725">medRxiv</a>
-      </p>
-
-      <a id="BrainGR"></a>
-      <p class="ref-par">
-        <strong>Geometric renormalization unravels self-similarity of the multiscale human connectome</strong><br>
-        M. Zheng, <strong>A. Allard</strong>, P. Hagmann, Y. Alem&aacute;n-G&oacute;mez and M. &Aacute;. Serrano<br>
-        Proceedings of the National Academy of Sciences USA 117, 20244 (2020)<br>
-        <a href="http://doi.org/10.1073/pnas.1922248117">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/1904.11793">arXiv</a>
-      </p>
-
-      <a id="GuillaumeMedium"></a>
-      <p class="ref-par">
-        <strong>COVID-19: Cancel your next large event, and tell your friends to cancel theirs</strong><br>
-        G. St-Onge, V. Thibeault, <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
-        <a href="https://medium.com/@antoine.allard/covid-19-cancel-your-next-large-event-and-tell-your-friends-to-cancel-theirs-7c06e688474e">medium.com</a>
-      </p>
-
-      <a id="Michel2020"></a>
-      <p class="ref-par">
-        <strong>Genome-scale modeling of metabolism in the polar diatom Fragilariopsis cylindrus underscores the strong robustness of growth rate in response to cellular perturbations</strong><br>
-        M. Lavoie, B. Saint-B&eacute;at, J. Strauss, S. Gu&eacute;rin, <strong>A. Allard</strong>, S. V. Hardy, A. Falciatore and J. Lavaud<br>
-        Biology 9, 30 (2020)<br>
-        <a href="https://doi.org/10.3390/biology9020030">Full text</a>
-      </p>
-
-      <a id="Brain2020"></a>
-      <p class="ref-par">
-        <strong>Navigable maps of structural brain networks across species</strong><br>
-        <strong>A. Allard</strong> and M. &Aacute;. Serrano<br>
-        PLOS Computational Biology 16, e1007584 (2020)<br>
-        <a href="https://doi.org/10.1371/journal.pcbi.1007584">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/1801.06079">arXiv</a>
-        &#124;
-        <a href="https://github.com/networkgeometry/navigable_brain_maps_data">data</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2019 &mdash;</h5>
-
-      <a id="Mercator"></a>
-      <p class="ref-par">
-        <strong>Mercator: uncovering faithful hyperbolic embeddings of complex networks</strong><br>
-        G. Garc&iacute;a-P&eacute;rez*, <strong>A. Allard</strong>*, M. &Aacute;. Serrano and M. Bogu&ntilde;&aacute;<br>
-        New Journal of Physics 21, 123033 (2019)<br>
-        <a href="https://doi.org/10.1088/1367-2630/ab57d2">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/1904.10814">arXiv</a>
-        &#124;
-        <a href="https://github.com/networkgeometry/mercator">code</a>
-      </p>
-
-      <a id="LHD2018"></a>
-      <p class="ref-par">
-        <strong>Smeared phase transition of percolation on real complex networks</strong><br>
-        L. H&eacute;bert-Dufresne and <strong>A. Allard</strong><br>
-        Physical Review Research 1, 013009 (2019)<br>
-        <a href="https://doi.org/10.1103/PhysRevResearch.1.013009">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/1810.00735">arXiv</a>
-      </p>
-
-      <a id="Allard2019"></a>
-      <p class="ref-par">
-        <strong>Percolation and the effective structure of complex networks</strong><br>
-        <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
-        Physical Review X 9, 011023 (2019)<br>
-        <a href="http://doi.org/10.1103/PhysRevX.9.011023">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/1804.09633">arXiv</a>
-        &#124;
-        <a href="#OnionDecomposition">code</a>
-        <!-- &#124; -->
-        <!-- <a href="https://aps.altmetric.com/details/54994807">Altmetric</a> -->
-        <!-- <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRevX.9.011023" data-hide-zero-citations="true" data-style="small_rectangle"></span> -->
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2018 &mdash;</h5>
-
-      <p class="ref-par">
-        <strong>A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013</strong><br>
-        G. Garc&iacute;a-P&eacute;rez, M. Bogu&ntilde;&aacute;, <strong>A. Allard</strong>, and M. &Aacute;. Serrano<br>
-        S. Gorgoni, A. Amighini, and M. Smith (Eds.), Vernon Press, ISBN 978-1622730650<br>
-        <a href="https://vernonpress.com/book/96">Table of contents</a>
-      </p>
-
-      <a id="Murphy2018"></a>
-      <p class="ref-par">
-        <strong>Geometric evolution of complex networks with degree correlations</strong><br>
-        C. Murphy, <strong>A. Allard</strong>, E. Laurence, G. St-Onge and L. J. Dub&eacute;<br>
-        Physical Review E 97, 032309 (2018)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.97.032309">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1710.01600">arXiv</a>
-        <!-- &#124; -->
-        <!-- <a href="https://www.altmetric.com/details/27025131">Altmetric</a> -->
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2017 &mdash;</h5>
-
-      <a id="Allard2017c"></a>
-      <p class="ref-par">
-        <strong>The risk of sustained sexual transmission of Zika is underestimated</strong><br>
-        <strong>A. Allard</strong>*, B. M. Althouse*, L. H&eacute;bert-Dufresne* and S. V. Scarpino*<br>
-        PLOS Pathogens 13, e1006633 (2017)<br>
-        <a href="http://doi.org/10.1371/journal.ppat.1006633">Full text</a>
-        &#124;
-        <a href="http://doi.org/10.1101/090324">bioRxiv</a><br>
-        <!-- &#x2605; In the top 5% of all research outputs scored by <a href="https://www.altmetric.com/details/26414927">Altmetric</a>. -->
-        <!-- https://app.dimensions.ai/details/publication/pub.1091879228 -->
-      </p>
-
-      <a id="Allard2017b"></a>
-      <p class="ref-par">
-        <strong>Asymmetric percolation drives a double transition in sexual contact networks</strong><br>
-        <strong>A. Allard</strong>, B. M. Althouse, S. V. Scarpino and L. H&eacute;bert-Dufresne<br>
-        Proceedings of the National Academy of Sciences USA 114, 8969-8973 (2017)<br>
-        <a href="http://doi.org/10.1073/pnas.1703073114">Full text</a>
-        &#124;
-        <a href="https://arxiv.org/abs/1702.06224">arXiv</a><br>
-        <!-- &#x2605; In the top 5% of all research outputs scored by <a href="https://www.altmetric.com/details/23518882">Altmetric</a>. -->
-        <!-- https://app.dimensions.ai/details/publication/pub.1091108776 -->
-      </p>
-
-      <a id="HebertDufresne2017"></a>
-      <p class="ref-par">
-        <strong>Strategic tradeoffs in competitor dynamics on adaptive networks</strong><br>
-        L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, P.-A. No&euml;l, J.-G. Young and E. Libby<br>
-        Scientific Reports 7, 7576 (2017)<br>
-        <a href="http://doi.org/10.1038/s41598-017-07621-x">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1607.04632">arXiv</a>
-      </p>
-
-      <a id="Allard2017"></a>
-      <p class="ref-par">
-        <strong>The geometric nature of weights in real complex networks</strong><br>
-        <strong>A. Allard</strong>, M. &Aacute;. Serrano, G. Garc&iacute;a-P&eacute;rez and M. Bogu&ntilde;&aacute;<br>
-        Nature Communications 8, 14103 (2017)<br>
-        <a href="http://doi.org/10.1038/ncomms14103">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1601.03891">arXiv</a><br>
-        &#x2605; <a href="http://doi.org/10.1038/nphys4046">Nature Phys. Research Highlights</a><br>
-        &#x2605; <a href="https://www.nature.com/collections/ycjylwzvmz/">Features in Nature Communications' web collection on complex systems</a><br>
-        <!-- &#x2605; In the top 5% of all research outputs scored by <a href="https://www.altmetric.com/details/5005536">Altmetric</a>. -->
-      </p>
-
-
-      <h5 class="subtitle">&mdash; 2016 &mdash;</h5>
-
-      <a id="Young2016"></a>
-      <p class="ref-par">
-        <strong>Growing networks of overlapping communities with internal structure</strong><br>
-        J.-G. Young, L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, and L. J. Dub&eacute;<br>
-        Physical Review E 94, 022317 (2016)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.94.022317">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1603.05566">arXiv</a>
-        <!-- &#124;
-        <a href="http://www.spa-networks.org">Software</a> -->
-      </p>
-
-      <a id="HebertDufresne2016b"></a>
-      <p class="ref-par">
-        <strong>Multi-scale structure and topological anomaly detection via a new network statistic: The onion decomposition</strong><br>
-        L. H&eacute;bert-Dufresne, J. A. Grochow, and <strong>A. Allard</strong><br>
-        Scientific Reports 6, 31708 (2016)<br>
-        <a href="http://doi.org/10.1038/srep31708">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1510.08542">arXiv</a>
-      </p>
-
-      <a id="Scarpino2016"></a>
-      <p class="ref-par">
-        <strong>The effect of a prudent adaptive behaviour on disease transmission</strong><br>
-        S. V. Scarpino, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne<br>
-        Nature Physics 12, 1042-1046 (2016)<br>
-        <a href="http://doi.org/10.1038/nphys3832">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1509.00801">arXiv</a>
-        &#124;
-        <a href="https://www.altmetric.com/details/10184598/news">Media coverage</a><br>
-        &#x2605; <a href="http://doi.org/10.1038/nphys3939">Nature Phys. News &amp; Views</a><br>
-        <!-- &#x2605; In the top 5% of all research outputs scored by <a href="https://www.altmetric.com/details/4466533">Altmetric</a>. -->
-      </p>
-
-      <a id="HebertDufresne2016a"></a>
-      <p class="ref-par">
-        <strong>Constrained growth of complex scale-independent systems</strong><br>
-        L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, J.-G. Young, and L. J. Dub&eacute;<br>
-        Physical Review E 93, 032304 (2016)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.93.032304">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1310.0112">arXiv</a><br>
-        &#x2605; In the <i>Editors' Suggestions</i> section of Physical Review E.<br>
-      </p>
-
-      <a id="WTW"></a>
-      <p class="ref-par">
-        <strong>The hidden hyperbolic geometry of international trade: World Trade Atlas 1870-2013</strong><br>
-        G. Garc&iacute;a-P&eacute;rez, M. Bogu&ntilde;&aacute;, <strong>A. Allard</strong>, and M. &Aacute;. Serrano<br>
-        Scientific Reports 6, 33441 (2016)<br>
-        <a href="http://doi.org/10.1038/srep33441">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1512.02233">arXiv</a>
-        &#124;
-        <a href="http://morfeo.ffn.ub.es/wta1870-2013/">Interactive map</a><br>
-        &#x2605; Featured in the section <a href="http://www.elperiodico.com/es/noticias/economia/globalizacion-refuerza-grandes-potencias-comercio-mundial-5844783"><i>Econom&iacute;a</i> of the newspaper <i>El Peri&oacute;dico</i></a>.
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2015 &mdash;</h5>
-
-      <a id="HebertDufresne2015"></a>
-      <p class="ref-par">
-        <strong>Complex networks as an emerging property of hierarchical preferential attachment</strong><br>
-        L. H&eacute;bert-Dufresne, E. Laurence, <strong>A. Allard</strong>, J.-G. Young and L. J. Dub&eacute;<br>
-        Physical Review E 92, 062809 (2015)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.92.062809">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1312.0171">arXiv</a>
-        <!-- &#124;
-        <a href="http://www.spa-networks.org">Software</a> -->
-      </p>
-
-      <a id="Allard2015"></a>
-      <p class="ref-par">
-        <strong>General and exact approach to percolation on random graphs</strong><br>
-        <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, J.-G. Young and L. J. Dub&eacute;<br>
-        Physical Review E 92, 062807 (2015)<br>
-          <a href="http://doi.org/10.1103/PhysRevE.92.062807">Full text</a>
-          &#124;
-          <a href="http://arxiv.org/abs/1509.01207">arXiv</a>
-        </p>
-
-      <a id="Young2015"></a>
-      <p class="ref-par">
-        <strong>A shadowing problem in the detection of overlapping communities: lifting the resolution limit through a cascading procedure</strong><br>
-        J.-G. Young, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne and L. J. Dub&eacute;<br>
-        PLOS ONE 10, e0140133 (2015)<br>
-        <a href="http://doi.org/10.1371/journal.pone.0140133">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1211.1364">arXiv</a>
-        &#124;
-        <a href="https://github.com/jg-you/cascading_detection">code</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2014 &mdash;</h5>
-
-      <p class="ref-par">
-        <strong>The Social Zombie: Modelling undead outbreaks on social networks</strong><br>
-        L. H&eacute;bert-Dufresne, V. Marceau, P.-A. No&euml;l, <strong>A. Allard</strong>, and L. J. Dub&eacute;<br>
-        Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
-        <a href="http://www.press.uottawa.ca/mathematical-modelling-of-zombies">Table of contents</a>
-      </p>
-
-      <a id="Noel2014"></a>
-      <p class="ref-par">
-        <strong>Spreading dynamics on complex networks: a general stochastic approach</strong><br>
-        P.-A. No&euml;l, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, V. Marceau and L. J. Dub&eacute;<br>
-        Journal of Mathematical Biology 69, 1627 (2014)<br>
-        <a href="http://doi.org/10.1007/s00285-013-0744-9">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1201.0296">arXiv</a>
-      </p>
-
-      <a id="Brooks2014"></a>
-      <p class="ref-par">
-        <strong>A system-level model for the microbial regulatory genome</strong><br>
-        A. N. Brooks, D. J. Reiss, <strong>A. Allard</strong>, W.-J. Wu, D. M. Salvanha, C. L. Plaisier, S. Chandrasekaran, M. Pan, A. Kaur and N. S. Baliga<br>
-        Molecular Systems Biology 10, 740 (2014)<br>
-        <a href="http://doi.org/10.15252/msb.20145160">Full text</a>
-      </p>
-
-      <a id="Allard2014"></a>
-      <p class="ref-par">
-        <strong>Coexistence of phases and the observability of random graphs</strong><br>
-        <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, J.-G. Young and L. J. Dub&eacute;<br>
-        Physical Review E 89, 022801 (2014)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.89.022801">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1309.7983">arXiv</a><br>
-        &#x2605; In the <i>Editors' Suggestions</i> section of Physical Review E.
-      </p>
-
-      <p class="ref-par">
-        <strong>Percolation sur graphes al&eacute;atoires: Mod&eacute;lisation et description analytique</strong><br>
-        (Percolation on random graphs: Modelling and analytical description)<br>
-        Ph.D. Thesis, Universit&eacute; Laval (2014)<br>
-        <a class="inside-link" href="files/Allard2014_PhDThesis.pdf">Full text</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2013 &mdash;</h5>
-
-      <a id="Hebert-Dufresne2013b"></a>
-      <p class="ref-par">
-        <strong>Percolation on random networks with arbitrary k-core structure</strong><br>
-        L. H&eacute;bert-Dufresne*, <strong>A. Allard</strong>*, J.-G. Young and L. J. Dub&eacute;<br>
-        Physical Review E 88, 062820 (2013)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.88.062820">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1308.6537">arXiv</a>
-      </p>
-
-      <a id="Hebert-Dufresne2013a"></a>
-      <p class="ref-par">
-        <strong>Global efficiency of local immunization of complex networks</strong><br>
-        L. H&eacute;bert-Dufresne*, <strong>A. Allard</strong>*, J.-G. Young* and L. J. Dub&eacute;<br>
-        Scientific Reports 3, 2171 (2013)<br>
-        <a href="http://doi.org/10.1038/srep02171">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1208.5768">arXiv</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2012 &mdash;</h5>
-
-      <p class="ref-par">
-        <strong>Bond percolation on a class of correlated and clustered random graphs</strong><br>
-        <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, P.-A. No&euml;l, V. Marceau and L. J. Dub&eacute;<br>
-        Journal of Physics A 45, 405005 (2012)<br>
-        <a href="http://doi.org/10.1088/1751-8113/45/40/405005">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1201.4602">arXiv</a>
-      </p>
-
-      <p class="ref-par">
-        <strong>Exact solution of bond percolation on small arbitrary graphs</strong><br>
-        <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, P.-A. No&euml;l, V. Marceau and L. J. Dub&eacute;<br>
-        Europhysics Letters (EPL) 98, 16001 (2012)<br>
-        <a href="http://doi.org/10.1209/0295-5075/98/16001">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1201.4369">arXiv</a>
-      </p>
-
-      <p class="ref-par">
-        <strong>Propagation on networks: An exact alternative perspective</strong><br>
-        P.-A. No&euml;l, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, V. Marceau and L. J. Dub&eacute;<br>
-        Physical Review E 85, 031118 (2012)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.85.031118">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1102.0987">arXiv</a>
-      </p>
-
-      <p class="ref-par">
-        <strong>Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems</strong><br>
-        L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, V. Marceau, P.-A. No&euml;l and L. J. Dub&eacute;<br>
-        Physical Review E 85, 026108 (2012)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.85.026108">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1109.0034">arXiv</a>
-        <!-- &#124;
-        <a href="http://www.spa-networks.org">Software</a> -->
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2011 &mdash;</h5>
-
-      <p class="ref-par">
-        <strong>Structural Preferential Attachment: Network Organization beyond the Link</strong><br>
-        L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, V. Marceau, P.-A. No&euml;l and L. J. Dub&eacute;<br>
-        Physical Review Letters 107, 158702 (2011)<br>
-        <a href="http://doi.org/10.1103/PhysRevLett.107.158702">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1105.5980">arXiv</a>
-        <!-- &#124;
-        <a href="http://www.spa-networks.org">Software</a> -->
-      </p>
-
-      <p class="ref-par">
-        <strong>Modeling the dynamical interaction between epidemics on overlay networks</strong><br>
-        V. Marceau, P.-A. No&euml;l, L. H&eacute;bert-Dufresne, <strong>A. Allard</strong> and L. J. Dub&eacute;<br>
-        Physical Review E 84, 026105 (2011)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.84.026105">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1103.4059">arXiv</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2010 &mdash;</h5>
-
-      <p class="ref-par">
-        <strong>Propagation dynamics on networks featuring complex topologies</strong><br>
-        L. H&eacute;bert-Dufresne, P.-A. No&euml;l, V. Marceau, <strong>A. Allard</strong> and L. J. Dub&eacute;<br>
-        Physical Review E 82, 036115 (2010)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.82.036115">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1005.1397">arXiv</a><br>
-        &#x2605; Also in the <em>Virtual Journal of Biological Physics Research</em>, issue 7, vol. 20 (2010)
-      </p>
-
-      <a id="Marceau2010"></a>
-      <p class="ref-par">
-        <strong>Adaptive networks: Coevolution of disease and topology</strong><br>
-        V. Marceau, P.-A. No&euml;l, L. H&eacute;bert-Dufresne, <strong>A. Allard</strong> and L. J. Dub&eacute;<br>
-        Physical Review E 82, 036116 (2010)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.82.036116">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/1005.1299">arXiv</a><br>
-        &#x2605; Also in the <em>Virtual Journal of Biological Physics Research</em>, issue 7, vol. 20 (2010)
-        <!-- https://app.dimensions.ai/details/publication/pub.1008652423 -->
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2009 &mdash;</h5>
-
-      <p class="ref-par">
-        <strong>Heterogeneous Bond Percolation on Multitype Networks with an Application to Epidemic Dynamics</strong><br>
-        <strong>A. Allard</strong>, P.-A. No&euml;l, L. J. Dub&eacute; and B. Pourbohloul<br>
-        Physical Review E 79, 036113 (2009)<br>
-        <a href="http://doi.org/10.1103/PhysRevE.79.036113">Full text</a>
-        &#124;
-        <a href="http://arxiv.org/abs/0811.2349">arXiv</a><br>
-        <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRevE.79.036113" data-hide-zero-citations="true" data-style="small_rectangle"></span>
-        &#x2605; Also in the <em>Virtual Journal of Biological Physics Research</em>, issue 7, vol. 17 (2009)
-        <!-- https://app.dimensions.ai/details/publication/pub.1008829980 -->
-      </p>
-
-      <p class="ref-par">
-        <strong>Des Ponts d'Euler &agrave; la Grippe Aviaire: De l'abstraction math&eacute;matique &agrave; la r&eacute;alit&eacute; sociale des &eacute;pid&eacute;mies</strong><br>
-        (From Euler Bridges to the Avian Flu: From Mathematical Abstraction to the Social Reality of Epidemics)<br>
-        <strong>A. Allard</strong>, P.-A. No&euml;l, and L. J. Dub&eacute;<br>
-        Accromath 4, 24-29 (2009)<br>
-        <a href="files/ponts-euler.pdf">Full text</a>
-      </p>
-
-
-
-      <h5 class="subtitle">&mdash; 2008 &mdash;</h5>
-
-      <p class="ref-par">
-        <strong>Mod&eacute;lisation Math&eacute;matique en Epid&eacute;miologie par R&eacute;seaux de Contacts: Introduction de l'H&eacute;t&eacute;rog&eacute;n&eacute;it&eacute; dans la Transmissibilit&eacute;</strong><br>
-        (Mathematical Modelling in Contact Networks for Epidemiology: Introduction of Heterogenity in Transmissibility)<br>
-        M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
-        <a class="inside-link" href="files/Allard2008_MScThesis.pdf">Full text</a>
-      </p>
-
-
-
-        <!-- </section> -->
-
-        <footer>
-          <center>
-            &copy; <script>document.write(new Date().getFullYear())</script> Antoine Allard &mdash;
-            Based on Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-          </center>
-        </footer>
-
-      </div>
+                    <p><a href="files/ChaireATHENA_en.pdf">Director, Sentinelle Nord Research Chair on Applications and Theory of Network Analysis</a></p>
+                    <p><a href="http://dynamica.phy.ulaval.ca">Codirector, Dynamica Research Lab on the structure and the dynamics of complex systems</a></p>
+                    <p><a href="http://cimmul.fsg.ulaval.ca">Board member, Centre Interdisciplinaire en Modélisation Mathématique de l’Université Laval (CIMMUL)</a></p>
+                    <p><a href="https://vermontcomplexsystems.org">External faculty, Vermont Complex Systems Center (UVM)</a></p>
+                    <p>
+                        <a href="http://phy.ulaval.ca">D&eacute;partement de physique, de g&eacute;nie physique et d'optique</a><br>
+                        Pavillon Alexandre-Vachon<br>
+                        1045 avenue de la M&eacute;decine<br>
+                        <a href="http://www.ulaval.ca">Universit&eacute; Laval</a><br>
+                        Qu&eacute;bec (Qu&eacute;bec) G1V 0A6, Canada
+                    </p>
+
+                </div>
+
+                <!-- Main image and links -->
+                <div class="col-lg-3 col-lg-pull-9 col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-8 col-xs-12" style="padding-bottom: 2rem;">
+
+                    <div class="row">
+
+                        <!-- Main Image -->
+                        <div class="col-12 hidden-xs">
+                            <img class="img-responsive" src="images/allard2_centered_rescaled.jpg" alt=""><br>
+                        </div>
+
+                        <!-- Links -->
+                        <div class="col-xs-12">
+                            <dd><i class="fas fa-envelope-square fa-size"></i> [first].[last]@phy.ulaval.ca</dd>
+                            <dd><i class="fas fa-building fa-size"></i> VCH-3205</dd>
+                            <dd><i class="fab fa-twitter-square fa-size"></i> <a href="http://twitter.com/all_are">@all_are</a></dd>
+                            <dd><i class="fab fa-twitter-square fa-size"></i> <a href="http://twitter.com/networkspapers">@networkspapers</a></dd>
+                            <dd><i class="fab fa-github fa-size"></i> <a href="http://github.com/antoineallard">antoineallard</a></dd>
+                            <dd><i class="fab fa-github fa-size"></i> <a href="http://github.com/DynamicaLab">DynamicaLab</a></dd>
+                            <dd><i class="fab fa-github fa-size"></i> <a href="http://github.com/networkgeometry">networkgeometry</a></dd>
+                            <dd><i class="ai ai-google-scholar-square ai-small"></i> <a href="http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en">Google Scholar</a></dd>
+                            <dd><i class="ai ai-orcid-square ai-small"></i> <a href="http://orcid.org/0000-0002-8208-9920">ORCID</a></dd>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+
+
+            <!-- News -->
+            <div id="news" class="col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-sm-12 col-xs-12" style="min-height: 100vh;">
+
+                <h2>News</h2>
+
+                <p>
+                    <strong>2022.01.17</strong> &mdash; New paper in Commun. Phys.: <a href="#GuillaumeSimplagion"><em>Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs</em></a>.
+                </p>
+
+                <p>
+                    <strong>2021.11.16</strong> &mdash; New manuscript on the arXiv: <a href="#Ebola"><em>The network epidemiology of an Ebola epidemic</em></a>.
+                </p>
+
+                <p>
+                    <strong>2021.10.06</strong> &mdash; New paper in Phys. Rev. Lett.: <a href="#GuillaumeBursty"><em>Universal Nonlinear Infection Kernel from Heterogeneous Exposure on Higher-Order Networks</em></a>.
+                </p>
+
+                <p>
+                    <strong>2021.08.05</strong> &mdash; New paper in Nat. Commun.: <a href="#dynalearn"><em>Deep learning of contagion dynamics on complex networks</em></a>.
+                </p>
+
+                <p>
+                    <strong>2021.07.07</strong> &mdash; New manuscript on the arXiv: <a href="#DiversityEarlyStage"><em>Predicting the diversity of early epidemic spread on networks</em></a>.
+                </p>
+
+                <p>
+                    <strong>2021.07.05</strong> &mdash; Patrick Desrosiers, Charles Murphy, Guillaume St-Onge, Vincent Thibeault, Marina Vegu&eacute; Llorente and myself are presenting our latest results at the <a href="https://networks2021.net">Networks 2021</a> conference.
+                </p>
+
+                <p>
+                    <strong>2021.05.23</strong> &mdash; Charles Murphy, Guillaume St-Onge, Vincent Thibeault and Marina Vegu&eacute; Llorente are presenting our latest results at the <a href="https://www.siam.org/conferences/cm/conference/ds21">SIAM Conference on Applications of Dynamical Systems (DS21)</a>.
+                </p>
+
+                <p>
+                    <strong>2021.05.03</strong> &mdash; Olivier Lapointe-Gagn&eacute;, Pierre-Luc Larouche and J&eacute;r&eacute;mi Lesage join the group as summer interns.
+                </p>
+
+                <p>
+                    <strong>2021.04.09</strong> &mdash; Immensely honored to have been awarded the 2021 ADEPUL prize for ``Teacher of the year'' (elected by the Physics undergraduate students).
+                </p>
+
+                <p>
+                    <strong>2021.04.01</strong> &mdash; Guillaume St-Onge, Vincent Thibeault and Marina Vegu&eacute; Llorente are presenting our latest results at the <a href="https://nerccs2021.github.io">Fourth Northeast Regional Conference on Complex Systems (NERCCS 2021)</a>.
+                </p>
+
+                <p>
+                    <strong>2021.03.01</strong> &mdash; New paper in Phys. Rev. Lett.: <a href="#GuillaumePRL"><em>Social confinement and mesoscopic localization of epidemics on networks</em></a>.
+                </p>
+
+                <p>
+                    <strong>2021.03.01</strong> &mdash; New paper in Phys. Rev. E: <a href="#GuillaumePRE"><em>Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks</em></a>.
+                </p>
+
+                <p>
+                    <strong>2021.02.11</strong> &mdash; Immensely honored to have been nominated as an <a href="https://vermontcomplexsystems.org/people/external-faculty/">external faculty</a> member of the <a href="https://vermontcomplexsystems.org">Vermont Complex Systems Center</a> at the University of Vermont.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Research group -->
+        <div class="row" id="researchgroup">
+
+            <div class="col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-sm-12 col-xs-12" style="min-height: 100vh;">
+
+                <h2>Research group</h2>
+
+                <p>
+                    My Research Chair is part of the <a href="http://dynamica.phy.ulaval.ca">Dynamica Research Lab on Complex Systems</a> that I lead alongside Patrick Desrosiers and Louis J. Dub&eacute;. I also co-supervise students or postdoctoral researchers affiliated with other research groups.
+                </p>
+
+                <h4 style="padding-left: 0rem;">Students/postdocs currently under my (co-)supervision</h4>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/marina.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Marina Vegu&eacute; Llorente</strong><br>Postdoctoral fellow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/ilhem.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Ilhem Bouderbala</strong><br>Postdoctoral fellow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/murphy.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Charles Murphy</strong><br>PhD student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/guillaume.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Guillaume St-Onge</strong><br>PhD student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/vincent_thibeault.png" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Vincent Thibeault</strong><br>PhD student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/francisn.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Francis Normand</strong><br>MSc student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/beatrice.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>B&eacute;atrice D&eacute;sy</strong><br>MSc student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/simon.png" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Simon Lizotte</strong><br>MSc student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/cerveau.png" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Fran&ccedil;ois Thibault</strong><br>MSc student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/olivier.png" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Olivier Ribordy</strong><br>MSc student
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" style="padding-right: 0px; padding-bottom: 1rem;">
+                                <img src="images/heikel.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <p><strong>Heikel Jarras</strong><br>MSc student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <h4 style="padding-left: 0rem;">Former members</h4>
+                <p>
+                    <dd>Olivier Lapointe-Gagn&eacute;, Undergraduate intern (summer 2021)</dd>
+                    <dd>Pierre-Luc Larouche, Undergraduate intern (summer 2021)</dd>
+                    <dd>J&eacute;r&eacute;mi Lesage, Undergraduate intern (summer 2021)</dd>
+                    <dd>Bastian Raulier, Undergraduate intern (summer-fall 2020)</dd>
+                    <dd>Simon Lizotte, Undergraduate intern (winter 2020)</dd>
+                    <dd>Olivier Ribordy, Undergraduate intern (summer 2019)</dd>
+                    <dd>Fran&ccedil;ois Thibault, Undergraduate intern (summer 2019, winter 2020)</dd>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Publications -->
+        <div class="row" id="publications">
+
+            <div class="col-lg-10 col-lg-push-1 col-md-10 col-md-push-1 col-sm-12 col-xs-12" style="min-height: 100vh;">
+
+                <h2>Publications</h2>
+
+                <p class="small">
+                    Listed in inverse chronological order; equal contributions are denoted by *.<br>
+                    Most of the publications below can also be found on <a href="http://www.arxiv.org/a/allard_a_1">arXiv</a>
+                        or on <a href="http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en">Google Scholar</a>.
+                </p>
+
+
+
+                <h4>&mdash; Preprints &mdash;</h4>
+
+                <a id="Ebola"></a>
+                <p>
+                    <strong>The network epidemiology of an Ebola epidemic</strong><br>
+                    L. Hébert-Dufresne, J.-G. Young, J. Bedson, L. A. Skrip, D. Pedi, M. F. Jalloh, B. Raulier, O. Lapointe-Gagné, A. Jambai, <strong>A. Allard</strong> and B. M. Althouse<br>
+                    <a href="https://arxiv.org/abs/2111.08686">arXiv</a>
+                </p>
+
+                <a id="cloSIR"></a>
+                <p>
+                    <strong>The unintended consequences of inconsistent pandemic control policies</strong><br>
+                    B. M. Althouse, B. Case, S. V. Scarpino, <strong>A. Allard</strong>, A. M. Berdahl, E. R. White and L. H&eacute;bert-Dufresne<br>
+                    <a href="https://doi.org/10.1101/2020.08.21.20179473">medRxiv</a>
+                </p>
+
+                <a id="juni"></a>
+                <p>
+                    <strong>Limits of individual consent and models of distributed consent in online social networks</strong><br>
+                    J. Lovato, <strong>A. Allard</strong>, R. Harp and L. H&eacute;bert-Dufresne<br>
+                    <a href="https://arxiv.org/abs/2006.16140">arXiv</a>
+                </p>
+
+                <a id="BeyondR0_2"></a>
+                <p>
+                    <strong>The role of directionality, heterogeneity and correlations in epidemic risk and spread</strong><br>
+                    <strong>A. Allard</strong>, C. Moore, S. V. Scarpino, B. M. Althouse and L. H&eacute;bert-Dufresne<br>
+                    <a href="https://arxiv.org/abs/2005.11283">arXiv</a>
+                </p>
+
+                <a id="TAMPA"></a>
+                <p>
+                    <strong>On the accuracy of message-passing approaches to percolation in complex networks</strong><br>
+                    <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
+                    <a href="https://arxiv.org/abs/1906.10377">arXiv</a>
+                </p>
+
+
+
+                <h4>&mdash; 2022 &mdash;</h4>
+
+                <a id="DiversityEarlyStage"></a>
+                <p>
+                    <strong>Predicting the diversity of early epidemic spread on networks</strong><br>
+                    A. J. Allen, M. C. Boudreau, N. J. Roberts, <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
+                    To appear in Physical Review Research<br>
+                    <a href="https://arxiv.org/abs/2107.03334">arXiv</a>
+                </p>
+
+                <a id="GuillaumeSimplagion"></a>
+                <p>
+                    <strong>Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs</strong><br>
+                    G. St-Onge, I. Iacopini, V. Latora, A. Barrat, G. Petri, <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
+                    Communications Physics 5, 25 (2022)<br>
+                    <a href="https://doi.org/10.1038/s42005-021-00788-w">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/2105.07092">arXiv</a>
+                </p>
+
+
+
+                <h4>&mdash; 2021 &mdash;</h4>
+
+                <a id="GuillaumeBursty"></a>
+                <p>
+                    <strong>Universal Nonlinear Infection Kernel from Heterogeneous Exposure on Higher-Order Networks</strong><br>
+                    G. St-Onge, H. Sun, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne and G. Bianconi<br>
+                    Physical Review Letters 127, 158301 (2021)<br>
+                    <a href="https://doi.org/10.1103/PhysRevLett.127.158301">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/2101.07229">arXiv</a>
+                </p>
+
+                <a id="dynalearn"></a>
+                <p>
+                    <strong>Deep learning of contagion dynamics on complex networks</strong><br>
+                    C. Murphy, E. Laurence and <strong>A. Allard</strong><br>
+                    Nature Communications 12, 4720 (2021)<br>
+                    <a href="https://doi.org/10.1038/s41467-021-24732-2">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/2006.05410">arXiv</a>
+                    &#124;
+                    <a href="https://github.com/DynamicaLab/code-dynalearn">code</a>
+                    &#124;
+                    <a href="https://github.com/DynamicaLab/data-dynalearn">data</a>
+                </p>
+
+                <a id="GuillaumePRL"></a>
+                <p>
+                    <strong>Social confinement and mesoscopic localization of epidemics on networks</strong><br>
+                    G. St-Onge, V. Thibeault, <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
+                    Physical Review Letters 126, 098301 (2021)<br>
+                    <a href="https://doi.org/10.1103/PhysRevLett.126.098301">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/2003.05924">arXiv</a>
+                </p>
+
+                <a id="GuillaumePRE"></a>
+                <p>
+                    <strong>Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks</strong><br>
+                    G. St-Onge, V. Thibeault, <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
+                    Physical Review E 103, 032301 (2021)<br>
+                    <a href="https://doi.org/10.1103/PhysRevE.103.032301">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/2004.10203">arXiv</a>
+                </p>
+
+
+
+                <h4>&mdash; 2020 &mdash;</h4>
+
+                <a id="ACFAS"></a>
+                <p>
+                    <strong>La mod&eacute;lisation math&eacute;matique pour cartographier le complexe et l'inconnu</strong><br>
+                    (Mapping the complex and the unknown with mathematical modeling)<br>
+                    <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
+                    <a href="https://www.acfas.ca/publications/magazine/2019/09/modelisation-mathematique-cartographier-complexe-inconnu">ACFAS Magazine (2020)</a>
+                </p>
+
+                <a id="BeyondR0_3"></a>
+                <p>
+                    <strong>Superspreading events in the transmission dynamics of SARS-CoV-2: Opportunities for interventions and control</strong><br>
+                    B. M. Althouse, E. A. Wenger, J. C. Miller, S. V. Scarpino, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne and H. Hu<br>
+                    PLOS Biology 18, e3000897 (2020)<br>
+                    <a href="https://doi.org/10.1371/journal.pbio.3000897">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/2005.13689">arXiv</a>
+                </p>
+
+                <a id="BeyondR0"></a>
+                <p>
+                    <strong>Beyond <em>R<sub>0</sub></em>: heterogeneity in secondary infections and probabilistic epidemic forecasting</strong><br>
+                    L. H&eacute;bert-Dufresne, B. M. Althouse, S. V. Scarpino and <strong>A. Allard</strong><br>
+                    Journal of the Royal Society Interface 17, 20200393 (2020)<br>
+                    <a href="https://doi.org/10.1098/rsif.2020.0393">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/2002.04004">arXiv</a>
+                    &#124;
+                    <a href="https://doi.org/10.1101/2020.02.10.20021725">medRxiv</a>
+                </p>
+
+                <a id="BrainGR"></a>
+                <p>
+                    <strong>Geometric renormalization unravels self-similarity of the multiscale human connectome</strong><br>
+                    M. Zheng, <strong>A. Allard</strong>, P. Hagmann, Y. Alem&aacute;n-G&oacute;mez and M. &Aacute;. Serrano<br>
+                    Proceedings of the National Academy of Sciences USA 117, 20244 (2020)<br>
+                    <a href="http://doi.org/10.1073/pnas.1922248117">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/1904.11793">arXiv</a>
+                </p>
+
+                <a id="GuillaumeMedium"></a>
+                <p>
+                    <strong>COVID-19: Cancel your next large event, and tell your friends to cancel theirs</strong><br>
+                    G. St-Onge, V. Thibeault, <strong>A. Allard</strong>, L. J. Dub&eacute; and L. H&eacute;bert-Dufresne<br>
+                    <a href="https://medium.com/@antoine.allard/covid-19-cancel-your-next-large-event-and-tell-your-friends-to-cancel-theirs-7c06e688474e">medium.com</a>
+                </p>
+
+                <a id="Michel2020"></a>
+                <p>
+                    <strong>Genome-scale modeling of metabolism in the polar diatom Fragilariopsis cylindrus underscores the strong robustness of growth rate in response to cellular perturbations</strong><br>
+                    M. Lavoie, B. Saint-B&eacute;at, J. Strauss, S. Gu&eacute;rin, <strong>A. Allard</strong>, S. V. Hardy, A. Falciatore and J. Lavaud<br>
+                    Biology 9, 30 (2020)<br>
+                    <a href="https://doi.org/10.3390/biology9020030">Full text</a>
+                </p>
+
+                <a id="Brain2020"></a>
+                <p>
+                    <strong>Navigable maps of structural brain networks across species</strong><br>
+                    <strong>A. Allard</strong> and M. &Aacute;. Serrano<br>
+                    PLOS Computational Biology 16, e1007584 (2020)<br>
+                    <a href="https://doi.org/10.1371/journal.pcbi.1007584">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/1801.06079">arXiv</a>
+                    &#124;
+                    <a href="https://github.com/networkgeometry/navigable_brain_maps_data">data</a>
+                </p>
+
+
+
+                <h4>&mdash; 2019 &mdash;</h4>
+
+                <a id="Mercator"></a>
+                <p>
+                    <strong>Mercator: uncovering faithful hyperbolic embeddings of complex networks</strong><br>
+                    G. Garc&iacute;a-P&eacute;rez*, <strong>A. Allard</strong>*, M. &Aacute;. Serrano and M. Bogu&ntilde;&aacute;<br>
+                    New Journal of Physics 21, 123033 (2019)<br>
+                    <a href="https://doi.org/10.1088/1367-2630/ab57d2">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/1904.10814">arXiv</a>
+                    &#124;
+                    <a href="https://github.com/networkgeometry/mercator">code</a>
+                </p>
+
+                <a id="LHD2018"></a>
+                <p>
+                    <strong>Smeared phase transition of percolation on real complex networks</strong><br>
+                    L. H&eacute;bert-Dufresne and <strong>A. Allard</strong><br>
+                    Physical Review Research 1, 013009 (2019)<br>
+                    <a href="https://doi.org/10.1103/PhysRevResearch.1.013009">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/1810.00735">arXiv</a>
+                </p>
+
+                <a id="Allard2019"></a>
+                <p>
+                    <strong>Percolation and the effective structure of complex networks</strong><br>
+                    <strong>A. Allard</strong> and L. H&eacute;bert-Dufresne<br>
+                    Physical Review X 9, 011023 (2019)<br>
+                    <a href="http://doi.org/10.1103/PhysRevX.9.011023">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/1804.09633">arXiv</a>
+                    &#124;
+                    <a href="files/onion_decomposition.tar.gz">code</a>
+                </p>
+
+
+
+                <h4>&mdash; 2018 &mdash;</h4>
+
+                <p>
+                    <strong>A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013</strong><br>
+                    G. Garc&iacute;a-P&eacute;rez, M. Bogu&ntilde;&aacute;, <strong>A. Allard</strong>, and M. &Aacute;. Serrano<br>
+                    S. Gorgoni, A. Amighini, and M. Smith (Eds.), Vernon Press, ISBN 978-1622730650<br>
+                    <a href="https://vernonpress.com/book/96">Table of contents</a>
+                </p>
+
+                <a id="Murphy2018"></a>
+                <p>
+                    <strong>Geometric evolution of complex networks with degree correlations</strong><br>
+                    C. Murphy, <strong>A. Allard</strong>, E. Laurence, G. St-Onge and L. J. Dub&eacute;<br>
+                    Physical Review E 97, 032309 (2018)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.97.032309">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1710.01600">arXiv</a>
+                </p>
+
+
+
+                <h4>&mdash; 2017 &mdash;</h4>
+
+                <a id="Allard2017c"></a>
+                <p>
+                    <strong>The risk of sustained sexual transmission of Zika is underestimated</strong><br>
+                    <strong>A. Allard</strong>*, B. M. Althouse*, L. H&eacute;bert-Dufresne* and S. V. Scarpino*<br>
+                    PLOS Pathogens 13, e1006633 (2017)<br>
+                    <a href="http://doi.org/10.1371/journal.ppat.1006633">Full text</a>
+                    &#124;
+                    <a href="http://doi.org/10.1101/090324">bioRxiv</a><br>
+                </p>
+
+                <a id="Allard2017b"></a>
+                <p>
+                    <strong>Asymmetric percolation drives a double transition in sexual contact networks</strong><br>
+                    <strong>A. Allard</strong>, B. M. Althouse, S. V. Scarpino and L. H&eacute;bert-Dufresne<br>
+                    Proceedings of the National Academy of Sciences USA 114, 8969-8973 (2017)<br>
+                    <a href="http://doi.org/10.1073/pnas.1703073114">Full text</a>
+                    &#124;
+                    <a href="https://arxiv.org/abs/1702.06224">arXiv</a><br>
+                </p>
+
+                <a id="HebertDufresne2017"></a>
+                <p>
+                    <strong>Strategic tradeoffs in competitor dynamics on adaptive networks</strong><br>
+                    L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, P.-A. No&euml;l, J.-G. Young and E. Libby<br>
+                    Scientific Reports 7, 7576 (2017)<br>
+                    <a href="http://doi.org/10.1038/s41598-017-07621-x">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1607.04632">arXiv</a>
+                </p>
+
+                <a id="Allard2017"></a>
+                <p>
+                    <strong>The geometric nature of weights in real complex networks</strong><br>
+                    <strong>A. Allard</strong>, M. &Aacute;. Serrano, G. Garc&iacute;a-P&eacute;rez and M. Bogu&ntilde;&aacute;<br>
+                    Nature Communications 8, 14103 (2017)<br>
+                    <a href="http://doi.org/10.1038/ncomms14103">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1601.03891">arXiv</a><br>
+                    &#x2605; <a href="http://doi.org/10.1038/nphys4046">Nature Phys. Research Highlights</a><br>
+                    &#x2605; <a href="https://www.nature.com/collections/ycjylwzvmz/">Features in Nature Communications' web collection on complex systems</a><br>
+                </p>
+
+
+
+                <h4>&mdash; 2016 &mdash;</h4>
+
+                <a id="Young2016"></a>
+                <p>
+                    <strong>Growing networks of overlapping communities with internal structure</strong><br>
+                    J.-G. Young, L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, and L. J. Dub&eacute;<br>
+                    Physical Review E 94, 022317 (2016)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.94.022317">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1603.05566">arXiv</a>
+                </p>
+
+                <a id="HebertDufresne2016b"></a>
+                <p>
+                    <strong>Multi-scale structure and topological anomaly detection via a new network statistic: The onion decomposition</strong><br>
+                    L. H&eacute;bert-Dufresne, J. A. Grochow, and <strong>A. Allard</strong><br>
+                    Scientific Reports 6, 31708 (2016)<br>
+                    <a href="http://doi.org/10.1038/srep31708">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1510.08542">arXiv</a>
+                </p>
+
+                <a id="Scarpino2016"></a>
+                <p>
+                    <strong>The effect of a prudent adaptive behaviour on disease transmission</strong><br>
+                    S. V. Scarpino, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne<br>
+                    Nature Physics 12, 1042-1046 (2016)<br>
+                    <a href="http://doi.org/10.1038/nphys3832">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1509.00801">arXiv</a>
+                    &#124;
+                    <a href="https://www.altmetric.com/details/10184598/news">Media coverage</a><br>
+                    &#x2605; <a href="http://doi.org/10.1038/nphys3939">Nature Phys. News &amp; Views</a><br>
+                </p>
+
+                <a id="HebertDufresne2016a"></a>
+                <p>
+                    <strong>Constrained growth of complex scale-independent systems</strong><br>
+                    L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, J.-G. Young, and L. J. Dub&eacute;<br>
+                    Physical Review E 93, 032304 (2016)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.93.032304">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1310.0112">arXiv</a><br>
+                    &#x2605; In the <i>Editors' Suggestions</i> section of Physical Review E.<br>
+                </p>
+
+                <a id="WTW"></a>
+                <p>
+                    <strong>The hidden hyperbolic geometry of international trade: World Trade Atlas 1870-2013</strong><br>
+                    G. Garc&iacute;a-P&eacute;rez, M. Bogu&ntilde;&aacute;, <strong>A. Allard</strong>, and M. &Aacute;. Serrano<br>
+                    Scientific Reports 6, 33441 (2016)<br>
+                    <a href="http://doi.org/10.1038/srep33441">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1512.02233">arXiv</a>
+                    &#124;
+                    <a href="http://morfeo.ffn.ub.es/wta1870-2013/">Interactive map</a><br>
+                    &#x2605; Featured in the section <a href="http://www.elperiodico.com/es/noticias/economia/globalizacion-refuerza-grandes-potencias-comercio-mundial-5844783"><i>Econom&iacute;a</i> of the newspaper <i>El Peri&oacute;dico</i></a>.
+                </p>
+
+
+
+                <h4>&mdash; 2015 &mdash;</h4>
+
+                <a id="HebertDufresne2015"></a>
+                <p>
+                    <strong>Complex networks as an emerging property of hierarchical preferential attachment</strong><br>
+                    L. H&eacute;bert-Dufresne, E. Laurence, <strong>A. Allard</strong>, J.-G. Young and L. J. Dub&eacute;<br>
+                    Physical Review E 92, 062809 (2015)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.92.062809">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1312.0171">arXiv</a>
+                </p>
+
+                <a id="Allard2015"></a>
+                <p>
+                    <strong>General and exact approach to percolation on random graphs</strong><br>
+                    <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, J.-G. Young and L. J. Dub&eacute;<br>
+                    Physical Review E 92, 062807 (2015)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.92.062807">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1509.01207">arXiv</a>
+                </p>
+
+                <a id="Young2015"></a>
+                <p>
+                    <strong>A shadowing problem in the detection of overlapping communities: lifting the resolution limit through a cascading procedure</strong><br>
+                    J.-G. Young, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne and L. J. Dub&eacute;<br>
+                    PLOS ONE 10, e0140133 (2015)<br>
+                    <a href="http://doi.org/10.1371/journal.pone.0140133">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1211.1364">arXiv</a>
+                    &#124;
+                    <a href="https://github.com/jg-you/cascading_detection">code</a>
+                </p>
+
+
+
+                <h4>&mdash; 2014 &mdash;</h4>
+
+                <p>
+                    <strong>The Social Zombie: Modelling undead outbreaks on social networks</strong><br>
+                    L. H&eacute;bert-Dufresne, V. Marceau, P.-A. No&euml;l, <strong>A. Allard</strong>, and L. J. Dub&eacute;<br>
+                    Robert Smith? (Ed.), University of Ottawa Press, ISBN 978-0776622101<br>
+                    <a href="http://www.press.uottawa.ca/mathematical-modelling-of-zombies">Table of contents</a>
+                </p>
+
+                <a id="Noel2014"></a>
+                <p>
+                    <strong>Spreading dynamics on complex networks: a general stochastic approach</strong><br>
+                    P.-A. No&euml;l, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, V. Marceau and L. J. Dub&eacute;<br>
+                    Journal of Mathematical Biology 69, 1627 (2014)<br>
+                    <a href="http://doi.org/10.1007/s00285-013-0744-9">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1201.0296">arXiv</a>
+                </p>
+
+                <a id="Brooks2014"></a>
+                <p>
+                    <strong>A system-level model for the microbial regulatory genome</strong><br>
+                    A. N. Brooks, D. J. Reiss, <strong>A. Allard</strong>, W.-J. Wu, D. M. Salvanha, C. L. Plaisier, S. Chandrasekaran, M. Pan, A. Kaur and N. S. Baliga<br>
+                    Molecular Systems Biology 10, 740 (2014)<br>
+                    <a href="http://doi.org/10.15252/msb.20145160">Full text</a>
+                </p>
+
+                <a id="Allard2014"></a>
+                <p>
+                    <strong>Coexistence of phases and the observability of random graphs</strong><br>
+                    <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, J.-G. Young and L. J. Dub&eacute;<br>
+                    Physical Review E 89, 022801 (2014)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.89.022801">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1309.7983">arXiv</a><br>
+                    &#x2605; In the <i>Editors' Suggestions</i> section of Physical Review E.
+                </p>
+
+                <p>
+                    <strong>Percolation sur graphes al&eacute;atoires: Mod&eacute;lisation et description analytique</strong><br>
+                    (Percolation on random graphs: Modelling and analytical description)<br>
+                    Ph.D. Thesis, Universit&eacute; Laval (2014)<br>
+                    <a class="inside-link" href="files/Allard2014_PhDThesis.pdf">Full text</a>
+                </p>
+
+
+
+                <h4>&mdash; 2013 &mdash;</h4>
+
+                <a id="Hebert-Dufresne2013b"></a>
+                <p>
+                    <strong>Percolation on random networks with arbitrary k-core structure</strong><br>
+                    L. H&eacute;bert-Dufresne*, <strong>A. Allard</strong>*, J.-G. Young and L. J. Dub&eacute;<br>
+                    Physical Review E 88, 062820 (2013)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.88.062820">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1308.6537">arXiv</a>
+                </p>
+
+                <a id="Hebert-Dufresne2013a"></a>
+                <p>
+                    <strong>Global efficiency of local immunization of complex networks</strong><br>
+                    L. H&eacute;bert-Dufresne*, <strong>A. Allard</strong>*, J.-G. Young* and L. J. Dub&eacute;<br>
+                    Scientific Reports 3, 2171 (2013)<br>
+                    <a href="http://doi.org/10.1038/srep02171">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1208.5768">arXiv</a>
+                </p>
+
+
+
+                <h4>&mdash; 2012 &mdash;</h4>
+
+                <p>
+                    <strong>Bond percolation on a class of correlated and clustered random graphs</strong><br>
+                    <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, P.-A. No&euml;l, V. Marceau and L. J. Dub&eacute;<br>
+                    Journal of Physics A 45, 405005 (2012)<br>
+                    <a href="http://doi.org/10.1088/1751-8113/45/40/405005">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1201.4602">arXiv</a>
+                </p>
+
+                <p>
+                    <strong>Exact solution of bond percolation on small arbitrary graphs</strong><br>
+                    <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, P.-A. No&euml;l, V. Marceau and L. J. Dub&eacute;<br>
+                    Europhysics Letters (EPL) 98, 16001 (2012)<br>
+                    <a href="http://doi.org/10.1209/0295-5075/98/16001">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1201.4369">arXiv</a>
+                </p>
+
+                <p>
+                    <strong>Propagation on networks: An exact alternative perspective</strong><br>
+                    P.-A. No&euml;l, <strong>A. Allard</strong>, L. H&eacute;bert-Dufresne, V. Marceau and L. J. Dub&eacute;<br>
+                    Physical Review E 85, 031118 (2012)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.85.031118">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1102.0987">arXiv</a>
+                </p>
+
+                <p>
+                    <strong>Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems</strong><br>
+                    L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, V. Marceau, P.-A. No&euml;l and L. J. Dub&eacute;<br>
+                    Physical Review E 85, 026108 (2012)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.85.026108">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1109.0034">arXiv</a>
+                </p>
+
+
+
+                <h4>&mdash; 2011 &mdash;</h4>
+
+                <p>
+                    <strong>Structural Preferential Attachment: Network Organization beyond the Link</strong><br>
+                    L. H&eacute;bert-Dufresne, <strong>A. Allard</strong>, V. Marceau, P.-A. No&euml;l and L. J. Dub&eacute;<br>
+                    Physical Review Letters 107, 158702 (2011)<br>
+                    <a href="http://doi.org/10.1103/PhysRevLett.107.158702">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1105.5980">arXiv</a>
+                </p>
+
+                <p>
+                    <strong>Modeling the dynamical interaction between epidemics on overlay networks</strong><br>
+                    V. Marceau, P.-A. No&euml;l, L. H&eacute;bert-Dufresne, <strong>A. Allard</strong> and L. J. Dub&eacute;<br>
+                    Physical Review E 84, 026105 (2011)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.84.026105">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1103.4059">arXiv</a>
+                </p>
+
+
+
+                <h4>&mdash; 2010 &mdash;</h4>
+
+                <p>
+                    <strong>Propagation dynamics on networks featuring complex topologies</strong><br>
+                    L. H&eacute;bert-Dufresne, P.-A. No&euml;l, V. Marceau, <strong>A. Allard</strong> and L. J. Dub&eacute;<br>
+                    Physical Review E 82, 036115 (2010)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.82.036115">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1005.1397">arXiv</a><br>
+                    &#x2605; Also in the <em>Virtual Journal of Biological Physics Research</em>, issue 7, vol. 20 (2010)
+                </p>
+
+                <a id="Marceau2010"></a>
+                <p>
+                    <strong>Adaptive networks: Coevolution of disease and topology</strong><br>
+                    V. Marceau, P.-A. No&euml;l, L. H&eacute;bert-Dufresne, <strong>A. Allard</strong> and L. J. Dub&eacute;<br>
+                    Physical Review E 82, 036116 (2010)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.82.036116">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/1005.1299">arXiv</a><br>
+                    &#x2605; Also in the <em>Virtual Journal of Biological Physics Research</em>, issue 7, vol. 20 (2010)
+                </p>
+
+
+
+                <h4>&mdash; 2009 &mdash;</h4>
+
+                <p>
+                    <strong>Heterogeneous Bond Percolation on Multitype Networks with an Application to Epidemic Dynamics</strong><br>
+                    <strong>A. Allard</strong>, P.-A. No&euml;l, L. J. Dub&eacute; and B. Pourbohloul<br>
+                    Physical Review E 79, 036113 (2009)<br>
+                    <a href="http://doi.org/10.1103/PhysRevE.79.036113">Full text</a>
+                    &#124;
+                    <a href="http://arxiv.org/abs/0811.2349">arXiv</a><br>
+                    <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRevE.79.036113" data-hide-zero-citations="true" data-style="small_rectangle"></span>
+                    &#x2605; Also in the <em>Virtual Journal of Biological Physics Research</em>, issue 7, vol. 17 (2009)
+                </p>
+
+                <p>
+                    <strong>Des Ponts d'Euler &agrave; la Grippe Aviaire: De l'abstraction math&eacute;matique &agrave; la r&eacute;alit&eacute; sociale des &eacute;pid&eacute;mies</strong><br>
+                    (From Euler Bridges to the Avian Flu: From Mathematical Abstraction to the Social Reality of Epidemics)<br>
+                    <strong>A. Allard</strong>, P.-A. No&euml;l, and L. J. Dub&eacute;<br>
+                    Accromath 4, 24-29 (2009)<br>
+                    <a href="files/ponts-euler.pdf">Full text</a>
+                </p>
+
+
+
+                <h4>&mdash; 2008 &mdash;</h4>
+
+                <p>
+                    <strong>Mod&eacute;lisation Math&eacute;matique en Epid&eacute;miologie par R&eacute;seaux de Contacts: Introduction de l'H&eacute;t&eacute;rog&eacute;n&eacute;it&eacute; dans la Transmissibilit&eacute;</strong><br>
+                    (Mathematical Modelling in Contact Networks for Epidemiology: Introduction of Heterogenity in Transmissibility)<br>
+                    M.Sc. Thesis, Universit&eacute; Laval (2008)<br>
+                    <a class="inside-link" href="files/Allard2008_MScThesis.pdf">Full text</a>
+                </p>
+
+
+
+
+
+                <div style="color:#b5bec9;font-size:0.8em; float:center;">
+                    <center>
+                        &copy; <script>document.write(new Date().getFullYear())</script> Antoine Allard &mdash;
+                            Based on <a href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> theme.
+                    </center>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
     </div>
-  </body>
+
+</body>
+
+
+
 </html>
