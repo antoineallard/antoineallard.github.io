@@ -1,85 +1,73 @@
 \pdfoutput=1
 \documentclass[11pt]{article}
 
-% =================================================================================================
-% Packages utilisés dans le document
-\usepackage[letterpaper,margin=12.5mm,nohead,includefoot]{geometry}
+
+\usepackage[letterpaper,
+            margin=12.5mm,
+            nohead,
+            includefoot]{geometry}
+
 \usepackage{calc}
 
 \usepackage{ulem}
-\renewcommand{\ULdepth}{1.8pt}
+  \renewcommand{\ULdepth}{1.8pt}
 
-% \usepackage{libertine}
-% \renewcommand{\familydefault}{\sfdefault}
 \usepackage{lmodern}
 \renewcommand{\familydefault}{\sfdefault}
+
 \usepackage[T1]{fontenc}
 
-\usepackage{hyperref}
-\hypersetup{
-            allcolors=seaborn_deep_blue}
+\usepackage[
+            allcolors=blue,
             colorlinks=true,
-            pdfauthor={Antoine Allard}}
+            pdfauthor={Antoine Allard},
             pdfdisplaydoctitle=true,
-            pdfsubject={Curriculum Vitae of Antoine Allard}
-            pdftitle={Antoine Allard},
-           }
+            pdfsubject={Curriculum Vitae of Antoine Allard},
+            pdftitle={Antoine Allard}
+           ]{hyperref}
 
 \usepackage{color}
-% \definecolor{background}{rgb}{0.91,0.91,0.95}
-\definecolor{background}{RGB}{242, 243, 244}
-% \definecolor{hyperlien}{RGB}{0,0,100}
-\definecolor{seaborn_deep_blue}{RGB}{76, 114, 176}
-\definecolor{seaborn_deep_orange}{RGB}{221, 132, 82}
-\definecolor{seaborn_deep_green}{RGB}{85, 168, 104}
-\definecolor{seaborn_deep_red}{RGB}{196, 78, 82}
+  \definecolor{background}{RGB}{244, 244, 244}
+  \definecolor{blue}{RGB}{76, 114, 176}
+  \definecolor{font}{RGB}{24,  24,  24}
 
 \usepackage{enumitem}
-\setitemize[0]{leftmargin=*,label=$\circ$}
+  \setitemize[0]{
+                  after=\vspace{0.75\baselineskip},
+                  label=$\circ$,
+                  leftmargin=*,
+                  noitemsep,
+                  topsep=0pt
+                }
 
 \usepackage{fancyhdr}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\rfoot{\small Allard \thepage}
-\pagestyle{fancy}
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \rfoot{\small Allard \thepage}
+  \pagestyle{fancy}
 
-% =================================================================================================
+
 % Hyphenation
 \hyphenation{Mar-ceau}
 \hyphenation{Scar-pino}
 
-% =================================================================================================
-% Names of authors
 
+% Section title
+\newcommand{\TitreSection}[1]{\colorbox{background}{\makebox[\textwidth-0.5em][c]{\Large\textrm{\textsc{#1}}}}\vspace{0.75\baselineskip}\\}
 
-% % =================================================================================================
-% % Calcul de la largeur du texte lorsque placé dans un "parbox"
-% \newlength{\LargText}
-% \newlength{\LargSymbCirc}
-% \settowidth{\LargSymbCirc}{$\circ$\ }
-% \setlength{\LargText}{\textwidth-\parindent-\LargSymbCirc}
 
 % =================================================================================================
-% Custom format
-\newlength{\BoxWidth}
-\setlength{\BoxWidth}{\textwidth-0.5em}
-\newcommand{\TitreA}[1]{\colorbox{background}{\makebox[\BoxWidth][c]{\Large\textrm{\textsc{#1}}}}\vspace{0.75\baselineskip}\\}
-% \newcommand{\TitreB}[1]{\colorbox{background}{\makebox[\BoxWidth][c]{\Large\textsc{#1}}}\vspace{0\baselineskip}\\}
-\newcommand{\SousTitreA}[2]{{\normalsize\textbf{#1} #2 \vspace{-0.5\baselineskip}}}
-\newcommand{\SousTitreB}[2]{{\vspace{0.4\baselineskip}\SousTitreA{#1}{#2}}}
-\newlength{\EspaceListe}
-\setlength{\EspaceListe}{-0.2em}
-% \setlength{\parindent}{1em}
-
-
-% ====================================================================================================
 \begin{document}
 %
-\titlepage
+\thispagestyle{empty}
 %
-\noindent \colorbox{background}{\parbox{\BoxWidth}{\centering{\LARGE \textbf{Antoine Allard}}\\\noindent{\Large Curriculum Vit\ae}}}
+\color{font}
 %
-\vspace{2\fboxsep} \\
+%
+%
+%
+%
+\noindent\colorbox{background}{\parbox{\textwidth-0.5em}{\centering{\LARGE \textbf{Antoine Allard}}\\\noindent{\Large Curriculum Vit\ae}}}\vspace{0.75\baselineskip}\\
 %
 \begin{tabular}{l}
 Assistant Professor\\
@@ -102,73 +90,17 @@ Twitter & \href{http://www.twitter.com/all\textunderscore are}{@all\textundersco
 %
 %
 %
-% % =================================================================================================
-% \newline \vspace{\baselineskip} \\
-% \TitreA{Education}
-% % =================================================================================================
-% %
-% \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
-% Ph.D. in Physics\hfill 2009--2014
-% \begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
-%   \item Thesis Title: \href{http://antoineallard.github.io/files/Allard2014_PhDThesis.pdf}{\textit{Percolation sur graphes al\'eatoires: Mod\'elisation et description analytique}}\footnotemark
-%   \item Advisor: Louis J. Dub\'e
-%   \item[$\star$] Awarded the CIHR Frederick Banting and Charles Best Canada Graduate Scholarship
-%   \item[$\star$] Thesis added to the Board of Honour for receiving the highest overall mark
-%   \footnotetext{Percolation on random graphs: Modelling and analytical description}
-% \end{itemize}
-% %
-% \textbf{Santa Fe Institute}\hfill Santa Fe, NM, USA\\
-% Complex Systems Summer School\hfill 2011
-% \vspace{0.75\baselineskip}\\
-% %
-% \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
-% M.Sc. in Physics\hfill 2006--2008
-% \begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
-%   \item Thesis Title: \href{http://antoineallard.github.io/files/Allard2008_MScThesis.pdf}{\textit{Mod\'elisation Math\'ematique en Epid\'emiologie par R\'eseaux de Contacts: Introduction\\de l'H\'et\'erog\'en\'eit\'e dans la Transmissibilit\'e}}\footnotemark
-%   \item Advisor: Louis J. Dub\'e
-%   \item[$\star$] Thesis added to the Board of Honour for receiving the highest overall mark
-%   \footnotetext{Mathematical modelling in contact networks for epidemiology: Introduction of heterogenity in transmissibility.}
-% \end{itemize}
-% %
-% \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
-% B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
-% \begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{1.75\baselineskip}]\small
-%   \item[$\star$] Rouge et Or Distinction for excellence in academic undergraduate results
-%   \item[$\star$] Nominated 2003 AESGUL Prize for ``Student of the year'' (chosen by the peers)
-% \end{itemize}
-%
-% \textbf{Ph.D. in Physics}, \textit{Universit\'e Laval}, 2009--2014 \\
-%   {\small \indent $\circ$ \parbox[t]{\LargText}{Thesis Title: \href{http://antoineallard.github.io/files/Allard2014_PhDThesis.pdf}{\textit{Percolation sur graphes al\'eatoires: Mod\'elisation et description analytique}}\footnotemark}} \\
-%   \footnotetext{Percolation on random graphs: Modelling and analytical description}%
-%   {\small \indent $\star$ Thesis added to the Board of Honour for receiving the highest overall mark} \vspace{0.5\baselineskip} \\
-% %
-% \textbf{M.Sc. in Physics}, \textit{Universit\'e Laval}, 2006--2008 \\
-%   {\small \indent $\circ$ \parbox[t]{\LargText}{Thesis Title: \href{http://antoineallard.github.io/files/Allard2008_MScThesis.pdf}{\textit{Mod\'elisation Math\'ematique en Epid\'emiologie par R\'eseaux de Contacts: Introduction de l'H\'et\'erog\'en\'eit\'e dans la Transmissibilit\'e}}\footnotemark}} \vspace{0.4\baselineskip} \\
-%   \footnotetext{Mathematical modelling in contact networks for epidemiology: Introduction of heterogenity in transmissibility.}%
-%   {\small \indent $\star$ Thesis added to the Board of Honour for receiving the highest overall mark} \vspace{0.5\baselineskip} \\
-% %
-% \textbf{B.Sc. in Physics} (Theoretical Physics option), \textit{Universit\'e Laval}, 2003--2006 \\
-%   {\small \indent $\star$ Rouge et Or Distinction for excellence in academic undergraduate results} \\
-%   {\small \indent $\star$ Nominated 2003 AESGUL Prize for ``Student of the year'' (chosen by the peers)} \vspace{0.5\baselineskip} \\
-% %
-% \textbf{Complex Systems Summer School}, \textit{Santa Fe Institute}, 2011 \vspace{1.5\baselineskip} \\
-%
-%
-%
-%
-%
 % =================================================================================================
 \newline \vspace{\baselineskip} \\
-\TitreA{Academic Positions}
+\TitreSection{Academic Positions}
 % =================================================================================================
 %
 \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
 Assistant Professor\hfill 2018--present
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\star$] Sentinelle Nord Research Chair on Applications and Theory of Network Analysis
   \item Codirector of the \href{http://dynamica.phy.ulaval.ca}{Dynamica Research Lab} on the structure and the dynamics of complex systems
   \item Board member of the \href{http://cimmul.fsg.ulaval.ca}{Centre Interdisciplinaire en Modélisation Mathématique de l’Université Laval (CIMMUL)}
-  % \item External faculty, \href{https://vermontcomplexsystems.org}{Vermont Complex Systems Center (University of Vermont)}
 \end{itemize}
 %
 \textbf{University of Vermont}\hfill Burlington, USA\\
@@ -176,72 +108,31 @@ External faculty at the \href{https://vermontcomplexsystems.org}{Vermont Complex
 %
 \textbf{Universitat de Barcelona}\hfill Barcelona, Spain\\
 Postdoctoral Fellow\hfill 2018
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\star$] Awarded the Juan de la Cierva -- Incorporaci\'on postdoctoral fellowship
 \end{itemize}
 %
 \textbf{Centre de Recerca Matem\`atica}\hfill Bellaterra, Spain\\
 Senior Research Fellow\hfill 2017\vspace{0.75\baselineskip}\\
 %
-% \newpage\noindent%
 \textbf{Universitat de Barcelona}\hfill Barcelona, Spain\\
 Postdoctoral Fellow\hfill 2014--2016
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\star$] Awarded the Fonds de recherche du Qu\'ebec -- Nature et Technologies postdoctoral fellowship
 \end{itemize}
-%
-% \textbf{University of British Columbia Centre for Disease Control}\hfill Vancouver, Canada\\
-% Research Assistant\hfill 2006--2007\vspace{0.75\baselineskip}\\
-% %
-% \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
-% Undergraduate Research Assistant\hfill 2006
-% \begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
-%   \item[$\circ$] Supervisor: Louis J. Dub\'e, Nonlinear Dynamics Group
-%   \item[$\star$] Natural Sciences and Engineering Research Council of Canada Undergraduate Student Research Award
-% \end{itemize}
-% %
-% \textbf{Centre de Recherche de l'H\^otel-Dieu de Qu\'ebec}\hfill Qu\'ebec, Canada\\
-% Undergraduate Research Assistant\hfill 2005
-% \begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
-%   \item[$\circ$] Supervisor: Luc Beaulieu, Radio Oncology Department
-%   \item[$\star$] Natural Sciences and Engineering Research Council of Canada Undergraduate Student Research Award
-% \end{itemize}
-% %
-% \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
-% Undergraduate Research Assistant\hfill 2004
-% \begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{1.75\baselineskip}]\small
-%   \item[$\circ$] Supervisor: Gilles Joncas, Astrophysics Group
-% \end{itemize}
-% %
-% % \SousTitreA{Research}{}
-% %
-% % \begin{itemize}[itemsep=\EspaceListe]
-%   % \item Assistant professor, \textit{Universit\'e Laval}, Qu\'ebec, Canada [August 2018]
-%   % \item Juan de la Cierva Postdoctoral Fellow, \textit{Universitat de Barcelona}, Barcelona, Spain, 2018--present
-%   % \item Senior Research Fellow, \textit{Centre de Recerca Matem\`atica}, Barcelona, Spain, 2017
-%   % \item FRQNT Postdoctoral Fellow, \textit{Universitat de Barcelona}, Barcelona, Spain, 2014--2016
-%   % \item CIHR Ph.D. Candidate, \textit{Universit\'e Laval}, Qu\'ebec, Canada, 2009--2014
-%   % \item Master Student, \textit{Universit\'e Laval}, Qu\'ebec, Canada, 2006--2008
-%   % \item Research Assistant, Division of Mathematical Modeling, \textit{University of British Columbia Centre for Disease Control}, Vancouver, Canada, 2006--2007
-% %   \item NSERC Undergraduate Research Assistant, Nonlinear Dynamics Group, \textit{Universit\'e Laval}, Qu\'ebec, Canada, 2006
-% %   \item NSERC Undergraduate Research Assistant, Radio Oncology Department, \textit{Centre de Recherche de l'H\^otel-Dieu de Qu\'ebec}, Qu\'ebec, Canada, 2005
-% %   \item Undergraduate Research Assistant, Astrophysics Group, \textit{Universit\'e Laval}, Qu\'ebec, Canada, 2004
-% % \end{itemize}
 %
 %
 %
 %
 %
 % =================================================================================================
-% \vspace{-0.25\baselineskip}
-\TitreA{Education}
+\TitreSection{Education}
 % =================================================================================================
 %
 \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
 Ph.D. in Physics\hfill 2009--2014
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item Thesis Title: \href{http://hdl.handle.net/20.500.11794/25058}{\textit{Percolation sur graphes al\'eatoires: Mod\'elisation et description analytique}}\footnotemark
-  % \item Advisor: Louis J. Dub\'e
   \item[$\star$] Awarded the CIHR Frederick Banting and Charles Best Canada Graduate Scholarship
   \item[$\star$] Thesis added to the Board of Honour for receiving the highest overall mark
   \footnotetext{Percolation on random graphs: Modelling and analytical description}
@@ -253,62 +144,35 @@ Complex Systems Summer School\hfill 2011
 %
 \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
 M.Sc. in Physics\hfill 2006--2008
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item Thesis Title: \href{http://hdl.handle.net/20.500.11794/20317}{\textit{Mod\'elisation Math\'ematique en Epid\'emiologie par R\'eseaux de Contacts: Introduction\\de l'H\'et\'erog\'en\'eit\'e dans la Transmissibilit\'e}}\footnotemark
-  % \item Advisor: Louis J. Dub\'e
   \item[$\star$] Thesis added to the Board of Honour for receiving the highest overall mark
   \footnotetext{Mathematical modelling in contact networks for epidemiology: Introduction of heterogenity in transmissibility.}
 \end{itemize}
 %
 \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
 B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{1.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\star$] Rouge et Or Distinction for excellence in academic undergraduate results
   \item[$\star$] Nominated 2003 AESGUL Prize for ``Student of the year'' (chosen by the peers)
 \end{itemize}
 %
-% \textbf{Ph.D. in Physics}, \textit{Universit\'e Laval}, 2009--2014 \\
-%   {\small \indent $\circ$ \parbox[t]{\LargText}{Thesis Title: \href{http://antoineallard.github.io/files/Allard2014_PhDThesis.pdf}{\textit{Percolation sur graphes al\'eatoires: Mod\'elisation et description analytique}}\footnotemark}} \\
-%   \footnotetext{Percolation on random graphs: Modelling and analytical description}%
-%   {\small \indent $\star$ Thesis added to the Board of Honour for receiving the highest overall mark} \vspace{0.5\baselineskip} \\
-% %
-% \textbf{M.Sc. in Physics}, \textit{Universit\'e Laval}, 2006--2008 \\
-%   {\small \indent $\circ$ \parbox[t]{\LargText}{Thesis Title: \href{http://antoineallard.github.io/files/Allard2008_MScThesis.pdf}{\textit{Mod\'elisation Math\'ematique en Epid\'emiologie par R\'eseaux de Contacts: Introduction de l'H\'et\'erog\'en\'eit\'e dans la Transmissibilit\'e}}\footnotemark}} \vspace{0.4\baselineskip} \\
-%   \footnotetext{Mathematical modelling in contact networks for epidemiology: Introduction of heterogenity in transmissibility.}%
-%   {\small \indent $\star$ Thesis added to the Board of Honour for receiving the highest overall mark} \vspace{0.5\baselineskip} \\
-% %
-% \textbf{B.Sc. in Physics} (Theoretical Physics option), \textit{Universit\'e Laval}, 2003--2006 \\
-%   {\small \indent $\star$ Rouge et Or Distinction for excellence in academic undergraduate results} \\
-%   {\small \indent $\star$ Nominated 2003 AESGUL Prize for ``Student of the year'' (chosen by the peers)} \vspace{0.5\baselineskip} \\
-% %
-% \textbf{Complex Systems Summer School}, \textit{Santa Fe Institute}, 2011 \vspace{1.5\baselineskip} \\
-%
 %
 %
 %
 %
 % =================================================================================================
-% \newpage
-\TitreA{Funding and Awards}
+\TitreSection{Funding and Awards}
 % =================================================================================================
 %
-\SousTitreA{Grants}{}
-% \textbf{Grants}
+\textbf{Funding}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item Fonds d'accélération des collaborations en santé (co-I), \textit{Consortium québécois sur la découverte du médicament}, 2021--2024 (15.32M\$)
   \item Alliance Grant (co-I), \textit{Natural Sciences and Engineering Research Council of Canada}, 2021--2026 (481k\$)
   \item Sentinel North Research Project (co-I), \textit{Canada First Research Excellence Fund}, 2020--2023 (750k\$)
   \item Discovery Grant (PI), \textit{Natural Sciences and Engineering Research Council of Canada}, 2019--2024 (157k\$)
   \item Sentinelle Nord Research Chair (PI), \textit{Canada First Research Excellence Fund}, 2018--2023 (500k\$)
-\end{itemize}
-%
-%
-%
-\SousTitreB{Fellowships}{}
-% \textbf{Fellowships}
-%
-\begin{itemize}[itemsep=\EspaceListe]
   \item Juan de la Cierva -- Incorporaci\'on (postdoctoral fellowship), \textit{Ministerio de Econom\'ia, Industria y Competitividad de Espa\~{n}a}, 2017--2019
   \item Postdoctoral Fellowship, \textit{Fonds de recherche du Qu\'ebec -- Nature et Technologies}, 2014--2016
   \item Frederick Banting and Charles Best Canada Graduate Scholarships - Doctoral Awards, \textit{Canadian Institutes of Health Research}, 2009--2012
@@ -320,9 +184,9 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
 %
 %
 %
-\SousTitreB{Other Recognitions}{}
+\textbf{Awards}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item 2021 ADEPUL Prize for ``Teacher of the year'' (elected by the undergraduate students)
   \item 2020 ADEPUL Prize for ``Teacher of the year'' (elected by the undergraduate students)
   \item Nominated 2020 AESGUL Prize for ``Teacher of the year'' (elected by the undergraduate students)
@@ -343,22 +207,21 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
 %
 %
 % =================================================================================================
-% \newpage\noindent%
-\TitreA{Mentoring}
+\TitreSection{Mentoring}
 % =================================================================================================
 %
-\SousTitreA{Postdoctoral researchers}{}
+\textbf{Postdoctoral researchers}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item Ilhem Bouderbala, \textit{Universit\'e Laval}, 2020--present
   \item Marina Vegué Llorente, \textit{Université Laval}, 2020--present
 \end{itemize}
 %
 %
 %
-\SousTitreB{Ph.D. students}{}
+\textbf{Ph.D. students}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item Charles Murphy, \textit{Universit\'e Laval}, 2018--present
   \item Guillaume St-Onge, \textit{Université Laval}, 2020--present
   \item Vincent Thibeault, \textit{Université Laval}, 2020--present
@@ -366,10 +229,9 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
 %
 %
 %
-\pagebreak
-\SousTitreB{M.Sc. students}{}
+\textbf{M.Sc. students}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item B\'eatrice D\'esy, \textit{Universit\'e Laval}, 2019--present
   \item Simon Lizotte, \textit{Universit\'e Laval}, 2020--present
   \item Francis Normand\footnotemark, \textit{Universit\'e Laval}, 2019--present
@@ -383,12 +245,12 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
 %
 %
 %
-\SousTitreB{B.Sc. interns}{}
+\textbf{B.Sc. interns}
 %
-\begin{itemize}[itemsep=\EspaceListe]
-  \item Olivier Lapointe-Gagn\'e, \textit{Universit\'e Laval}, Summer 2021
-  \item Pierre-Luc Larouche, \textit{Universit\'e Laval}, Summer 2021
-  \item Jérémi Lesage, \textit{Universit\'e Laval}, Summer 2021
+\begin{itemize}
+  \item Olivier Lapointe-Gagn\'e, \textit{Universit\'e Laval}, Summer 2021
+  \item Pierre-Luc Larouche, \textit{Universit\'e Laval}, Summer 2021
+  \item Jérémi Lesage, \textit{Universit\'e Laval}, Summer 2021
   \item Bastian Raulier, \textit{Universit\'e Laval}, Summer-Fall 2020
   \item Olivier Ribordy, \textit{Universit\'e Laval}, Summer 2019
   \item Fran\c{c}ois Thibault, \textit{Universit\'e Laval}, Summer 2019
@@ -396,10 +258,9 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
 %
 %
 %
-% \pagebreak%
-\SousTitreB{Bachelor's thesis}{}
+\textbf{Bachelor's thesis}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item Simon Lizotte, \textit{Universit\'e Laval}, 2020
   \item Fran\c{c}ois Thibault, \textit{Universit\'e Laval}, 2020
   \item Marta Cavero L\'azaro\textsuperscript{\arabic{footnote}}, \textit{Universitat Aut\`onoma de Barcelona}, 2018
@@ -410,16 +271,14 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
 %
 %
 % =================================================================================================
-% \newpage\noindent%
-\TitreA{Teaching}
+\TitreSection{Teaching}
 % =================================================================================================
 %
 \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
 Teacher
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] PHY-7053 Theory of Complex Systems and Networks \hfill 2020--2021
   \item[$\circ$] PHY-3500 Computational Physics \hfill 2020
-  % \item[$\circ$] PHY-3000 Statistical Physics \hfill Fall 2019
   \item[$\circ$] PHY-2502 Nonlinear Dynamics, Chaos and Complexity \hfill 2019, 2022%
   \item[$\circ$] PHY-7008 Deep Learning: Theory and applications \hfill 2019%
   \item[$\circ$] PHY-3000 Statistical Physics \hfill 2018--2021
@@ -429,114 +288,72 @@ Teacher
   \item[$\star$] Awarded 2021 ADEPUL prize for ``Teacher of the year'' (elected by the undergraduate students)
 \end{itemize}\vspace{0.75\baselineskip}%
 %
-% \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
-% Teaching Assistant
-% \begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
-%   \item[$\circ$] PHY-3000 Statistical Physics \hfill 2009, 2010, 2013
-%   \item[$\star$] Nominated 2013 AESGUL Prize for ``Staff member of the year'' (elected by the undergraduate students)
-%   \item[$\circ$] PHY-2502 Nonlinear Dynamics, Chaos and Complexity \hfill 2007, 2012
-%   % \item[$\circ$] PHY-3000 Statistical Physics \hfill Fall 2010
-%   % \item[$\circ$] PHY-3000 Statistical Physics \hfill Fall 2009
-%   % \item[$\circ$] PHY-1002 Mathematical Physics II \hfill Fall 2007
-%   % \item[$\circ$] PHY-2502 Nonlinear Dynamics, Chaos and Complexity \hfill Winter 2007
-%   \item[$\circ$] PHY-1002 Mathematical Physics II \hfill 2006, 2007
-%   \item[$\star$] Awarded 2006 AESGUL Prize for ``Staff member of the year'' (elected by the undergraduate students)
-% \end{itemize}
-% %
-% \textbf{St. Anthony's RC Girls School/Hetton School}\hfill Sunderland, United Kingdom\\
-% Foreign Language Assistant\hfill 2008--2009\vspace{1.50\baselineskip}\\
-% %
-% %
-% %
-% % \newpage
-% % \SousTitreB{Teaching}{}
-% % %
-% % \begin{itemize}[itemsep=\EspaceListe]
-% %   \item Teaching Assistant, PHY-3000 Statistical Physics, \textit{Universit\'e Laval}, 2009, 2010 and 2013 \\
-% %   {\small \indent $\star$ Nominated 2013 AESGUL Prize for ``Staff member of the year'' (elected by the undergraduate students)}
-% % %
-% %   \item Teaching Assistant, PHY-2502 Nonlinear Dynamics, Chaos and Complexity, \textit{Universit\'e Laval}, 2007 and 2012
-% % %
-% %   \item Foreign Language Assistant, \textit{St. Anthony's RC Girls School/Hetton School}, Sunderland, United Kingdom, 2008--2009
-% % %
-% %   \item Teaching Assistant, PHY-1002 Mathematical Physics II, \textit{Universit\'e Laval}, 2006 and 2007 \\
-% %   {\small \indent $\star$ Awarded 2006 AESGUL Prize for ``Staff member of the year'' (elected by the undergraduate students)}
-% % \end{itemize}
-%
 %
 %
 %
 %
 % =================================================================================================
-\TitreA{Organizing Activities}
+\TitreSection{Organizing Activities}
 % =================================================================================================
 %
 \parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/fr/reseauxcomplexes2020}{CNWW})\hfill Qu\'ebec, Canada\\
 Codirector\hfill January 2021
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord} and the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center}
 \end{itemize}}
 %
 \parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/fr/reseauxcomplexes2019}{CNWW})\hfill Qu\'ebec, Canada\\
 Codirector\hfill December 2019
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord} and the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center}
 \end{itemize}}
 %
 \parbox{\textwidth}{\textbf{International School and Conference on Network Science} (\href{http://vermontcomplexsystems.org/events/netsci/}{NetSci 2019})\hfill Burlington VT, USA\\
 School, Poster Session, and Satellite Co-chair\hfill May 2019
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] Organized by the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center}
 \end{itemize}}
 %
 \parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/fr/reseauxcomplexes2018}{CNWW})\hfill Qu\'ebec, Canada\\
 Codirector\hfill December 2018
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord}, the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center} and the \href{https://www.networkscienceinstitute.org/}{Network Science Institute}
 \end{itemize}}
 %
 \parbox{\textwidth}{\textbf{Contagion \& Networks} (\href{http://networkscontagion.github.io/}{ContNet2018})\hfill Paris, France\\
 Co-organizer\hfill June 2018
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{0.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] Satellite symposium of the International School and Conference on Network Science (NetSci 2018)
   \item[$\circ$] In collaboration with B.~M.~Althouse, L.~H\'ebert-Dufresne and S.~V.~Scarpino
 \end{itemize}}
 %
 \parbox{\textwidth}{\textbf{Contagion \& Networks} (\href{http://networkscontagion.github.io/contnet2017/}{ContNet2017})\hfill Indianapolis IN, USA\\
 Co-organizer\hfill June 2017
-\begin{itemize}[noitemsep, leftmargin=1.5em, topsep=0pt, after=\vspace{1.75\baselineskip}]\small
+\begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] Satellite symposium of the International School and Conference on Network Science (NetSci 2017)
   \item[$\circ$] In collaboration with B.~M.~Althouse, L.~H\'ebert-Dufresne and S.~V.~Scarpino
 \end{itemize}}
 %
-% \SousTitreA{Organizing committee}{}
-% %
-% \begin{itemize}[itemsep=\EspaceListe]
-%   \item Contagion \& Networks satellite symposium (\href{http://networkscontagion.github.io/}{ContNet2018}) of the International School and Conference on Network Science (NetSci 2018)
-%   \item Contagion \& Networks satellite symposium (\href{http://networkscontagion.github.io/contnet2017/}{ContNet2017}) of the International School and Conference on Network Science (NetSci 2017)
-% \end{itemize}
-%
 %
 %
 %
 %
 % =================================================================================================
-% \newpage\noindent%
-\TitreA{Reviewing Activities}
+\TitreSection{Reviewing Activities}
 % =================================================================================================
 %
-\SousTitreA{Grant review}{}
+\textbf{Grant review}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item OPUS Grants, \textit{National Science Center, Poland}, 2020
   \item Discovery Grants, \textit{Natural Sciences and Engineering Research Council of Canada}, 2020
 \end{itemize}
 %
 %
 %
-\SousTitreB{Program committee}{}
+\textbf{Program committee}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item 12th International Conference on Complex Networks (CompleNet 2021)
   \item 10th International Conference on Complex Networks and their Applications (Complex Networks 2021)
   \item 1st French Regional Conference on Complex Systems (CCS -- France 2021)
@@ -554,9 +371,9 @@ Co-organizer\hfill June 2017
 %
 %
 %
-\SousTitreB{Thesis jury}{}
+\textbf{Thesis jury}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item Marianne Gratton (Master's thesis, \textit{Universit\'e Laval}, 2022)
   \item Xavier Roy-Pomerleau (Master's thesis, \textit{Universit\'e Laval}, 2020)
   \item Vincent Thibeault (Master's thesis, \textit{Universit\'e Laval}, 2020)
@@ -570,95 +387,49 @@ Co-organizer\hfill June 2017
 %
 %
 %
-\pagebreak%
-\SousTitreB{Scholarships}{}
+\textbf{Scholarships}
 %
-\begin{itemize}[itemsep=\EspaceListe]
+\begin{itemize}
   \item Byron-T. Darling graduate scholarship, \textit{Universit\'e Laval}, 2020
   \item Larkin Kerwin undergraduate scholarship, \textit{Universit\'e Laval}, 2019
 \end{itemize}
 %
 %
 %
-% \pagebreak
-\SousTitreB{Scientific journals}{}
+\textbf{Scientific journals}\\
 %
-\vspace{0.65\baselineskip}\\Applied Network Science, Bioinformatics, BMC Medicine, Communications Physics, Discrete Dynamics in Nature and Society, Europhysics Letters, IEEE's Transactions on Network Science and Engineering, Nature Communications, Network Neuroscience, Physica A, Physical Review E, Physical Review Letters, Physical Review X, PLOS Computational Biology, PLOS ONE, PNAS, Science Advances, Scientific Reports\vspace{1.70\baselineskip}\\
-%
-% \begin{itemize}[itemsep=\EspaceListe]
-%   \item Applied Network Science
-%   \item Bioinformatics
-%   \item Discrete Dynamics in Nature and Society
-%   \item Europhysics Letters
-%   \item IEEE's Transactions on Network Science and Engineering
-%   \item Nature Communications
-%   \item Physica A
-%   \item Physical Review E
-%   \item Physical Review Letters
-%   \item Physical Review X
-%   \item PLOS Computational Biology
-%   \item PLOS ONE
-%   \item Scientific Reports
-% \end{itemize} \vspace{0.90\baselineskip}
+Applied Network Science, Bioinformatics, BMC Medicine, Communications Physics, Discrete Dynamics in Nature and Society, Europhysics Letters, IEEE's Transactions on Network Science and Engineering, Nature Communications, Network Neuroscience, Physica A, Physical Review E, Physical Review Letters, Physical Review X, PLOS Computational Biology, PLOS ONE, PNAS, Science Advances, Scientific Reports\vspace{1.70\baselineskip}\\
 %
 %
 %
 %
 %
 % =================================================================================================
-% \newpage\noindent%
-\TitreA{Administrative Activities}
+\TitreSection{Administrative Activities}
 % =================================================================================================
 %
 Centre Interdisciplinaire en Modélisation Mathématique \href{http://cimmul.fsg.ulaval.ca}{(CIMMUL)}\hfill Universit\'e Laval\\
 Board member\hfill 2020--present\vspace{0.75\baselineskip}\\
 %
 Recruitment of a new professor at the Physics Department\hfill Universit\'e Laval\\
-Selection committee member\hfill 2021\vspace{0.75\baselineskip}\\
+Selection committee member\hfill 2022\vspace{0.75\baselineskip}\\
 %
 Reconditioning of the research facilities in the Alexandre-Vachon building\hfill Universit\'e Laval\\
 Consulting committee member\hfill 2020\vspace{0.75\baselineskip}\\
 %
-% \textbf{Student Investment Fund}\hfill Universit\'e Laval\\
-% Board member\hfill 2012--2013\vspace{0.75\baselineskip}\\
-% %
-% \textbf{Physics Graduate Student Union}\hfill Universit\'e Laval\\
-% Treasurer\hfill 2011--2012\vspace{0.75\baselineskip}\\
-% %
-% \textbf{Physics Graduate Program Committee}\hfill Universit\'e Laval\\
-% Member\hfill 2011--2012\vspace{0.75\baselineskip}\\
-% %
-% \textbf{Physics Professoral Assembly}\hfill Universit\'e Laval\\
-% Student representative\hfill 2010--2012\vspace{0.75\baselineskip}\\
-% %
-% \textbf{Physics Undergraduate Student Union}\hfill Universit\'e Laval\\
-% Treasurer\hfill 2004--2006\vspace{1.70\baselineskip}\\
-% %
-% % \SousTitreB{Other committees}{}
-% % %
-% % \begin{itemize}[itemsep=\EspaceListe]
-% %   \item Board member of the Student Investment Fund, \textit{Universit\'e Laval}, 2012--2013
-% %   \item Treasurer, Undergraduate/Graduate Physics Student Union, \textit{Universit\'e Laval}, 2009--2011/2011--2012
-% %   \item Student representative at the Physics Professoral Assembly, \textit{Universit\'e Laval}, 2010--2012
-% %   \item Member of the Physics Graduate Program Committee, \textit{Universit\'e Laval}, 2009--2011
-% % \end{itemize} \vspace{1.75\baselineskip}
-%
 %
 %
 %
 %
 % =================================================================================================
-% \newpage\noindent%
-\TitreA{Publications and Presentations}
+\TitreSection{Publications and Presentations}
 % =================================================================================================
 %
-%
-% ========================================================================
-\SousTitreA{Submitted manuscripts\footnotemark}{}
+\textbf{Submitted manuscripts\footnotemark}
 %
 \footnotetext{Students or postdoctoral researchers who worked under my supervision are underlined.}
 %
-\begin{itemize}
+\begin{itemize}[itemsep=0.5em]
 %
   % Ilhem1
   \item \textit{Effects of global change on animal biodiversity in boreal forest landscape: an assemblage dissimilarity analysis}, \uline{I.~Bouderbala}, G.~Labadie, J.-M.~Leblanc, Y.~Boulanger, C.~Hébert, P.~Desrosiers, \textbf{A.~Allard} and D.~Fortin, \href{https://doi.org/10.1101/2022.01.31.477297}{bioRxiv}
@@ -678,80 +449,50 @@ Consulting committee member\hfill 2020\vspace{0.75\baselineskip}\\
   % Tampa
   \item \textit{On the accuracy of message-passing approaches to percolation in complex networks}, \textbf{A.~Allard} and L.~H\'ebert-Dufresne, \href{https://arxiv.org/abs/1906.10377}{arXiv:1906.10377}
 %
-  % % Zika Edito
-  % \item \textit{Assessing the threat of Zika virus as a sexually transmitted infection}, \textbf{A.~Allard}\footnotemark, B.~M.~Althouse\textsuperscript{\arabic{footnote}}, L.~H\'ebert-Dufresne\textsuperscript{\arabic{footnote}}, and S.~V.~Scarpino\textsuperscript{\arabic{footnote}}
-%
 \end{itemize}
-% \begin{itemize}
-% % %
-% %   % HRNprime
-% %   \item \textit{Effective structure of complex networks}, \textbf{A.~Allard}, and L.~H\'ebert-Dufresne
-% %
-%   % Graphicality
-%   \item \textit{Graphicality, structure and size of constrained random graph ensembles}, L.~H\'ebert-Dufresne and \textbf{A.~Allard}
-% %
-%   % Effective
-%   \item \textit{Effective random ensembles of complex networks}, \textbf{A.~Allard} and L.~H\'ebert-Dufresne
-% %
-%   % SBVM 2
-%   \item \textit{The distribution and stability of life cycles across environments}, E.~Libby, \textbf{A.~Allard}, J.-G.~Young, and L.~H\'ebert-Dufresne
-% %
-%   % Brain
-%   \item \textit{The effective navigable geometry of the brain}, \textbf{A.~Allard} and M.~\'A.~Serrano
-% %
-%   % Directed networks in Hidden metric space
-%   \item \textit{Directed networks in hidden metric space}, \textbf{A.~Allard}, M.~\'A.~Serrano, G.~Garc\'ia-P\'erez, and M.~Bogu\~n\'a
-% %
-% \end{itemize}
 %
 %
 %
-% ========================================================================
-% \pagebreak
-% \newcommand{\publi}[5]{\textit{#1}\\{\small#2}\\{\small\href{#3}{#4}}%{\ [#5]}}
-% \SousTitreB{Refereed research publications\footnotemark}{}
-\SousTitreB{Refereed research publications}{}
+\textbf{Refereed research publications}
 %
-% \footnotetext{Known number of citations in brackets (according to \href{http://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en}{{\texttt{Google Scholar}}}).}
-%
-\begin{itemize}
+\begin{itemize}[itemsep=0.5em]
 %
   % Andrea, Maria and Nicholas
   \item \textit{Predicting the diversity of early epidemic spread on networks}, A.~J.~Allen, M.~C.~Boudreau, N.~J.~Roberts, \textbf{A.~Allard} and L.~H\'ebert-Dufresne, \href{https://arxiv.org/abs/2107.03334}{Phys. Rev. Research (in press)}
 %
   % Guillaume Simplagion
-  \item \textit{Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs}, \uline{G.~St-Onge}, I.~Iacopini, V.~Latora, A.~Barrat, G.~Petri, \textbf{A.~Allard} and L.~H\'ebert-Dufresne, \href{https://doi.org/10.1038/s42005-021-00788-w}{Commun. Phys. 5, 25 (2022)}%{\ [1]}
+  \item \textit{Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs}, \uline{G.~St-Onge}, I.~Iacopini, V.~Latora, A.~Barrat, G.~Petri, \textbf{A.~Allard} and L.~H\'ebert-Dufresne, \href{https://doi.org/10.1038/s42005-021-00788-w}{Commun. Phys. 5, 25 (2022)}
 %
   % Guillaume Bursty
-  \item \textit{Universal nonlinear infection kernel from heterogeneous exposure on higher-order networks}, \uline{G.~St-Onge}, H.~Sun, \textbf{A.~Allard}, L.~H\'ebert-Dufresne and G.~Bianconi, \href{https://doi.org/10.1103/PhysRevLett.127.158301}{Phys. Rev. Lett. 127, 158301 (2021)}%{\ [10]}
+  \item \textit{Universal nonlinear infection kernel from heterogeneous exposure on higher-order networks}, \uline{G.~St-Onge}, H.~Sun, \textbf{A.~Allard}, L.~H\'ebert-Dufresne and G.~Bianconi, \href{https://doi.org/10.1103/PhysRevLett.127.158301}{Phys. Rev. Lett. 127, 158301 (2021)}
 %
   % DynaLearn
-  \item \textit{Deep learning of contagion dynamics on complex networks}, \uline{C.~Murphy}, E. Laurence and \textbf{A.~Allard}, \href{https://arxiv.org/abs/2006.05410}{Nat. Commun. 12, 4720 (2021)}\\%{\ [4]}\\
+  \item \textit{Deep learning of contagion dynamics on complex networks}, \uline{C.~Murphy}, E. Laurence and \textbf{A.~Allard}, \href{https://arxiv.org/abs/2006.05410}{Nat. Commun. 12, 4720 (2021)}\\
   {\footnotesize $\star$ Featured in \href{https://www.nature.com/ncomms/editorshighlights}{Nature communications' Editors' Highlights}.}
 %
   % Guillaume clique SIS - PRL
-  \item \textit{Social confinement and mesoscopic localization of epidemics on networks}, \uline{G.~St-Onge}, \uline{V.~Thibeault}, \textbf{A.~Allard}, L.~J.~Dub\'e and L.~H\'ebert-Dufresne, \href{http://doi.org/10.1103/PhysRevLett.126.098301}{Phys. Rev. Lett. 126, 098301 (2021)}%{\ [25]}
+  \item \textit{Social confinement and mesoscopic localization of epidemics on networks}, \uline{G.~St-Onge}, \uline{V.~Thibeault}, \textbf{A.~Allard}, L.~J.~Dub\'e and L.~H\'ebert-Dufresne, \href{http://doi.org/10.1103/PhysRevLett.126.098301}{Phys. Rev. Lett. 126, 098301 (2021)}
 %
   % Guillaume clique SIS - PRE
-  \item \textit{Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks}, \uline{G.~St-Onge}, \uline{V.~Thibeault}, \textbf{A.~Allard}, L.~J.~Dub\'e and L.~H\'ebert-Dufresne, \href{http://doi.org/10.1103/PhysRevE.103.032301}{Phys. Rev. E 103, 032301 (2021)}%{\ [18]}
+  \item \textit{Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks}, \uline{G.~St-Onge}, \uline{V.~Thibeault}, \textbf{A.~Allard}, L.~J.~Dub\'e and L.~H\'ebert-Dufresne, \href{http://doi.org/10.1103/PhysRevE.103.032301}{Phys. Rev. E 103, 032301 (2021)}
   %
   % Beyond R0
-  \item \textit{Beyond $R_0$: Heterogeneity in secondary infections and probabilistic epidemic forecasting}, L.~H\'ebert-Dufresne, B.~M.~Althouse, S.~V.~Scarpino and \textbf{A.~Allard}, \href{https://doi.org/10.1098/rsif.2020.0393}{J. R. Soc. Interface 17, 20200393 (2020)}%{\ [79]}
+  \item \textit{Beyond $R_0$: Heterogeneity in secondary infections and probabilistic epidemic forecasting}, L.~H\'ebert-Dufresne, B.~M.~Althouse, S.~V.~Scarpino and \textbf{A.~Allard}, \href{https://doi.org/10.1098/rsif.2020.0393}{J. R. Soc. Interface 17, 20200393 (2020)}
 %
   % Beyond R0 3
-  \item \textit{Superspreading events in the transmission dynamics of SARS-CoV-2: opportunities for interventions and control}B.~M.~Althouse, E.~A.~Wenger, J.~C.~Miller, S.~V.~Scarpino, \textbf{A.~Allard}, L.~H\'ebert-Dufresne and H.~Hu, \href{https://doi.org/10.1371/journal.pbio.3000897}{PLOS Biol. 18, e3000897 (2020)}%{\ [160]}
+  \item \textit{Superspreading events in the transmission dynamics of SARS-CoV-2: opportunities for interventions and control} B.~M.~Althouse, E.~A.~Wenger, J.~C.~Miller, S.~V.~Scarpino, \textbf{A.~Allard}, L.~H\'ebert-Dufresne and H.~Hu, \href{https://doi.org/10.1371/journal.pbio.3000897}{PLOS Biol. 18, e3000897 (2020)}
 %
   % Mercator
-  \item \textit{Geometric renormalization unravels self-similarity of the multiscale human connectome}, M. Zheng, \textbf{A.~Allard}, P.~Hagmann, Y.~Alem\'an-G\'omez and M.~\'A.~Serrano, \href{http://doi.org/10.1073/pnas.1922248117}{Proc. Natl. Acad. Sci. USA 117, 20244 (2020)}%{\ [19]}
+  \item \textit{Geometric renormalization unravels self-similarity of the multiscale human connectome}, M. Zheng, \textbf{A.~Allard}, P.~Hagmann, Y.~Alem\'an-G\'omez and M.~\'A.~Serrano, \href{http://doi.org/10.1073/pnas.1922248117}{Proc. Natl. Acad. Sci. USA 117, 20244 (2020)}
 %
   % Brain
-  \item \textit{Navigable maps of structural brain networks across species}, \textbf{A.~Allard} and M.~\'A.~Serrano, \href{https://doi.org/10.1371/journal.pcbi.1007584}{PLOS Comput. Biol. 16, e1007584 (2020)}%{\ [30]}
+  \item \textit{Navigable maps of structural brain networks across species}, \textbf{A.~Allard} and M.~\'A.~Serrano, \href{https://doi.org/10.1371/journal.pcbi.1007584}{PLOS Comput. Biol. 16, e1007584 (2020)}
   %
   % Michel
-  \item \textit{Genome-scale modeling of metabolism in the polar diatom Fragilariopsis cylindrus underscores the strong robustness of growth rate in response to cellular perturbations}, M.~Lavoie, B.~Saint-Béat, J.~Strauss, S.~Guérin, \textbf{A.~Allard}, S.~V.~Hardy, A.~Falciatore and J.~Lavaud, \href{https://doi.org/10.3390/biology9020030}{Biology 9, 30 (2020)}%{\ [2]}
+  \item \textit{Genome-scale modeling of metabolism in the polar diatom Fragilariopsis cylindrus underscores the strong robustness of growth rate in response to cellular perturbations}, M.~Lavoie, B.~Saint-Béat, J.~Strauss, S.~Guérin, \textbf{A.~Allard}, S.~V.~Hardy, A.~Falciatore and J.~Lavaud, \href{https://doi.org/10.3390/biology9020030}{Biology 9, 30 (2020)}
 %
   % Mercator
-  \item \textit{Mercator: uncovering faithful hyperbolic embeddings of complex networks}, G.~Garc\'ia-P\'erez\footnotemark, \textbf{A.~Allard}\textsuperscript{\arabic{footnote}}, M.~\'A.~Serrano and M.~Bogu\~n\'a, \href{https://doi.org/10.1088/1367-2630/ab57d2}{New J. Phys. 21, 123033 (2019)}%{\ [32]}
+  \item \textit{Mercator: uncovering faithful hyperbolic embeddings of complex networks}, G.~Garc\'ia-P\'erez\footnotemark, \textbf{A.~Allard}\textsuperscript{\arabic{footnote}}, M.~\'A.~Serrano and M.~Bogu\~n\'a, \href{https://doi.org/10.1088/1367-2630/ab57d2}{New J. Phys. 21, 123033 (2019)}
 %
   \footnotetext{Equal contribution.}
 %
@@ -759,112 +500,104 @@ Consulting committee member\hfill 2020\vspace{0.75\baselineskip}\\
   \setcounter{EqualContribution}{\value{footnote}}
 %
   % Smeared
-  \item \textit{Smeared phase transitions in percolation on real complex networks}, L.~H\'ebert-Dufresne and \textbf{A.~Allard}, \href{http://doi.org/10.1103/PhysRevResearch.1.013009}{Phys. Rev. Research 1, 013009 (2019)}%{\ [11]}
+  \item \textit{Smeared phase transitions in percolation on real complex networks}, L.~H\'ebert-Dufresne and \textbf{A.~Allard}, \href{http://doi.org/10.1103/PhysRevResearch.1.013009}{Phys. Rev. Research 1, 013009 (2019)}
 %
   % Effective structure
-  \item \textit{Percolation and the effective structure of complex networks}, \textbf{A.~Allard} and L.~H\'ebert-Dufresne, \href{http://doi.org/10.1103/PhysRevX.9.011023}{Phys. Rev. X 9, 011023 (2019)}%{\ [15]}
+  \item \textit{Percolation and the effective structure of complex networks}, \textbf{A.~Allard} and L.~H\'ebert-Dufresne, \href{http://doi.org/10.1103/PhysRevX.9.011023}{Phys. Rev. X 9, 011023 (2019)}
 %
   % Time-dependent growth
-  \item \textit{Geometric evolution of complex networks with degree correlations}, \uline{C.~Murphy}, \textbf{A.~Allard}, E.~Laurence, G.~St-Onge, and L.~J.~Dub\'e, \href{http://doi.org/10.1103/PhysRevE.97.032309}{Phys. Rev. E 97, 032309 (2018)}%{\ [5]}
+  \item \textit{Geometric evolution of complex networks with degree correlations}, \uline{C.~Murphy}, \textbf{A.~Allard}, E.~Laurence, G.~St-Onge, and L.~J.~Dub\'e, \href{http://doi.org/10.1103/PhysRevE.97.032309}{Phys. Rev. E 97, 032309 (2018)}
 %
   % Zika Rzero
-  \item \textit{The risk of sustained sexual transmission of Zika is underestimated}, \textbf{A.~Allard}\textsuperscript{\arabic{EqualContribution}}, B.~M.~Althouse\textsuperscript{\arabic{EqualContribution}}, L.~H\'ebert-Dufresne\textsuperscript{\arabic{EqualContribution}}, and S.~V.~Scarpino\textsuperscript{\arabic{EqualContribution}}, \href{http://dx.doi.org/10.1371/journal.ppat.1006633}{PLOS Pathog. 13, e1006633 (2017)}%{\ [52]}
+  \item \textit{The risk of sustained sexual transmission of Zika is underestimated}, \textbf{A.~Allard}\textsuperscript{\arabic{EqualContribution}}, B.~M.~Althouse\textsuperscript{\arabic{EqualContribution}}, L.~H\'ebert-Dufresne\textsuperscript{\arabic{EqualContribution}}, and S.~V.~Scarpino\textsuperscript{\arabic{EqualContribution}}, \href{http://dx.doi.org/10.1371/journal.ppat.1006633}{PLOS Pathog. 13, e1006633 (2017)}
 %
   % Zika Double Transition
-  \item \textit{Asymmetric percolation drives a double transition in sexual contact networks}, \textbf{A.~Allard}, B.~M.~Althouse, S.~V.~Scarpino, and L.~H\'ebert-Dufresne, \href{http://dx.doi.org/10.1073/pnas.1703073114}{Proc. Natl. Acad. Sci. USA 114, 8969--8973 (2017)}%{\ [33]}
+  \item \textit{Asymmetric percolation drives a double transition in sexual contact networks}, \textbf{A.~Allard}, B.~M.~Althouse, S.~V.~Scarpino, and L.~H\'ebert-Dufresne, \href{http://dx.doi.org/10.1073/pnas.1703073114}{Proc. Natl. Acad. Sci. USA 114, 8969--8973 (2017)}
 %
   % SBVM1
-  \item \textit{Strategic tradeoffs in competitor dynamics on adaptive networks}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, P.-A. No\H{e}l, J.-G.~Young, and E.~Libby, \href{http://dx.doi.org/10.1038/s41598-017-07621-x}{Sci. Rep. 7, 7576 (2017)}%{\ [5]}
+  \item \textit{Strategic tradeoffs in competitor dynamics on adaptive networks}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, P.-A. No\H{e}l, J.-G.~Young, and E.~Libby, \href{http://dx.doi.org/10.1038/s41598-017-07621-x}{Sci. Rep. 7, 7576 (2017)}
 %
   % wS1 model
-  \item \textit{The geometric nature of weights in real complex networks}, \textbf{A.~Allard}, M.~\'A.~Serrano, G.~Garc\'ia-P\'erez, and M.~Bogu\~n\'a, \href{http://doi.org/10.1038/ncomms14103}{Nat. Commun. 8, 14103 (2017)}\\%{\ [71]}\\
+  \item \textit{The geometric nature of weights in real complex networks}, \textbf{A.~Allard}, M.~\'A.~Serrano, G.~Garc\'ia-P\'erez, and M.~Bogu\~n\'a, \href{http://doi.org/10.1038/ncomms14103}{Nat. Commun. 8, 14103 (2017)}\\
   {\footnotesize $\star$ Featured in \href{http://dx.doi.org/10.1038/nphys4046}{Nature Physics' Research highlights}.}\\
   {\footnotesize $\star$ Featured in \href{https://www.nature.com/collections/ycjylwzvmz/}{Nature Communications' Web collection on complex systems}.}
-  % \item \publi{The geometric nature of weights in real complex networks}{\textbf{A.~Allard}, M.~\'A.~Serrano, G.~Garc\'ia-P\'erez, and M.~Bogu\~n\'a}{http://doi.org/10.1038/ncomms14103}{Nat. Commun. 8, 14103 (2017)}{52}\\
 %
   % Teleportation
-  \item \textit{The effect of a prudent adaptive behaviour on disease transmission}, S.~V.~Scarpino, \textbf{A.~Allard}, and L.~H\'ebert-Dufresne, \href{http://dx.doi.org/10.1038/nphys3832}{Nat. Phys. 12, 1042--1046 (2016)}\\%{\ [57]}\\
+  \item \textit{The effect of a prudent adaptive behaviour on disease transmission}, S.~V.~Scarpino, \textbf{A.~Allard}, and L.~H\'ebert-Dufresne, \href{http://dx.doi.org/10.1038/nphys3832}{Nat. Phys. 12, 1042--1046 (2016)}\\
   {\footnotesize $\star$ Featured in \href{http://dx.doi.org/10.1038/nphys3939}{Nature Physics' News \& Views}.}%\\
-  % {\footnotesize $\star$ In the top 5\% of all research outputs scored by \href{https://www.altmetric.com/details/10184598/news}{\texttt{Altmetric}} (media coverage).}
 %
   % WTW
-  \item \textit{The hidden hyperbolic geometry of international trade: World Trade Atlas 1870--2013}, G.~Garc\'ia-P\'erez, M.~Bogu\~n\'a, \textbf{A.~Allard}, and M.~\'A.~Serrano, \href{http://dx.doi.org/10.1038/srep33441}{Sci. Rep. 6, 33441 (2016)}%{\ [70]}%\\
-  % {\footnotesize $\star$ Featured in the section \href{http://www.elperiodico.com/es/noticias/economia/globalizacion-refuerza-grandes-potencias-comercio-mundial-5844783}{\textit{Econom\'ia} of the newspaper \textit{El Peri\'odico}}.}
+  \item \textit{The hidden hyperbolic geometry of international trade: World Trade Atlas 1870--2013}, G.~Garc\'ia-P\'erez, M.~Bogu\~n\'a, \textbf{A.~Allard}, and M.~\'A.~Serrano, \href{http://dx.doi.org/10.1038/srep33441}{Sci. Rep. 6, 33441 (2016)}
 %
   % SPA+
-  \item \textit{Growing networks of overlapping communities with internal structure}, J.-G.~Young, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.94.022317}{Phys. Rev. E 94, 022317 (2016)}%{\ [14]}
+  \item \textit{Growing networks of overlapping communities with internal structure}, J.-G.~Young, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.94.022317}{Phys. Rev. E 94, 022317 (2016)}
 %
   % OD
-  \item \textit{Multi-scale structure and topological anomaly detection via a new network statistic: The onion decomposition}, L.~H\'ebert-Dufresne, J.~Grochow, and \textbf{A.~Allard}, \href{http://dx.doi.org/10.1038/srep31708}{Sci. Rep. 6, 31708 (2016)}%{\ [30]}
+  \item \textit{Multi-scale structure and topological anomaly detection via a new network statistic: The onion decomposition}, L.~H\'ebert-Dufresne, J.~Grochow, and \textbf{A.~Allard}, \href{http://dx.doi.org/10.1038/srep31708}{Sci. Rep. 6, 31708 (2016)}
 %
   % Growth
-  \item \textit{Constrained growth of complex scale-independent systems}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.93.032304}{Phys. Rev. E 93, 032304 (2016)}\\%{\ [14]}\\
+  \item \textit{Constrained growth of complex scale-independent systems}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.93.032304}{Phys. Rev. E 93, 032304 (2016)}\\
   {\footnotesize $\star$ Featured in the \textit{Editors' Suggestions} section of Phys. Rev. E.}
 %
   % HPA
-  \item \textit{Complex networks as an emerging property of hierarchical preferential attachment}, L.~H\'ebert-Dufresne, E.~Laurence, \textbf{A.~Allard}, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.92.062809}{Phys. Rev. E 92, 062809 (2015)}%{\ [16]}
+  \item \textit{Complex networks as an emerging property of hierarchical preferential attachment}, L.~H\'ebert-Dufresne, E.~Laurence, \textbf{A.~Allard}, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.92.062809}{Phys. Rev. E 92, 062809 (2015)}
 %
   % Omnibus
-  \item \textit{General and exact approach to percolation on random graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.92.062807}{Phys. Rev. E 92, 062807 (2015)}%{\ [30]}
+  \item \textit{General and exact approach to percolation on random graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.92.062807}{Phys. Rev. E 92, 062807 (2015)}
 %
   % Cascading
-  \item \textit{A shadowing problem in the detection of overlapping communities: Lifting the resolution limit through a cascading procedure}, J.-G.~Young, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1371/journal.pone.0140133}{PLOS ONE 10, e0140133 (2015)}%{\ [11]}
+  \item \textit{A shadowing problem in the detection of overlapping communities: Lifting the resolution limit through a cascading procedure}, J.-G.~Young, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1371/journal.pone.0140133}{PLOS ONE 10, e0140133 (2015)}
 %
   % Noel12
-  \item \textit{Spreading dynamics on complex networks: a general stochastic approach}, P.-A.~No\"el, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1007/s00285-013-0744-9}{J. Math. Biol. 69, 1627--1660 (2014)}%{\ [11]}
+  \item \textit{Spreading dynamics on complex networks: a general stochastic approach}, P.-A.~No\"el, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1007/s00285-013-0744-9}{J. Math. Biol. 69, 1627--1660 (2014)}
 %
   % Aaron's paper
-  \item \textit{A system-level model for the microbial regulatory genome}, A.~N.~Brooks, D.~J.~Reiss, \textbf{A.~Allard}, W.-J.~Wu, D.~M.~Salvanha, C.~L.~Plaisier, S.~Chandrasekaran, M.~Pan, A.~Kaur, and N.~S.~Baliga, \href{http://dx.doi.org/10.15252/msb.20145160}{Mol. Syst. Biol. 10, 740 (2014)}%{\ [57]}
+  \item \textit{A system-level model for the microbial regulatory genome}, A.~N.~Brooks, D.~J.~Reiss, \textbf{A.~Allard}, W.-J.~Wu, D.~M.~Salvanha, C.~L.~Plaisier, S.~Chandrasekaran, M.~Pan, A.~Kaur, and N.~S.~Baliga, \href{http://dx.doi.org/10.15252/msb.20145160}{Mol. Syst. Biol. 10, 740 (2014)}
 %
   % article suivi de Yang et al.
-  \item \textit{Coexistence of phases and the observability of random graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.89.022801}{Phys. Rev. E 89, 022801 (2014)}\\%{\ [7]}\\
+  \item \textit{Coexistence of phases and the observability of random graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.89.022801}{Phys. Rev. E 89, 022801 (2014)}\\
   {\footnotesize $\star$ Featured in the \textit{Editors' Suggestions} section of Phys. Rev. E.}
 %
   % HRN
-  \item\textit{Percolation on random networks with arbitrary k-core structure}, L.~H\'ebert-Dufresne\textsuperscript{\arabic{EqualContribution}}, \textbf{A.~Allard}\textsuperscript{\arabic{EqualContribution}}, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.88.062820}{Phys. Rev. E 88, 062820 (2013)}%{\ [27]}
+  \item\textit{Percolation on random networks with arbitrary k-core structure}, L.~H\'ebert-Dufresne\textsuperscript{\arabic{EqualContribution}}, \textbf{A.~Allard}\textsuperscript{\arabic{EqualContribution}}, J.-G.~Young, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.88.062820}{Phys. Rev. E 88, 062820 (2013)}
 %
   % HebertDufresne12 - Influential spreader
-  \item \textit{Global efficiency of local immunization of complex networks}, L.~H\'ebert-Dufresne\textsuperscript{\arabic{EqualContribution}}, \textbf{A.~Allard}\textsuperscript{\arabic{EqualContribution}}, J.-G.~Young\textsuperscript{\arabic{EqualContribution}}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1038/srep02171}{Sci. Rep. 3, 2171 (2013)}%{\ [111]}
+  \item \textit{Global efficiency of local immunization of complex networks}, L.~H\'ebert-Dufresne\textsuperscript{\arabic{EqualContribution}}, \textbf{A.~Allard}\textsuperscript{\arabic{EqualContribution}}, J.-G.~Young\textsuperscript{\arabic{EqualContribution}}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1038/srep02171}{Sci. Rep. 3, 2171 (2013)}
 %
   % Allard12_JPhysA - article long
-  \item \textit{Bond percolation on a class of correlated and clustered random graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, P.-A.~No\"el, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1088/1751-8113/45/40/405005}{J. Phys. A 45, 405005 (2012)}%{\ [28]}
+  \item \textit{Bond percolation on a class of correlated and clustered random graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, P.-A.~No\"el, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1088/1751-8113/45/40/405005}{J. Phys. A 45, 405005 (2012)}
 %
   % Allard12_EPL - article court
-  \item \textit{Exact solution of bond percolation on small arbitrary graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, P.-A.~No\"el, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1209/0295-5075/98/16001}{EPL 98, 16001 (2012)}%{\ [11]}
+  \item \textit{Exact solution of bond percolation on small arbitrary graphs}, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, P.-A.~No\"el, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1209/0295-5075/98/16001}{EPL 98, 16001 (2012)}
 %
   % Noel12_PhysRevE
-  \item \textit{Propagation on networks: An exact alternative perspective}, P.-A.~No\"el, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.85.031118}{Phys. Rev. E 85, 031118 (2012)}%{\ [23]}
+  \item \textit{Propagation on networks: An exact alternative perspective}, P.-A.~No\"el, \textbf{A.~Allard}, L.~H\'ebert-Dufresne, V.~Marceau, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.85.031118}{Phys. Rev. E 85, 031118 (2012)}
 %
   % HebertDufresne12_PhysRevE - SPA II
-  \item \textit{Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, V.~Marceau, P.-A.~No\"el, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.85.026108}{Phys. Rev. E 85, 026108 (2012)}%{\ [20]}
+  \item \textit{Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, V.~Marceau, P.-A.~No\"el, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.85.026108}{Phys. Rev. E 85, 026108 (2012)}
 %
   % HebertDufresne11_PhysRevLett - SPA
-  \item \textit{Structural preferential attachment: Network organization beyond the link}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, V.~Marceau, P.-A.~No\"el, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevLett.107.158702}{Phys. Rev. Lett. 107, 158702 (2011)}%{\ [42]}
+  \item \textit{Structural preferential attachment: Network organization beyond the link}, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, V.~Marceau, P.-A.~No\"el, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevLett.107.158702}{Phys. Rev. Lett. 107, 158702 (2011)}
 %
   % Marceau11_PhysRevE
-  \item \textit{Modeling the dynamical interaction between epidemics on overlay networks}, V.~Marceau, P.-A.~No\"el, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.84.026105}{Phys. Rev. E 84, 026105 (2011)}%{\ [148]}
+  \item \textit{Modeling the dynamical interaction between epidemics on overlay networks}, V.~Marceau, P.-A.~No\"el, L.~H\'ebert-Dufresne, \textbf{A.~Allard}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.84.026105}{Phys. Rev. E 84, 026105 (2011)}
 %
   % HebertDufresne10_PhysRevE
-  \item \textit{Propagation dynamics on networks featuring complex topologies}, L.~H\'ebert-Dufresne, P.-A.~No\"el, V.~Marceau, \textbf{A.~Allard}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.82.036115}{Phys. Rev. E 82, 036115 (2010)}%{\ [58]}%\\
-  % {\footnotesize $\star$ Also in the \textit{Virtual Journal of Biological Physics Research}, issue 7, vol. 20 (2010).}
+  \item \textit{Propagation dynamics on networks featuring complex topologies}, L.~H\'ebert-Dufresne, P.-A.~No\"el, V.~Marceau, \textbf{A.~Allard}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.82.036115}{Phys. Rev. E 82, 036115 (2010)}
 %
   % Marceau10_PhysRevE
-  \item \textit{Adaptive networks: Coevolution of disease and topology}, V.~Marceau, P.-A.~No\"el, L.~H\'ebert-Dufresne, \mbox{\textbf{A.~Allard}}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.82.036116}{Phys. Rev. E 82, 036116 (2010)}%{\ [221]}%\\
-  % {\footnotesize $\star$ Also in the \textit{Virtual Journal of Biological Physics Research}, issue 7, vol. 20 (2010).}
+  \item \textit{Adaptive networks: Coevolution of disease and topology}, V.~Marceau, P.-A.~No\"el, L.~H\'ebert-Dufresne, \mbox{\textbf{A.~Allard}}, and L.~J.~Dub\'e, \href{http://dx.doi.org/10.1103/PhysRevE.82.036116}{Phys. Rev. E 82, 036116 (2010)}
 %
   % Allard09_PhysRevE - article maitrîse
-  \item \textit{Heterogeneous bond percolation on multitype networks with an application to epidemic dynamics}, \mbox{\textbf{A.~Allard}}, P.-A.~No\"el, L.~J.~Dub\'e, and B.~Pourbohloul, \href{http://dx.doi.org/10.1103/PhysRevE.79.036113}{Phys. Rev. E 79, 036113 (2009)}%{\ [119]}%\\
-  % {\footnotesize $\star$ Also in the \textit{Virtual Journal of Biological Physics Research}, issue 7, vol. 17 (2009).}
+  \item \textit{Heterogeneous bond percolation on multitype networks with an application to epidemic dynamics}, \mbox{\textbf{A.~Allard}}, P.-A.~No\"el, L.~J.~Dub\'e, and B.~Pourbohloul, \href{http://dx.doi.org/10.1103/PhysRevE.79.036113}{Phys. Rev. E 79, 036113 (2009)}
 %
 \end{itemize}
 %
 %
 %
-% \ \vspace{1.5\baselineskip} \\
-% \pagebreak
-\SousTitreB{Book chapters}{}
+\textbf{Book chapters}
 %
-\begin{itemize}
+\begin{itemize}[itemsep=0.5em]
 %
   % World Atlas
   \item \textit{A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013}, G.~Garc\'ia-P\'erez, M.~Bogu\~n\'a, \textbf{A.~Allard}, and M.~\'A.~Serrano, in \href{https://vernonpress.com/book/96}{\textit{Networks of International Trade and Investment: Understanding globalization through the lens of network analysis}}, S.~Gorgoni, A.~Amighini, and M.~Smith (Eds.), Vernon Press, pp.~71--112 (2018) ISBN:978-1-62273-065-0
@@ -876,10 +609,9 @@ Consulting committee member\hfill 2020\vspace{0.75\baselineskip}\\
 %
 %
 %
-% \pagebreak
-\SousTitreB{Perspectives, opinions and outreach publications}{}
+\textbf{Perspectives, opinions and outreach publications}
 %
-\begin{itemize}
+\begin{itemize}[itemsep=0.5em]
 %
 % ACFAS
 \item \textit{La modélisation mathématique pour cartographier le complexe et l’inconnu}\footnotemark, \textbf{A.~Allard}, L.~J.~Dub\'e and L.~H\'ebert-Dufresne, \href{https://www.acfas.ca/publications/magazine/2019/09/modelisation-mathematique-cartographier-complexe-inconnu}{ACFAS Magazine (September 2020)}
@@ -898,11 +630,11 @@ Consulting committee member\hfill 2020\vspace{0.75\baselineskip}\\
 %
 %
 %
-\SousTitreB{Selected presentations\footnotemark}{}
+\textbf{Selected presentations\footnotemark}
 %
 \footnotetext{Invited presentations are denoted with a filled circle.}
 %
-\begin{itemize}
+\begin{itemize}[itemsep=0.5em]
 %
   % Netsci 2021
   \item \textit{Realistic clustering patterns in directed geometric networks} (oral), Networks 2021: A Joint Sunbelt and NetSci Conference, Washington DC, USA, 2021
@@ -976,28 +708,12 @@ Consulting committee member\hfill 2020\vspace{0.75\baselineskip}\\
   % NetSci2012 - Influential Spreaders
   \item \textit{Using network organization to hinder propagation in structured populations} (poster), International School and Conference on Network Science (NetSci 2012), Evanston, Illinois, 2012
 %
-%$\circ$ \parbox[t]{\LargText+\parindent}{\textit{Exact solution of bond percolation on small arbitrary graphs} (oral), \uline{\textbf{A. Allard}}, L. H\'ebert-Dufresne, P.-A. No\"el, V. Marceau, and L. J. Dub\'e, Canadian Association of Physicists Congress, Calgary, 2012} \\ \espaceInterLigneC
-%
   % NetSci 2010 - AA
   \item \textit{Multitype modular networks as a model of clustered social networks} (poster), International School and Conference on Network Science (NetSci 2010), Boston \& Cambridge, Massachusetts, 2010
-%
-%$\circ$ \parbox[t]{\LargText+\parindent}{\textit{Exact(?) SIR dynamics on networks of finite size}, Pierre-Andr\'e No\"el, \textbf{Antoine Allard}, and Louis J. Dub\'e, International School and Conference on Network Science, Boston \& Cambridge, Massachusetts, 2010} \\ \espaceInterLigneC
-%
-%$\circ$ \parbox[t]{\LargText+\parindent}{\textit{Adaptive networks: Coevolution of disease and topology}, Vincent Marceau, Pierre-Andr\'e No\"el, Laurent H\'ebert-Dufresne, \textbf{Antoine Allard}, and Louis J. Dub\'e, International School and Conference on Network Science, Boston \& Cambridge, Massachusetts, 2010} \\ \espaceInterLigneC
-%
-%$\circ$ \parbox[t]{\LargText+\parindent}{\textit{Propagation dynamics on networks featuring complex topologies}, Laurent H\'ebert-Dufresne, Pierre-Andr\'e No\"el, Vincent Marceau, \textbf{Antoine Allard}, and Louis J. Dub\'e, International School and Conference on Network Science, Boston \& Cambridge, Massachusetts, 2010} \\ \espaceInterLigneC
-%
-  % % Poster PAN à SIAM 2009
-  % \item \textit{Time evolution of epidemics on complex networks} (poster), \uline{P.-A.~No\"el}, \textbf{A.~Allard}, and L.~J.~Dub\'e, SIAM Conference on Applications of Dynamical Systems, Snowbird, Utah, 2009
 %
   % CAP congres 2008 - AA
   \item \textit{Heterogeneous Bond Percolation on Complex Networks: Application to Epidemiology} (poster), Canadian Association of Physicists Congress, Qu\'ebec City, 2008\\
   {\small $\star$ Third place at the student competition.}\\
-%
-%   % Été Hôtel-Dieu 2005
-%   \item \textit{Mod\'elisation d'un implant radioactif \`a haut d\'ebit utilis\'e en curieth\'erapie \`a l'aide de GEANT4}\footnotemark\ (poster), \uline{\textbf{A. Allard}}, J.-F. Carrier, and L. Beaulieu, Centre de Recherche de l'H\^otel-Dieu de Qu\'ebec's Scientific Day, Qu\'ebec City, 2005
-% %
-%   \footnotetext{High-dose rate brachytherapy implant modelling using GEANT4.}
 %
 \end{itemize}
 %
