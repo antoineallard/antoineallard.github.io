@@ -12,8 +12,6 @@
 \usepackage{ulem}
   \renewcommand{\ULdepth}{1.8pt}
 
-\usepackage{fontawesome5}
-
 \usepackage{lmodern}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[T1]{fontenc}
@@ -242,51 +240,61 @@ Teacher
 %
 % \pagebreak
 % =================================================================================================
-\TitreSection{Mentoring\footnotemark}
+\TitreSection{Mentoring%
+% \footnotetext{Acting/acted as co-advisor denoted by $\ddagger$.}%
+% \textsuperscript{,}%
+% \footnotetext{Student's thesis added to the Board of Honour, the highest distinction at Université Laval, denoted by $\dagger$.}%
+}%
 % =================================================================================================
 %
-\footnotetext{Acting/acted as co-advisor denoted by $\ddagger$.}
-%
-\textbf{Postdoctoral researchers}
+\textbf{Postdoctoral researchers}%
+\footnote{\label{foot:codirecteur}Acting/acted as co-advisor denoted by $\ddagger$.}
 %
 \begin{itemize}
   \item Azénor Bideault\textsuperscript{$\ddagger$}, \textit{Universit\'e Laval}, 2022--present
-  \item Ilhem Bouderbala, \textit{Universit\'e Laval}, 2020--2022
+  \item Ilhem Bouderbala, \textit{Universit\'e Laval}, 2020--2022  {\small(continued as postdoc at University of Alberta)}
   \item Chantal Hutchison, \textit{Université Laval}, 2020
-  \item Marina Vegué Llorente, \textit{Université Laval}, 2020--2022
+  \item Marina Vegué Llorente, \textit{Université Laval}, 2020--2022 {\small(continued as postdoc at Universitat Politècnica de Catalunya)}
 \end{itemize}
 %
 %
 %
-\textbf{Ph.D. students}
+\textbf{Ph.D. students}%
+\textsuperscript{\ref{foot:codirecteur}}%
+\textsuperscript{,}%
+\footnote{\label{foot:tableau}Thesis added to the Board of Honour, the highest distinction at Université Laval, denoted by $\ast$.}
 %
 \begin{itemize}
+  \item Gabriel Bergeron\textsuperscript{$\ddagger$}, \textit{Universit\'e Laval}, 2022--present
   \item Simon Lizotte, \textit{Universit\'e Laval}, 2022--present
   \item Charles Murphy, \textit{Universit\'e Laval}, 2018--present
-  \item Zahra Yazdani Najafabadi\textsuperscript{$\ddagger$}, \textit{Université Laval}, 2022--present
+  \item Zahra Yazdani Najafabadi\textsuperscript{$\ddagger$} \textit{Université Laval}, 2022--present
   \item Fran\c{c}ois Thibault, \textit{Universit\'e Laval}, 2022--present
   \item Vincent Thibeault, \textit{Université Laval}, 2020--present
-  \item Guillaume St-Onge, \textit{Université Laval}, 2020--2022 \href{http://antoineallard.github.io/files/theses/StOnge.2022.PhD.pdf}{\faIcon[solid]{book}}
+  \item Guillaume St-Onge\textsuperscript{$\ast$}, \textit{Université Laval}, 2020--2022 {\small(\href{http://antoineallard.github.io/files/theses/StOnge.2022.PhD.pdf}{link to thesis}; continued as postdoc at Northeastern University)}
 \end{itemize}
 %
 %
 %
-\textbf{M.Sc. students}
+\textbf{M.Sc. students}%
+\textsuperscript{\ref{foot:codirecteur}}%
+\textsuperscript{,}%
+\textsuperscript{\ref{foot:tableau}}%
 %
 \begin{itemize}
-  \item Heikel Jarras\textsuperscript{$\ddagger$}, \textit{Universit\'e Laval}, 2021--present
+  \item Heikel Jarras\textsuperscript{$\ddagger$} \textit{Universit\'e Laval}, 2021--present
   \item Jérémi Lesage, \textit{Universit\'e Laval}, 2022--present
-  \item Simon Lizotte, \textit{Universit\'e Laval}, 2020--2022 \href{http://antoineallard.github.io/files/theses/Lizotte.2022.MSc.pdf}{\faIcon[solid]{book}}
+  \item Simon Lizotte\textsuperscript{$\ast$}, \textit{Universit\'e Laval}, 2020--2022 {\small(\href{http://antoineallard.github.io/files/theses/Lizotte.2022.MSc.pdf}{link to thesis}; continued to PhD at Université Laval))}
   \item Olivier Ribordy, \textit{Universit\'e Laval}, 2020--2022
-  \item Fran\c{c}ois Thibault, \textit{Universit\'e Laval}, 2020--2022 \href{http://antoineallard.github.io/files/theses/Thibault.2022.MSc.pdf}{\faIcon[solid]{book}}
-  \item B\'eatrice D\'esy, \textit{Universit\'e Laval}, 2019--2022 \href{http://antoineallard.github.io/files/theses/Desy.2022.MSc.pdf}{\faIcon[solid]{book}}
-  \item Francis Normand\textsuperscript{$\ddagger$}, \textit{Universit\'e Laval}, 2019--2022 \href{http://hdl.handle.net/20.500.11794/73573}{\faIcon[solid]{book}}
-  \item Charles Murphy\textsuperscript{$\ddagger$}, \textit{Universit\'e Laval}, 2016--2017 \href{http://hdl.handle.net/20.500.11794/30382}{\faIcon[solid]{book}}
+  \item Fran\c{c}ois Thibault, \textit{Universit\'e Laval}, 2020--2022 {\small(\href{http://antoineallard.github.io/files/theses/Thibault.2022.MSc.pdf}{link to thesis}; continued to PhD at Université Laval)}
+  \item B\'eatrice D\'esy\textsuperscript{$\ast$}, \textit{Universit\'e Laval}, 2019--2022 {\small(\href{http://antoineallard.github.io/files/theses/Desy.2022.MSc.pdf}{link to thesis}; continued to PhD at Victoria University of Wellington)}
+  \item Francis Normand\textsuperscript{$\ddagger$} \textit{Universit\'e Laval}, 2019--2022 {\small(\href{http://hdl.handle.net/20.500.11794/73573}{link to thesis}; continued to PhD at Monash University)}
+  \item Charles Murphy\textsuperscript{$\ddagger$} \textit{Universit\'e Laval}, 2016--2017 {\small(\href{http://hdl.handle.net/20.500.11794/30382}{link to thesis}; continued to PhD at Université Laval)}
 \end{itemize}
 %
 %
 %
-\textbf{B.Sc. interns}
+\textbf{B.Sc. interns}\textsuperscript{\ref{foot:codirecteur}}
 %
 \begin{itemize}
   \item Olivier Lapointe-Gagn\'e, \textit{Universit\'e Laval}, Summer 2021
@@ -300,7 +308,7 @@ Teacher
 %
 %
 \newpage\noindent%
-\textbf{Bachelor's thesis}
+\textbf{Bachelor's thesis}\textsuperscript{\ref{foot:codirecteur}}
 %
 \begin{itemize}
   \item Émile Baril, \textit{Universit\'e Laval}, 2022--present
@@ -374,7 +382,7 @@ Co-organizer\hfill June 2017
 %
 \begin{itemize}\small
   \item OPUS Grants, \textit{National Science Center, Poland}, 2020
-  \item Discovery Grants, \textit{Natural Sciences and Engineering Research Council of Canada}, 2020
+  \item Discovery Grants, \textit{Natural Sciences and Engineering Research Council of Canada}, 2020, 2023
 \end{itemize}
 %
 %
