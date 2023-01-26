@@ -16,6 +16,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[T1]{fontenc}
 
+\PassOptionsToPackage{hyphens}{url}
 \usepackage[
             allcolors=blue,
             colorlinks=true,
@@ -31,13 +32,42 @@
   \definecolor{font}{RGB}{24,  24,  24}
 
 \usepackage{enumitem}
-  \setitemize[0]{
-                  after=\vspace{0.75\baselineskip},
-                  label=$\circ$,
-                  leftmargin=*,
-                  noitemsep,
-                  topsep=0.15\baselineskip
-                }
+  \setlist[itemize, 1]{
+                        after=\vspace{0.75\baselineskip},
+                        label=$\circ$,
+                        leftmargin=*,
+                        noitemsep,
+                        topsep=0.15\baselineskip
+                      }
+  \setlist[itemize, 2]{
+                        label=$-$,
+                        noitemsep
+                      }
+  \setlist[enumerate, 1]{
+                          after=\vspace{0.75\baselineskip},
+                          leftmargin=30pt,
+                          noitemsep,
+                          topsep=0.15\baselineskip
+                        }
+
+% https://tex.stackexchange.com/questions/627593/change-labels-in-etaremune
+\makeatletter
+\AddEnumerateCounter*{\reversearabic}{\@reversearabic}{2}
+\newcommand{\reversearabic}[1]{\expandafter\@reversearabic\csname c@#1\endcsname}
+\newcommand{\@reversearabic}[1]{%
+  \number\numexpr\getrefnumber{this@etaremune@\romannumeral\c@etaremune}-#1+1\relax
+}
+\newcounter{etaremune}
+\newenvironment{etaremune}[1][]{%
+  \stepcounter{etaremune}%
+  \begin{enumerate}[label=\reversearabic*.,#1]%
+}{%
+  \edef\@currentlabel{\the\csname c@\@enumctr\endcsname}%
+  \label{this@etaremune@\romannumeral\c@etaremune}%
+  \end{enumerate}%
+}
+\makeatother
+
 
 \usepackage{fancyhdr}
   \fancyhf{}
@@ -73,7 +103,7 @@ Assistant Professor\\
 D\'epartement de physique, de g\'enie physique et d'optique\\
 1045 avenue de la M\'edecine\\
 Universit\'e Laval\\
-Qu\'ebec (Qu\'ebec) G1V 0A6, Canada
+Qu\'ebec (Qu\'ebec)\\G1V 0A6, Canada
 \end{tabular}
 %
 \hfill
@@ -82,7 +112,8 @@ Qu\'ebec (Qu\'ebec) G1V 0A6, Canada
 Office  & VCH-3215\\
 Email   & \href{mailto:antoine.allard@phy.ulaval.ca}{antoine.allard@phy.ulaval.ca}\\
 W3      & \href{http://antoineallard.info}{antoineallard.info} \\
-Twitter & \href{http://www.twitter.com/all\textunderscore are}{@all\textunderscore are}
+Twitter & \href{http://www.twitter.com/all\textunderscore are}{@all\textunderscore{}are}\\
+ORCID   & \href{https://orcid.org/0000-0002-8208-9920}{0000-0002-8208-9920}
 \end{tabular} \vspace{0.75\baselineskip} \\
 %
 %
@@ -110,7 +141,12 @@ Assistant Professor\hfill 2018--present
 \end{itemize}
 %
 \textbf{University of Vermont}\hfill Burlington, USA\\
-External faculty at the \href{https://vermontcomplexsystems.org}{Vermont Complex Systems Center}\hfill 2021--present\vspace{0.75\baselineskip}\\
+External faculty at the \href{https://vermontcomplexsystems.org}{Vermont Complex Systems Center}\hfill 2021--present
+\vspace{0.25\baselineskip}\\\hspace*{1.5em}%
+\begin{minipage}{0.75\textwidth}
+  \small\textit{``Created with the intention of honoring scholars in our external network who make complex systems a welcoming intellectual community and keep meaningful collaborations with the Center.''}
+\end{minipage}
+\vspace{0.75\baselineskip}\\
 %
 \textbf{Universitat de Barcelona}\hfill Barcelona, Spain\\
 Postdoctoral Fellow\hfill 2018
@@ -140,8 +176,8 @@ Ph.D. in Physics\hfill 2009--2014
 \begin{itemize}[leftmargin=1.5em]\small
   \item Thesis Title: \href{http://hdl.handle.net/20.500.11794/25058}{\textit{Percolation sur graphes al\'eatoires: Mod\'elisation et description analytique}}\footnotemark
   \item[$\star$] Awarded the CIHR Frederick Banting and Charles Best Canada Graduate Scholarship
-  \item[$\star$] Thesis added to the Board of Honour for receiving the highest overall mark
-  \footnotetext{Percolation on random graphs: Modelling and analytical description}
+  \item[$\star$] Thesis added to the Board of Honor for receiving the highest overall mark
+  \footnotetext{Percolation on random graphs: Modeling and analytical description}
 \end{itemize}
 %
 \textbf{Santa Fe Institute}\hfill Santa Fe, NM, USA\\
@@ -153,8 +189,8 @@ Complex Systems Summer School\hfill 2011\\
 M.Sc. in Physics\hfill 2006--2008
 \begin{itemize}[leftmargin=1.5em]\small
   \item Thesis Title: \href{http://hdl.handle.net/20.500.11794/20317}{\textit{Mod\'elisation Math\'ematique en Epid\'emiologie par R\'eseaux de Contacts: Introduction\\de l'H\'et\'erog\'en\'eit\'e dans la Transmissibilit\'e}}\footnotemark
-  \item[$\star$] Thesis added to the Board of Honour for receiving the highest overall mark
-  \footnotetext{Mathematical modelling in contact networks for epidemiology: Introduction of heterogenity in transmissibility.}
+  \item[$\star$] Thesis added to the Board of Honor for receiving the highest overall mark
+  \footnotetext{Mathematical modeling in contact networks for epidemiology: Introduction of heterogeneity in transmissibility.}
 \end{itemize}
 %
 \textbf{Universit\'e Laval}\hfill Qu\'ebec, Canada\\
@@ -172,21 +208,47 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
 \TitreSection{Funding and Awards}
 % =================================================================================================
 %
-\textbf{Funding}
+\textbf{Team funding}
 %
 \begin{itemize}
-  \item Fonds d'accélération des collaborations en santé (co-I), \textit{Consortium québécois sur la découverte du médicament}, 2021--2024 (15.32M\$)
-  \item Alliance Grant (co-I), \textit{Natural Sciences and Engineering Research Council of Canada}, 2021--2026 (481k\$)
-  \item Sentinel North Research Project (co-I), \textit{Canada First Research Excellence Fund}, 2020--2023 (750k\$)
-  \item Discovery Grant (PI), \textit{Natural Sciences and Engineering Research Council of Canada}, 2019--2024 (157k\$)
-  \item Sentinelle Nord Research Chair (PI), \textit{Canada First Research Excellence Fund}, 2018--2023 (500k\$)
-  \item Juan de la Cierva -- Incorporaci\'on (postdoctoral fellowship), \textit{Ministerio de Econom\'ia, Industria y Competitividad de Espa\~{n}a}, 2017--2019
-  \item Postdoctoral Fellowship, \textit{Fonds de recherche du Qu\'ebec -- Nature et Technologies}, 2014--2016
-  \item Frederick Banting and Charles Best Canada Graduate Scholarships - Doctoral Awards, \textit{Canadian Institutes of Health Research}, 2009--2012
-  \item Doctoral Research Scholarship, \textit{Fonds de recherche du Qu\'ebec -- Nature et Technologies}, 2008 (declined)
-  \item Doctoral Research Scholarship, \textit{Fondation de l'Universit\'e Laval}, 2008 (declined)
-  \item Undergraduate Student Research Award, \textit{Natural Sciences and Engineering Research Council of Canada}, 2006
-  \item Undergraduate Student Research Award, \textit{Natural Sciences and Engineering Research Council of Canada}, 2005
+  \item Fonds d'accélération des collaborations en santé, \textit{Consortium québécois sur la découverte du médicament}, 2021--2024 (15.32M CAD)
+  \item Alliance Grant, \textit{Natural Sciences and Engineering Research Council of Canada}, 2021--2026 (481k CAD)
+  \item Sentinel North Research Project, \textit{Canada First Research Excellence Fund}, 2020--2023 (750k CAD)
+\end{itemize}
+%
+%
+%
+\textbf{Individual funding}
+%
+\begin{itemize}
+  \item Discovery Grant, \textit{Natural Sciences and Engineering Research Council of Canada}, 2019--2025 (157k CAD)
+  \item Sentinelle Nord Research Chair, \textit{Canada First Research Excellence Fund}, 2018--2024 (500k CAD)
+\end{itemize}
+%
+%
+%
+\textbf{Individual funding as postdoctoral fellow, graduate student or undergraduate student}
+%
+\begin{itemize}
+  \item Juan de la Cierva -- Incorporaci\'on (postdoctoral fellowship), \textit{Ministerio de Econom\'ia, Industria y Competitividad de Espa\~{n}a}, 2017--2019 (50k EUR)
+  \item Postdoctoral Fellowship, \textit{Fonds de recherche du Qu\'ebec -- Nature et Technologies}, 2014--2016 (65k CAD)
+  \item Frederick Banting and Charles Best Canada Graduate Scholarships - Doctoral Awards, \textit{Canadian Institutes of Health Research}, 2009--2012 (105k CAD)
+  \item Doctoral Research Scholarship, \textit{Fonds de recherche du Qu\'ebec -- Nature et Technologies}, 2008 (63k CAD; declined)
+  \item Doctoral Research Scholarship, \textit{Fondation de l'Universit\'e Laval}, 2008 (36k CAD; declined)
+  \item Undergraduate Student Research Award, \textit{Natural Sciences and Engineering Research Council of Canada}, 2006 (4.5k CAD)
+  \item Undergraduate Student Research Award, \textit{Natural Sciences and Engineering Research Council of Canada}, 2005 (4.5k CAD)
+\end{itemize}
+%
+%
+%
+\textbf{Funding through scholarships awarded to mentees}
+%
+\begin{itemize}
+  \item \textit{Natural Sciences and Engineering Research Council of Canada}, Charles Murphy (42k CAD), Guillaume St-Onge (35k CAD), Olivier Ribordy (22k CAD), Béatrice Désy (17.5k CAD), Jérémi Lesage (17.5k CAD)
+%
+  \item \textit{Fonds de recherche du Qu\'ebec -- Nature et Technologies}, Vincent Thibeault (84k CAD), Olivier Ribordy (19.5k CAD), Béatrice Désy (24k CAD), Jérémi Lesage (17.5k CAD)
+%
+  \item \textit{Sentinelle Nord (Canada First Research Excellence Fund)}, Simon Lizotte (63k CAD), Charles Murphy (54k CAD), Béatrice Désy (32.5k CAD)
 \end{itemize}
 %
 %
@@ -202,9 +264,9 @@ B.Sc. in Physics (Theoretical Physics option)\hfill 2003--2006
   \item 2019 Star Teacher Prize (based on students evaluation)
   \item 2019 ADEPUL Prize for ``Teacher of the year'' (elected by the undergraduate students)
   \item 2019 AESGUL Prize for ``Teacher of the year'' (elected by the undergraduate students)
-  \item Board of Honour for a Ph.D.'s Thesis (highest distinction), Faculty of Graduate Studies, Universit\'e Laval, 2014
+  \item Board of Honor for a Ph.D.'s Thesis (highest distinction), Faculty of Graduate Studies, Universit\'e Laval, 2014
   \item Nominated 2013 AESGUL Prize for ``Staff member of the year'' as the Teaching Assistant of PHY-3000 Statistical Physics (elected by the undergraduate students), 2014
-  \item Board of Honour for a Master's Thesis (highest distinction), Faculty of Graduate Studies, Universit\'e Laval, 2009
+  \item Board of Honor for a Master's Thesis (highest distinction), Faculty of Graduate Studies, Universit\'e Laval, 2009
   \item Third Place at the Student Competition (Poster Presentation), Congress of the Canadian Association of Physicists, Quebec City, 2008
   \item 2006 AESGUL Prize for ``Staff member of the year'' as the Teaching Assistant of PHY-1002 Mathematical Physics II (elected by the undergraduate students), 2007
   \item Rouge et Or Distinction for excellence in academic undergraduate results, 2006
@@ -243,11 +305,12 @@ Teacher
 \TitreSection{Mentoring%
 % \footnotetext{Acting/acted as co-advisor denoted by $\ddagger$.}%
 % \textsuperscript{,}%
-% \footnotetext{Student's thesis added to the Board of Honour, the highest distinction at Université Laval, denoted by $\dagger$.}%
+% \footnotetext{Student's thesis added to the Board of Honor, the highest distinction at Université Laval, denoted by $\dagger$.}%
 }%
 % =================================================================================================
 %
 \textbf{Postdoctoral researchers}%
+%
 \footnote{\label{foot:codirecteur}Acting/acted as co-advisor denoted by $\ddagger$.}
 %
 \begin{itemize}
@@ -262,13 +325,14 @@ Teacher
 \textbf{Ph.D. students}%
 \textsuperscript{\ref{foot:codirecteur}}%
 \textsuperscript{,}%
-\footnote{\label{foot:tableau}Thesis added to the Board of Honour, the highest distinction at Université Laval, denoted by $\ast$.}
+\footnote{\label{foot:tableau}Thesis added to the Board of Honor, the highest distinction at Université Laval, denoted by $\ast$.}
 %
 \begin{itemize}
   \item Gabriel Bergeron\textsuperscript{$\ddagger$}, \textit{Universit\'e Laval}, 2022--present
   \item Simon Lizotte, \textit{Universit\'e Laval}, 2022--present
   \item Charles Murphy, \textit{Universit\'e Laval}, 2018--present
   \item Zahra Yazdani Najafabadi\textsuperscript{$\ddagger$} \textit{Université Laval}, 2022--present
+  \item Olivier Ribordy, \textit{Universit\'e Laval}, Fall 2023
   \item Fran\c{c}ois Thibault, \textit{Universit\'e Laval}, 2022--present
   \item Vincent Thibeault, \textit{Université Laval}, 2020--present
   \item Guillaume St-Onge\textsuperscript{$\ast$}, \textit{Université Laval}, 2020--2022 {\small(\href{http://antoineallard.github.io/files/theses/StOnge.2022.PhD.pdf}{link to thesis}; continued as postdoc at Northeastern University)}
@@ -276,7 +340,9 @@ Teacher
 %
 %
 %
+\pagebreak
 \textbf{M.Sc. students}%
+%
 \textsuperscript{\ref{foot:codirecteur}}%
 \textsuperscript{,}%
 \textsuperscript{\ref{foot:tableau}}%
@@ -307,11 +373,11 @@ Teacher
 %
 %
 %
-\newpage\noindent%
+% \newpage\noindent%
 \textbf{Bachelor's thesis}\textsuperscript{\ref{foot:codirecteur}}
 %
 \begin{itemize}
-  \item Émile Baril, \textit{Universit\'e Laval}, 2022--present
+  \item Émile Baril, \textit{Universit\'e Laval}, 2022
   \item Simon Lizotte, \textit{Universit\'e Laval}, 2020
   \item Fran\c{c}ois Thibault, \textit{Universit\'e Laval}, 2020
   \item Marta Cavero L\'azaro\textsuperscript{$\ddagger$}, \textit{Universitat Aut\`onoma de Barcelona}, 2018
@@ -326,44 +392,52 @@ Teacher
 \TitreSection{Organizing Activities}
 % =================================================================================================
 %
-% \parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/fr/reseauxcomplexes2020}{CNWW})\hfill Qu\'ebec, Canada\\
-% Chair\hfill June 2024
-% \begin{itemize}[leftmargin=1.5em]\small
-%   \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord} and the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center}
-% \end{itemize}}
-%
-\parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/fr/reseauxcomplexes2020}{CNWW})\hfill Qu\'ebec, Canada\\
-Codirector\hfill January 2021
+\parbox{\textwidth}{\textbf{International School and Conference on Network Science} (\href{https://netscisociety.net/events/netsci}{NetSci 2024})\hfill Qu\'ebec, Canada\\
+% Conference chair\hfill June 2024
+Conference co-chair\hfill June 2024
 \begin{itemize}[leftmargin=1.5em]\small
-  \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord} and the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center}
+  \item In collaboration with the \href{https://vermontcomplexsystems.org/}{Vermont Complex Systems Center}
+  \item Flagship conference of the Network Science Society; approx.~800 participants
 \end{itemize}}
 %
-\parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/fr/reseauxcomplexes2019}{CNWW})\hfill Qu\'ebec, Canada\\
+\parbox{\textwidth}{\textbf{Advanced Field School in Computational Ecology} (\href{https://sentinellenord.ulaval.ca/en/ecology2023}{Ecology2023})\hfill Qu\'ebec, Canada\\
+Co-organizer\hfill May 2023
+\begin{itemize}[leftmargin=1.5em]\small
+  \item[$\circ$] Organized by \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord}
+\end{itemize}}
+%
+\parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/en/formation/ecoles-doctorales-internationales/ecole-internationale-sur-les-reseaux-complexes}{CNWW 2020})\hfill Qu\'ebec, Canada\\
+Codirector\hfill January 2021
+\begin{itemize}[leftmargin=1.5em]\small
+  \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord} and the \href{https://vermontcomplexsystems.org/}{Vermont Complex Systems Center}
+\end{itemize}}
+%
+\parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/en/cnww-2019}{CNWW 2019})\hfill Qu\'ebec, Canada\\
 Codirector\hfill December 2019
 \begin{itemize}[leftmargin=1.5em]\small
-  \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord} and the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center}
+  \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord} and the \href{https://vermontcomplexsystems.org/}{Vermont Complex Systems Center}
 \end{itemize}}
 %
 \parbox{\textwidth}{\textbf{International School and Conference on Network Science} (\href{http://vermontcomplexsystems.org/events/netsci/}{NetSci 2019})\hfill Burlington VT, USA\\
 School, Poster Session, and Satellite Co-chair\hfill May 2019
 \begin{itemize}[leftmargin=1.5em]\small
-  \item[$\circ$] Organized by the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center}
+  \item[$\circ$] Organized by the \href{https://vermontcomplexsystems.org/}{Vermont Complex Systems Center}
 \end{itemize}}
 %
-\parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/fr/reseauxcomplexes2018}{CNWW})\hfill Qu\'ebec, Canada\\
+\parbox{\textwidth}{\textbf{Complex Networks Winter Workshop} (\href{https://sentinellenord.ulaval.ca/en/complex-networks-workshop-2018}{CNWW 2018})\hfill Qu\'ebec, Canada\\
 Codirector\hfill December 2018
 \begin{itemize}[leftmargin=1.5em]\small
-  \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord}, the \href{http://www.vermontcomplexsystems.org/}{Vermont Complex Systems Center} and the \href{https://www.networkscienceinstitute.org/}{Network Science Institute}
+  \item[$\circ$] In collaboration with \href{http://sentinellenord.ulaval.ca/}{Sentinelle Nord}, the \href{https://vermontcomplexsystems.org/}{Vermont Complex Systems Center} and the \href{https://www.networkscienceinstitute.org/}{Network Science Institute}
 \end{itemize}}
 %
-\parbox{\textwidth}{\textbf{Contagion \& Networks} (\href{http://networkscontagion.github.io/}{ContNet2018})\hfill Paris, France\\
+\parbox{\textwidth}{\textbf{Contagion \& Networks} (\href{http://networkscontagion.github.io/}{ContNet 2018})\hfill Paris, France\\
 Co-organizer\hfill June 2018
 \begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] Satellite symposium of the International School and Conference on Network Science (NetSci 2018)
   \item[$\circ$] In collaboration with B.~M.~Althouse, L.~H\'ebert-Dufresne and S.~V.~Scarpino
 \end{itemize}}
 %
-\parbox{\textwidth}{\textbf{Contagion \& Networks} (\href{http://networkscontagion.github.io/contnet2017/}{ContNet2017})\hfill Indianapolis IN, USA\\
+\parbox{\textwidth}{\textbf{Contagion \& Networks} (\href{http://networkscontagion.github.io/contnet2017/}{ContNet 2017})\hfill Indianapolis IN, USA\\
 Co-organizer\hfill June 2017
 \begin{itemize}[leftmargin=1.5em]\small
   \item[$\circ$] Satellite symposium of the International School and Conference on Network Science (NetSci 2017)
@@ -378,11 +452,19 @@ Co-organizer\hfill June 2017
 \TitreSection{Reviewing Activities}
 % =================================================================================================
 %
+\textbf{Editorial board}
+%
+\begin{itemize}\small
+  \item Associate editor, \href{https://www.nature.com/npjcomplex}{npj Complexity} (first issue scheduled for Jan.~2024), 2023--present
+\end{itemize}
+%
+%
+%
 \textbf{Grant review}
 %
 \begin{itemize}\small
-  \item OPUS Grants, \textit{National Science Center, Poland}, 2020
   \item Discovery Grants, \textit{Natural Sciences and Engineering Research Council of Canada}, 2020, 2023
+  \item OPUS Grants, \textit{National Science Center, Poland}, 2020
 \end{itemize}
 %
 %
@@ -390,13 +472,13 @@ Co-organizer\hfill June 2017
 \textbf{Program committee}
 %
 \begin{itemize}\small
+  \item International School and Conference on Network Science (NetSci) 2018--2020, 2022, 2023
   \item French Regional Conference on Complex Systems (FRCCS) 2021, 2023
   % \item Third Edition of the French Regional Conference on Complex Systems (FRCCS 2023)
-  \item Complex Data Blocks: Data Science and Complexity on the Blockchain (CDB 2022)
+  % \item Complex Data Blocks: Data Science and Complexity on the Blockchain (CDB 2022)
   \item International Conference on Complex Networks and their Applications (Complex Networks) 2016--2019, 2021, 2022
   % \item 11th International Conference on Complex Networks and their Applications (Complex Networks 2022)
-  \item Conference on Complex Systems (CCS 2022)
-  \item International School and Conference on Network Science (NetSci) 2018--2020, 2022
+  \item Conference on Complex Systems (CCS) 2022
   % \item International School and Conference on Network Science (NetSci 2022)
   % \item 12th International Conference on Complex Networks (CompleNet 2021)
   % \item 10th International Conference on Complex Networks and their Applications (Complex Networks 2021)
@@ -405,12 +487,12 @@ Co-organizer\hfill June 2017
   \item International Conference on Complex Networks (CompleNet) 2020, 2021
   % \item 11th International Conference on Complex Networks (CompleNet 2020)
   % \item 8th International Conference on Complex Networks and their Applications (Complex Networks 2019)
-  \item 10th Conference on Network Modeling and Analysis (MARAMI 2019)
+  \item 10th Conference on Network Modeling and Analysis (MARAMI) 2019
   % \item International School and Conference on Network Science (NetSci 2019)
   % \item 7th International Conference on Complex Networks and their Applications (Complex Networks 2018)
   % \item International School and Conference on Network Science (NetSci 2018)
   % \item 6th International Conference on Complex Networks and their Applications (Complex Networks 2017)
-  \item Mapping Complexity: Foundations and Applications of Network Geometry workshop (MACFANG-17)
+  \item Mapping Complexity: Foundations and Applications of Network Geometry workshop (MACFANG) 2017
   % \item 5th International Workshop on Complex Networks and their Applications (Complex Networks 2016)
 \end{itemize}
 %
@@ -437,6 +519,7 @@ Co-organizer\hfill June 2017
 \textbf{Scholarships}
 %
 \begin{itemize}\small
+  \item Marcel-Dessureault undergraduate scholarship, \textit{Université Laval}, 2022
   \item Byron-T. Darling graduate scholarship, \textit{Universit\'e Laval}, 2020
   \item Larkin Kerwin undergraduate scholarship, \textit{Universit\'e Laval}, 2019
 \end{itemize}
@@ -445,18 +528,50 @@ Co-organizer\hfill June 2017
 %
 \parbox{\textwidth}{\textbf{Scientific journals}\\\small
 %
-Applied Network Science, Bioinformatics, BMC Medicine, Communications Physics, Discrete Dynamics in Nature and Society, Europhysics Letters, IEEE's Transactions on Network Science and Engineering, Nature Communications, Network Neuroscience, Physica A, Physical Review E, Physical Review Letters, Physical Review Research, Physical Review X, PLOS Computational Biology, PLOS ONE, PNAS, Science Advances, Scientific Reports} \vspace{1.75\baselineskip} \\
+Applied Network Science, %
+Bioinformatics, %
+BMC Medicine, %
+Communications Physics, %
+Discrete Dynamics in Nature and Society, %
+Europhysics Letters, %
+IEEE's Transactions on Network Science and Engineering, %
+Nature Communications, %
+Network Neuroscience, %
+Physica A, %
+Physical Review E, %
+Physical Review Letters, %
+Physical Review Research, %
+Physical Review X, %
+PLOS Computational Biology, %
+PLOS ONE, %
+PNAS, %
+Science Advances, %
+Scientific Reports%
+} \vspace{1.75\baselineskip} \\
 %
 %
 %
 %
 %
+\newpage\noindent
 % =================================================================================================
 \TitreSection{Community Services and Administrative Activities}
 % =================================================================================================
 %
 Centre Interdisciplinaire en Modélisation Mathématique \href{http://cimmul.fsg.ulaval.ca}{(CIMMUL)}\hfill Universit\'e Laval\\
 Board member\hfill 2020--present\vspace{0.75\baselineskip}\\
+%
+New papers in Network Science\hfill Online\\%
+Sole webmaster, reviewer and administrator\hfill 2017--present%\vspace{0.75\baselineskip}
+\begin{itemize}\small
+  \item Systematic aggregator of new publications touching the field of network science
+  \item New publications are publicly available to the community via %
+        \href{https://twitter.com/networkspapers}{Twitter}, %
+        \href{https://social.skewed.de/@networkspapers}{Mastodon}, and %
+        \href{https://raw.githubusercontent.com/antoineallard/networkspapers/main/rss.xml}{RSS} %
+        feeds
+  \item More than 2.5k subscribers
+\end{itemize}
 %
 % Recruitment of a new professor at the Physics Department\hfill Universit\'e Laval\\
 % Selection committee member\hfill 2022 \vspace{0.75\baselineskip} \\
@@ -476,16 +591,22 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
 %
 \textbf{Submitted manuscripts and preprints}%
 %
-\footnote{Students or postdoctoral researchers who worked under my supervision are underlined.}%
+\footnote{\label{foot:mentee}Students or postdoctoral researchers who worked under my supervision are underlined.}%
 \textsuperscript{,}%
-\footnote{Equal contributions are denoted by \textsuperscript{*}.}
+\footnote{\label{foot:equal}Equal contributions are denoted by \textsuperscript{*}.}
 %
-\begin{itemize}[itemsep=0.5em]\small
+\begin{etaremune}[itemsep=0.5em, label={[P\reversearabic*]}]\small\vspace{0.5\baselineskip}
+% \begin{itemize}[itemsep=0.5em]\small
+%
+  % Papier JG et Alice
+  \item \textit{Exact and rapid linear clustering of networks with dynamic programming}\split
+  A.~Patania, \textbf{A.~Allard} and J.-G.~Young\split
+  \href{https://arxiv.org/abs/2301.10403}{arXiv:2301.10403}
 %
   % Béatrice Maîtrise
   \item \textit{Dimension matters when modeling network communities in hyperbolic spaces}\split
   \uline{B.~Désy}, P.~Desrosiers and \textbf{A.~Allard}\split
-  \href{https://arxiv.org/abs/2209.09201}{arXiv:2209. 09201}
+  \href{https://arxiv.org/abs/2209.09201}{arXiv:2209.09201}
 %
   % Francis maîtrise
   \item \textit{NBS-SNI, an extension of the Network-based statistic: Investigating differences in functional connections between important structural actors in case-control studies}\split
@@ -547,14 +668,20 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   \textbf{A.~Allard} and L.~H\'ebert-Dufresne\split
   \href{https://arxiv.org/abs/1906.10377}{arXiv:1906.10377}
 %
-\end{itemize}
+% \end{itemize}
+\end{etaremune}
 %
 %
 %
 % \pagebreak
-\textbf{Refereed research publications}
+\textbf{Refereed research publications}%
 %
-\begin{itemize}[itemsep=0.5em]\small
+\textsuperscript{\ref{foot:mentee}}%
+\textsuperscript{,}%
+\textsuperscript{\ref{foot:equal}}%
+%
+\begin{etaremune}[itemsep=0.5em, label={[A\reversearabic*]}]\small\vspace{0.5\baselineskip}
+% \begin{itemize}[itemsep=0.5em]\small
 %
   % Beyond R0 2
   \item \textit{The role of directionality, heterogeneity and correlations in epidemic risk and spread}\split
@@ -612,6 +739,11 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   M. Zheng, \textbf{A.~Allard}, P.~Hagmann, Y.~Alem\'an-G\'omez and M.~\'A.~Serrano\split
   \href{http://doi.org/10.1073/pnas.1922248117}{Proc. Natl. Acad. Sci. USA 117, 20244 (2020)}
 %
+  % Guillaume ALIFE
+  \item \textit{Localization, bistability and optimal seeding of contagions on higher-order networks}\split
+  \uline{G.~St-Onge}, \textbf{A.~Allard} and L.~H\'ebert-Dufresne\split
+  \href{https://doi.org/10.1162/isal_a_00327}{Artificial Life Conference Proceedings, 567--569 (2020)}
+%
   % Brain
   \item \textit{Navigable maps of structural brain networks across species}\split
   \textbf{A.~Allard} and M.~\'A.~Serrano\split
@@ -664,6 +796,7 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   {\footnotesize $\star$ Featured in \href{http://dx.doi.org/10.1038/nphys4046}{Nature Physics' Research highlights}.}\\
   {\footnotesize $\star$ Featured in \href{https://www.nature.com/collections/ycjylwzvmz/}{Nature Communications' Web collection on complex systems}.}
 %
+  \pagebreak
   % Teleportation
   \item \textit{The effect of a prudent adaptive behaviour on disease transmission}\split
   S.~V.~Scarpino, \textbf{A.~Allard} and L.~H\'ebert-Dufresne\split
@@ -777,14 +910,16 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   \textbf{A.~Allard}, P.-A.~No\"el, L.~J.~Dub\'e and B.~Pourbohloul\split
   \href{http://dx.doi.org/10.1103/PhysRevE.79.036113}{Phys. Rev. E 79, 036113 (2009)}
 %
-\end{itemize}
+% \end{itemize}
+\end{etaremune}
 %
 %
 %
-% \pagebreak
+\pagebreak
 \textbf{Book chapters}
 %
-\begin{itemize}[itemsep=0.5em]
+\begin{etaremune}[itemsep=0.5em, label={[B\reversearabic*]}]\small\vspace{0.5\baselineskip}
+% \begin{itemize}[itemsep=0.5em]\small
 %
   % World Atlas
   \item \textit{A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013}\split
@@ -793,18 +928,20 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   S.~Gorgoni, A.~Amighini and M.~Smith (Eds.), Vernon Press, pp.~71--112 (2018) ISBN:978-1-62273-065-0
 %
   % Social Zombie
-  \item \textit{The Social Zombie: Modelling undead outbreaks on social networks}\split
+  \item \textit{The Social Zombie: Modeling undead outbreaks on social networks}\split
   L.~H\'ebert-Dufresne, P.-A.~No\"el, V.~Marceau, \textbf{A.~Allard} and L.~J.~Dub\'e\split
-  in \href{http://www.press.uottawa.ca/mathematical-modelling-of-zombies}{\textit{Mathematical Modelling of Zombies}}\split
+  in \href{https://www.jstor.org/stable/j.ctt1287nxm}{\textit{Mathematical Modeling of Zombies}}\split
   R.~Smith$\!$? (Ed.), University of Ottawa Press, pp.~149--170 (2014) ISBN:978-0-77662-210-1
 %
-\end{itemize}
+% \end{etaremune}
+\end{etaremune}
 %
 %
 %
 \textbf{Perspectives, opinions and outreach publications}
 %
-\begin{itemize}[itemsep=0.5em]
+\begin{etaremune}[itemsep=0.5em, label={[O\reversearabic*]}]\small\vspace{0.5\baselineskip}
+% \begin{itemize}[itemsep=0.5em]\small
 %
   % ACFAS
   \item \textit{La modélisation mathématique pour cartographier le complexe et l’inconnu}\footnotemark\split
@@ -825,15 +962,19 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
 %
 \footnotetext{From Euler bridges to avian flu: From mathematical abstraction to the social reality of epidemics.}
 %
-\end{itemize}
+% \end{etaremune}
+\end{etaremune}
 %
 %
 %
-\textbf{Selected presentations\footnotemark}
+% \textbf{Selected presentations\footnotemark}
+% %
+% \footnotetext{Invited presentations are denoted with a filled circle.}
 %
-\footnotetext{Invited presentations are denoted with a filled circle.}
+\textbf{Invited seminars and presentations}
 %
-\begin{itemize}[itemsep=0.5em]
+\begin{etaremune}[itemsep=0.5em, label={[I\reversearabic*]}]\small\vspace{0.5\baselineskip}
+% \begin{itemize}[itemsep=0.5em]
 %
   % % Séminaire BIFI
   % \item[$\bullet$] \textit{Dynamics on networks through the lens of spectral and information theories}\split
@@ -841,69 +982,87 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   % Zaragoza, Spain, 2023
 %
   % Séminaire UBICS
-  \item[$\bullet$] \textit{Dynamics on networks through the lens of spectral and information theories}\split
+  \item \textit{Dynamics on networks through the lens of spectral and information theories}\split
   Universitat de Barcelona Institute of Complex Systems\split
   Barcelona, Spain, 2022
 %
   % Journée Poisson du 1er avril
-  \item[$\bullet$] \textit{Graphe poissonnien, un oxymore?}\split
+  \item \textit{Graphe poissonnien, un oxymore?}\split
   Centre Interdisciplinaire en Modélisation Mathématique de l'Université Laval (CIMMUL)\split
   Québec, Canada, 2022
 %
   % Séminaire McGill QLS
-  \item[$\bullet$] \textit{Contact Network Epidemiology: Heterogeneity and Stochasticity of Disease Spread}\split
+  \item \textit{Contact Network Epidemiology: Heterogeneity and Stochasticity of Disease Spread}\split
   Quantitative Life Sciences, McGill University\split
   Montréal, Canada, 2022
+%
+  % Séminaire UVM
+  \item \textit{Deep learning of dynamical epidemic processes on complex networks}\split
+  Vermont Complex Systems Center, University of Vermont\split
+  Burlington, USA, 2019
+%
+  % Séminaire UBICS
+  \item \textit{Deep learning of dynamical epidemic processes on complex networks}\split
+  Universitat de Barcelona Institute of Complex Systems\split
+  Barcelona, Spain, 2019
+%
+  % Inauguration de la chaire
+  \item \textit{Chaire de recherche Sentinelle Nord en modélisation mathématique des systèmes et des réseaux complexes}\split
+  Official inauguration of the latest Sentinelle Nord research chairs\split
+  L\'evis, Canada, 2019
+%
+  % Présentation à retraite CT1
+  \item \textit{An introduction to the methodologies for studying complex networks}\split
+  Scientific retreat of the thematic project 1 (TP1) – Sentinelle Nord\split
+  For\^et Montmorency, Canada, 2019
+%
+  % Présentation à Complenet'19
+  \item \textit{Three tales about percolation on real complex networks}\split
+  International Conference on Complex Networks (CompleNet 2019)\split
+  Tarragona, Spain, 2019
+%
+  % Présentation à CNWW18 avec Laurent
+  \item \textit{Modeling with Random Networks}\split
+  Complex Networks Winter Workshop (CNWW18)\split
+  Qu\'ebec, Canada, 2018
+%
+  % Séminaire au CERVO
+  \item \textit{Les réseaux complexes: un paradigme unificateur et transformateur pour comprendre la relation dynamique/structure des systèmes complexes}\split
+  Centre de recherche CERVO\split
+  Qu\'ebec, Canada, 2018
+%
+  % Séminaire à l'IBIS
+  \item \textit{Les réseaux complexes: un paradigme unificateur et transformateur pour comprendre la relation dynamique/structure des systèmes complexes}\split
+  Institut de biologie intégrative et des systèmes, Université Laval\split
+  Qu\'ebec, Canada, 2018
+%
+  % SN 2018
+  \item \textit{The hyperbolic brain: A geometric approach to network neuroscience}\split
+  Sentinelle Nord Annual Meeting\split
+  Qu\'ebec, Canada, 2018
+%
+  % NetSI
+  \item \textit{Towards an effective structure of complex networks and its contributions to epidemiology and neuroscience}\split
+  Network Science Institute\split
+  Boston, Massachusetts, USA, 2017
+%
+  % SFI
+  \item \textit{Exploring the hidden metric space of complex networks}\split
+  Santa Fe Institute\split
+  Santa Fe, New Mexico, USA, 2015
+%
+\end{etaremune}
+%
+%
+%
+\textbf{Contributed presentations}
+%
+\begin{etaremune}[itemsep=0.5em, label={[C\reversearabic*]}]\small\vspace{0.5\baselineskip}
 %
   % Netsci 2021
   \item \textit{Realistic clustering patterns in directed geometric networks}\split
   Networks 2021: A Joint Sunbelt and NetSci Conference\split
   Washington DC, USA, 2021
-%
-  % Séminaire UVM
-  \item[$\bullet$] \textit{Deep learning of dynamical epidemic processes on complex networks}\split
-  Vermont Complex Systems Center, University of Vermont\split
-  Burlington, USA, 2019
-%
-  % Séminaire UBICS
-  \item[$\bullet$] \textit{Deep learning of dynamical epidemic processes on complex networks}\split
-  Universitat de Barcelona Institute of Complex Systems\split
-  Barcelona, Spain, 2019
-%
-  % Inauguration de la chaire
-  \item[$\bullet$] \textit{Chaire de recherche Sentinelle Nord en modélisation mathématique des systèmes et des réseaux complexes}\split
-  Official inauguration of the latest Sentinelle Nord research chairs\split
-  L\'evis, Canada, 2019
-%
-  % Présentation à retraite CT1
-  \item[$\bullet$] \textit{An introduction to the methodologies for studying complex networks}\split
-  Scientific retreat of the thematic project 1 (TP1) – Sentinelle Nord\split
-  For\^et Montmorency, Canada, 2019
-%
-  % Présentation à Complenet'19
-  \item[$\bullet$] \textit{Three tales about percolation on real complex networks}\split
-  International Conference on Complex Networks (CompleNet 2019)\split
-  Tarragona, Spain, 2019
-%
-  % Présentation à CNWW18 avec Laurent
-  \item[$\bullet$] \textit{Modeling with Random Networks}\split
-  Complex Networks Winter Workshop (CNWW18)\split
-  Qu\'ebec, Canada, 2018
-%
-  % Séminaire au CERVO
-  \item[$\bullet$] \textit{Les réseaux complexes: un paradigme unificateur et transformateur pour comprendre la relation dynamique/structure des systèmes complexes}\split
-  Centre de recherche CERVO\split
-  Qu\'ebec, Canada, 2018
-%
-  % Séminaire à l'IBIS
-  \item[$\bullet$] \textit{Les réseaux complexes: un paradigme unificateur et transformateur pour comprendre la relation dynamique/structure des systèmes complexes}\split
-  Institut de biologie intégrative et des systèmes, Université Laval\split
-  Qu\'ebec, Canada, 2018
-%
-  % SN 2018
-  \item[$\bullet$] \textit{The hyperbolic brain: A geometric approach to network neuroscience}\split
-  Sentinelle Nord Annual Meeting\split
-  Qu\'ebec, Canada, 2018
 %
   % NetSci 2018
   \item \textit{Effective structure of complex networks and a second look at message passing approaches} (poster)\split
@@ -924,11 +1083,7 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   \item \textit{The effective navigable geometry of the brain}\split
   International School and Conference on Network Science (NetSci 2017)\split
   Indianapolis, Indiana, USA, 2017
-%
-  % NetSI
-  \item[$\bullet$] \textit{Towards an effective structure of complex networks and its contributions to epidemiology and neuroscience}\split
-  Network Science Institute\split
-  Boston, Massachusetts, USA, 2017
+
 %
   % CCS 2016
   \item \textit{The geometric nature of weights in real complex networks}\split
@@ -944,11 +1099,6 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   \item \textit{Unveiling the hidden geometry of weighted networks}\split
   International School and Conference on Network Science (TOPONETS15)\split
   Zaragoza, Spain, 2015
-%
-  % SFI
-  \item[$\bullet$] \textit{Exploring the hidden metric space of complex networks}\split
-  Santa Fe Institute\split
-  Santa Fe, New Mexico, USA, 2015
 %
   % NetSci 2013
   \item \textit{Percolation on clustered and correlated random graphs: General formalism and applications} (poster)\split
@@ -984,7 +1134,175 @@ Consulting committee member\hfill 2020\vspace{1.75\baselineskip}\\
   \item \textit{Heterogeneous Bond Percolation on Complex Networks: Application to Epidemiology} (poster)\split
   Canadian Association of Physicists Congress\split
   Qu\'ebec, Canada, 2008\\
-  {\small $\star$ Third place at the student competition.}\\
+  {\small $\star$ Third place at the student competition.}
+%
+% \end{itemize}
+\end{etaremune}
+%
+%
+%
+\textbf{Contributed presentations by mentees}
+%
+\begin{etaremune}[itemsep=0.5em, label={[M\reversearabic*]}, first*=\small\vspace{0.5\baselineskip}]
+%
+  \item \textit{The Low-Rank Hypothesis of Complex Systems: From Empirical and Theoretical Evidence to the Emergence of Higher-Order Interactions},
+  \uline{Vincent Thibeault}\split
+  SIAM Conference on Applications of Dynamical Systems (DS23)\split
+  Portland OR, USA, 2023
+%
+  \item \textit{Dimension matters when modeling network communities in hyperbolic spaces},
+  \uline{Béatrice Désy}\split
+  International School and Conference on Network Science (Netsci2022)\split
+  Shanghai, China, 2022
+%
+  \item \textit{Random graph models with fixed centrality patterns and degree sequence},
+  \uline{François Thibault}\split
+  International School and Conference on Network Science (Netsci2022)\split
+  Shanghai, China, 2022
+%
+  \item \textit{On the importance of correlation in graph reconstruction},
+  \uline{SImon Lizotte}\split
+  International School and Conference on Network Science (Netsci2022)\split
+  Shanghai, China, 2022
+%
+  \item \textit{Nonlinear infection rate to compress mechanistic epidemic models},
+  \uline{Guillaume St-Onge}\split
+  Northeast Regional Conference on Complex Systems (NERCCS 2022)\split
+  Buffalo NY, USA, 2022
+%
+  \item \textit{The low-dimension hypothesis implies higher-order interactions in complex systems},
+  \uline{Vincent Thibeault}\split
+  Northeast Regional Conference on Complex Systems (NERCCS 2022)\split
+  Buffalo NY, USA, 2022
+%
+  \item \textit{Dimension reduction on heterogeneous networks},
+  \uline{Marina Vegué Llorente}\split
+  Networks 2021: A Joint Sunbelt and NetSci Conference\split
+  Washington DC, USA, 2021
+%
+  \item \textit{Information Theory of Dynamics on Networks: Between Predictability and Reconstructability},
+  \uline{Charles Murphy}\split
+  Networks 2021: A Joint Sunbelt and NetSci Conference\split
+  Washington DC, USA, 2021
+%
+  \item \textit{Universal nonlinear infection kernel from heterogeneous exposure on higher-order networks},
+  \uline{Guillaume St-Onge}\split
+  Networks 2021: A Joint Sunbelt and NetSci Conference\split
+  Washington DC, USA, 2021
+%
+  \item \textit{Dimension reduction of high-dimensional dynamics on networks with adaptation},
+  \uline{Vincent Thibeault}\split
+  Networks 2021: A Joint Sunbelt and NetSci Conference\split
+  Washington DC, USA, 2021
+%
+  \item \textit{Firing rate distributions in plastic networks of spiking neurons},
+  \uline{Marina Vegué Llorente}\split
+  Networks 2021: A Joint Sunbelt and NetSci Conference\split
+  Washington DC, USA, 2021
+%
+  \item \textit{Information Theory of Dynamics on Networks: Quantifying the Structure-Function Relationship},
+  \uline{Charles Murphy}\split
+  SIAM Conference on Applications of Dynamical Systems (DS21)
+%
+  \item \textit{Bursty Exposure on Higher-Order Networks Leads to Nonlinear Infection Kernels},
+  \uline{Guillaume St-Onge}\split
+  SIAM Conference on Applications of Dynamical Systems (DS21)
+%
+  \item \textit{Dimension Reduction of High-Dimensional Dynamics on Networks with Adaptation},
+  \uline{Vincent Thibeault}\split
+  SIAM Conference on Applications of Dynamical Systems (DS21)
+%
+  \item \textit{Firing Rate Distributions in Plastic Networks of Spiking Neurons},
+  \uline{Marina Vegué Llorente}\split
+  SIAM Conference on Applications of Dynamical Systems (DS21)
+%
+  \item \textit{Bursty exposure on higher-order networks leads to nonlinear infection kernels},
+  \uline{Guillaume St-Onge}\split
+  Northeast Regional Conference on Complex Systems (NERCCS 2021)
+%
+  \item \textit{Dimension reduction of high-dimensional dynamics on networks with adaptation},
+  \uline{Vincent Thibeault}\split
+  Northeast Regional Conference on Complex Systems (NERCCS 2021)
+%
+  \item \textit{Dimension reduction on heterogeneous networks},
+  \uline{Marina Vegué Llorente}\split
+  Northeast Regional Conference on Complex Systems (NERCCS 2021)
+%
+  \item \textit{Deep learning of stochastic contagion dynamics on complex networks},
+  \uline{Charles Murphy}\split
+  International School and Conference on Network Science (Netsci 2020)\split
+  Rome, Italy (2020)
+%
+  \item \textit{Localization, bistability and optimal seeding of contagions on higher-order networks},
+  \uline{Guillaume St-Onge}\split
+  Conference on Artificial Life (ALIFE 2020)\split
+  Montréal, Canada (2020)
+%
+  \item \textit{Learning dynamical processes on complex networks from time series},
+  \uline{Charles Murphy}\split
+  International School and Conference on Network Science (Netsci 2019)\split
+  Burlington VT, États-Unis (2019)
+%
+\end{etaremune} \vspace{0.75\baselineskip}
+%
+%
+%
+%
+%
+% =================================================================================================
+\TitreSection{Selected Media Coverage}
+% =================================================================================================
+%
+\vspace{-0.75\baselineskip}
+\begin{itemize}[itemsep=0.5em, first*=\small]
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Déconfinement\,: La chasse aux super-propagateurs du covid-19}\\
+  Vincent Nouyrigat, Science \& Vie, January 2021\\
+  \footnotesize\url{https://www.science-et-vie.com/corps-et-sante/deconfinement-la-chasse-aux-super-propagateurs- du-covid-19-2216.html}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{L'épidémiologie du temps des Fêtes}\\
+  Alexandre Touchette, Les années lumière, November 22\textsuperscript{nd} 2020\\
+  \footnotesize\url{https://ici.radio-canada.ca/ohdio/premiere/emissions/les-annees-lumiere/segments/reportage/210686/covid-19-noel-temps-des-fetes-super-propagation-virus-confinement}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Covid-19\,: comment certains malades deviennent des supercontaminateurs}\\
+  Le Monde, August 15\textsuperscript{th} 2020\\
+  \footnotesize\url{https://www.youtube.com/watch?v=_2MT1r-Cmsw}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{An Obscure Field of Math Might Help Unlock Mysteries of Human Perception}\\
+  Stephen Ornes, Discover Magazine, July/August 2020\\
+  \footnotesize\url{https://www.discovermagazine.com/the-sciences/an-obscure-field-of-math-might-help-unlock-mysteries-of-human-perception}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{La pandémie s'alimente de hasard et de superdissémination}\\
+  Jean Hamann, ULaval nouvelles, June 2\textsuperscript{nd} 2020\\
+  \footnotesize\url{https://nouvelles.ulaval.ca/2020/06/02/la-pandemie-s-39-alimente-de-hasard-et-de-superdissemination-a:895b2a35-08a7-43d5-b686-9d0567f42a9b}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Voir par-delà le sommet de la courbe}\\
+  Alexis Riopel, Le Devoir, April 21\textsuperscript{st} 2020\\
+  \footnotesize\url{https://www.ledevoir.com/societe/sante/577379/voir-par-dela-le-sommet-de-la-courbe}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{How large a gathering is too large during the coronavirus pandemic?}\\
+  Dana Mackenzie, Science News, April 2\textsuperscript{nd} 2020\\
+  \footnotesize\url{https://www.sciencenews.org/article/coronavirus-covid19-social-gathering-size-math-pandemic}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Disease modelers gaze into their computers to see the future of Covid-19, and it isn’t good}\\
+  Sharon Begley, STAT News, February 14\textsuperscript{th} 2020\\
+  \footnotesize\url{https://www.statnews.com/2020/02/14/disease-modelers-see-future-of-covid-19/}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Hidden influence}\\
+  Abigail Klopper, Nature Physics, February 3\textsuperscript{rd} 2017\\
+  \footnotesize\url{https://www.nature.com/articles/nphys4046}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Don't call in sick}\\
+  Thilo Gross, Nature Physics, November 3\textsuperscript{rd} 2016\\
+  \footnotesize\url{https://www.nature.com/articles/nphys3939}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Going Home Sick? Your Substitute Could Spread Disease More Widely}\\
+  Erin Blakemore, Smithsonian Magazine, August 2\textsuperscript{nd} 2016\\
+  \footnotesize\url{https://www.smithsonianmag.com/smart-news/substitute-workers-could-make-workplace-illness-worse-180959979/}}
+%
+  \item \parbox[t]{0.9\textwidth}{\textit{Send your sick colleague home -- but don’t hire a replacement}\\
+  Ben Johnson, Nature Microbiology, August 1\textsuperscript{st} 2016\\
+  \footnotesize\url{https://microbiologycommunity.nature.com/posts/11048-send-your-sick-colleague-home-but-don-t-hire-a-replacement}}
 %
 \end{itemize}
 %
