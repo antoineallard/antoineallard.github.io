@@ -7,22 +7,26 @@
 
 <style>
     body {
-        font-size:160% !important;
+        font-size:100% !important;
         color: #3a3a3a !important;
         background-color: #F9F9F9 !important;
         padding-top: 70px !important;
     }
     a {
         color: #4C72B0 !important;
+        text-decoration: none !important;
     }
     a:hover {
         color: #4C72B0 !important;
+        text-decoration: underline !important;
     }
     nav a {
         color: #9D9D9D !important;
+        text-decoration: none !important;
     }
     nav a:hover {
         color: #F7F8F9 !important;
+        text-decoration: none !important;
     }
     header a {
         color: #3a3a3a !important;
@@ -46,14 +50,17 @@
         color: #B5B5B5 !important;
     }
     h2 {
-        padding-top: 50px !important;
+        padding-top: 70px !important;
     }
-    h4 {
+    h5 {
         padding-top: 2rem;
         padding-left: 2rem;
     }
     p {
-        line-height: 135%;
+        line-height: 125%;
+    }
+    dd {
+        line-height: 100%;
     }
     .member_photo {
         padding-right: 0px;
@@ -90,9 +97,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="files/images/favicon.ico" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
@@ -104,29 +110,24 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="#news">News</a>
+                <a class="nav-link" href="#researchgroup">Research group</a>
+                <a class="nav-link" href="#publications">Publications</a>
+                <a class="nav-link" href="files/cv/allard_a_cv.pdf">Curriculum vitae</a>
+              </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a data-toggle="collapse" data-target=".in" href="#news">News</a></li>
-                    <li><a data-toggle="collapse" data-target=".in" href="#researchgroup">Research group</a></li>
-                    <li><a data-toggle="collapse" data-target=".in" href="#publications">Publications</a></li>
-                    <li><a data-toggle="collapse" data-target=".in" href="files/cv/allard_a_cv.pdf">Curriculum vitae</a></li>
-                </ul>
-            </div>
-        </div>
-	</nav>
+          </div>
+        </nav>
+    </div>
 
 
 
@@ -135,13 +136,12 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
+        <header>
 
             <!-- Home -->
-            <header>
+            <div class="row">
 
-                <!-- Info -->
-                <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4 col-xs-12">
+                <div class="col order-sm-last">
 
                     <div style="font-size: 200%;"><b>Antoine Allard</b></div>
                     <p><b>Associate professor</b></p>
@@ -161,46 +161,36 @@
 
                 </div>
 
-                <!-- Main image and links -->
-                <div class="col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-8 col-xs-12" style="padding-bottom: 2rem;">
+                <div class="col-md-3 col-sm-5 order-sm-first">
 
-                    <div class="row">
+                    <img class="img-fluid center-block d-none d-sm-block" src="files/images/people/antoine.jpg" alt="" style="padding-top: 1rem;"><br>
 
-                        <!-- Main Image -->
-                        <div class="col-12 hidden-xs">
-                            <img class="img-responsive center-block" src="files/images/people/antoine.jpg" alt=""><br>
-                        </div>
-
-                        <!-- Links -->
-                        <div class="col-xs-12">
-                            <dd><i class="fas fa-envelope-square fa-size"></i> [first].[last]@phy.ulaval.ca</dd>
-                            <dd><i class="fas fa-building fa-size"></i> VCH-3215</dd>
-                            <!-- <dd><img src="https://bsky.app/static/favicon-16x16.png" style="width:13px;vertical-align:-1px;"></img> <a href="https://bsky.app/profile/allard.bsky.social">@allard.bsky.social</a></dd> -->
-                            <dd><i class="fa fa-cloud fa-solid fa-xs" style="width:14px;vertical-align:2px;"></i> <a href="https://bsky.app/profile/allard.bsky.social">@allard.bsky.social</a></dd>
-                            <dd><i class="fab fa-mastodon"></i> <a rel="me" href="https://fediscience.org/@all_are">@all_are</a></dd>
-                            <dd><i class="fab fa-twitter-square fa-size"></i> <a href="https://twitter.com/all_are">@all_are</a></dd>
-                            <dd><i class="fab fa-mastodon"></i> <a href="https://social.skewed.de/@networkspapers">@networkspapers</a></dd>
-                            <dd><i class="fab fa-twitter-square fa-size"></i> <a href="https://twitter.com/networkspapers">@networkspapers</a></dd>
-                            <dd><i class="fab fa-github fa-size"></i> <a href="https://github.com/antoineallard">antoineallard</a></dd>
-                            <dd><i class="fab fa-github fa-size"></i> <a href="https://github.com/DynamicaLab">DynamicaLab</a></dd>
-                            <dd><i class="fab fa-github fa-size"></i> <a href="https://github.com/networkgeometry">networkgeometry</a></dd>
-                            <dd><i class="ai ai-google-scholar-square ai-small"></i> <a href="https://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en">Google Scholar</a></dd>
-                            <dd><i class="ai ai-orcid-square ai-small"></i> <a href="https://orcid.org/0000-0002-8208-9920">ORCID</a></dd>
-                        </div>
-
+                    <div class="col-12">
+                        <dd><i class="fas fa-envelope-square fa-size"></i> [first].[last]@phy.ulaval.ca</dd>
+                        <dd><i class="fas fa-building fa-size"></i> VCH-3215</dd>
+                        <!-- <dd><img src="https://bsky.app/static/favicon-16x16.png" style="width:13px;vertical-align:-1px;"></img> <a href="https://bsky.app/profile/allard.bsky.social">@allard.bsky.social</a></dd> -->
+                        <dd><i class="fa fa-cloud fa-solid fa-xs" style="width:14px;vertical-align:2px;"></i> <a href="https://bsky.app/profile/allard.bsky.social">@allard.bsky.social</a></dd>
+                        <dd><i class="fab fa-mastodon"></i> <a rel="me" href="https://fediscience.org/@all_are">@all_are</a></dd>
+                        <dd><i class="fab fa-twitter-square fa-size"></i> <a href="https://twitter.com/all_are">@all_are</a></dd>
+                        <dd><i class="fab fa-mastodon"></i> <a href="https://social.skewed.de/@networkspapers">@networkspapers</a></dd>
+                        <dd><i class="fab fa-twitter-square fa-size"></i> <a href="https://twitter.com/networkspapers">@networkspapers</a></dd>
+                        <dd><i class="fab fa-github fa-size"></i> <a href="https://github.com/antoineallard">antoineallard</a></dd>
+                        <dd><i class="fab fa-github fa-size"></i> <a href="https://github.com/DynamicaLab">DynamicaLab</a></dd>
+                        <dd><i class="fab fa-github fa-size"></i> <a href="https://github.com/networkgeometry">networkgeometry</a></dd>
+                        <dd><i class="ai ai-google-scholar-square ai-small"></i> <a href="https://scholar.google.ca/citations?user=7zq4KLMAAAAJ&hl=en">Google Scholar</a></dd>
+                        <dd><i class="ai ai-orcid-square ai-small"></i> <a href="https://orcid.org/0000-0002-8208-9920">ORCID</a></dd>
                     </div>
 
                 </div>
 
-            </header>
+            </div>
 
+        </header>
 
+        <!-- News -->
+        <div id="news" class="row" style="min-height: 100vh;">
 
-
-
-            <!-- News -->
-            <!-- <div id="news" class="col-md-10 col-md-push-1 col-sm-12 col-xs-12" style="min-height: 100vh;"> -->
-            <div id="news" class="col-xs-12" style="min-height: 100vh;">
+            <div class="col">
 
                 <h2>News</h2>
 
@@ -328,20 +318,19 @@
         <!-- Research group -->
         <div class="row" id="researchgroup">
 
-            <!-- <div class="col-md-10 col-md-push-1 col-sm-12 col-xs-12" style="min-height: 100vh;"> -->
-            <div class="col-xs-12" style="min-height: 100vh;">
+            <div class="col-12" style="min-height: 100vh;">
 
                 <h2>Research group</h2>
 
                 <p>My Research Chair is part of the <a href="https://dynamica.phy.ulaval.ca">Dynamica Research Lab on Complex Systems</a> that I lead alongside <a href="https://scholar.google.cl/citations?user=YAqE0O0AAAAJ&hl=en">Patrick Desrosiers</a>. I also co-supervise students or postdoctoral researchers affiliated with other research groups.</p>
 
-                <div class="row hidden-xs">
-                    <div class="col-sm-push-3 col-sm-6">
-                        <img src="files/images/symposium_scientifique_2021.png" class="img-responsive center-block">
+                <div class="row d-none d-sm-flex justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10">
+                        <img src="files/images/symposium_scientifique_2021.png" class="img-fluid center-block">
                     </div>
                 </div>
-                <div class="row hidden-xs">
-                    <div class="col-sm-push-2 col-sm-8">
+                <div class="row d-none d-sm-flex justify-content-center">
+                    <div class="col-md-8">
                         <p class="text-center small">
                             <strong>Dynamica Lab annual scientific symposium (Aug. 2021)</strong><br>
                             (<i>third row</i>) Antoine A., Fran&ccedil;ois T., Olivier R., Francis N., Vincent T., Patrick D., Jeson H., Gabriel G.
@@ -352,112 +341,104 @@
                     </div>
                 </div>
 
-                <h4 style="padding-left: 0rem;">Students/postdocs currently under my (co-)supervision</h4>
+                <h5 style="padding-left: 0rem;">Students/postdocs currently under my (co-)supervision</h5>
 
-                <div class="row">
+                <div class="row row-cols-3">
 
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Az&eacute;nor Bideault</strong> <a title="Go to Google Scholar profile" class="member_link" href="https://scholar.google.com/citations?user=tNl041cAAAAJ"><i class="ai ai-google-scholar-square ai-small"></i></a><br>Postdoc</p>
                             </div>
                         </div>
                     </div>
 
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Gabriel Bergeron</strong><br>PhD student</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/simon.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/simon.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Simon Lizotte</strong><br>PhD student</p>
                             </div>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="row">
-
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/charles.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/charles.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Charles Murphy</strong> <a title="Go to Google Scholar profile" class="member_link" href="https://scholar.google.com/citations?user=xgBmSD8AAAAJ"><i class="ai ai-google-scholar-square ai-small"></i></a><br>PhD student</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/olivier.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/olivier.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Olivier Ribordy</strong><br>PhD student</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Fran&ccedil;ois Thibault</strong><br>PhD student</p>
                             </div>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="row">
-
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/vincent.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/vincent.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Vincent Thibeault</strong> <a title="Go to Google Scholar profile" class="member_link" href="https://scholar.google.com/citations?user=jHEI8xcAAAAJ"><i class="ai ai-google-scholar-square ai-small"></i></a><br>PhD student</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/zahra.png" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/zahra.png" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>Zahra Yazdani</strong><br>PhD student</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-4 col-12">
                         <div class="row">
-                            <div class="col-sm-3 hidden-xs member_photo">
-                                <img src="files/images/people/jeremi.jpg" class="img-responsive center-block">
+                            <div class="col-sm-3 d-none d-md-flex member_photo">
+                                <img src="files/images/people/jeremi.jpg" class="img-fluid center-block">
                             </div>
-                            <div class="col-sm-9 col-xs-12">
+                            <div class="col-md-9 col-12">
                                 <p><strong>J&eacute;r&eacute;mi Lesage</strong><br>MSc student</p>
                             </div>
                         </div>
@@ -467,8 +448,8 @@
 
 
 
-                <h4 style="padding-left: 0rem;">Former members</h4>
-                <p>
+                <h5 style="padding-left: 0rem;">Former members</h5>
+                <div class="col-12">
                     <dd>Ilhem Bouderbala <a title="Go to Google Scholar profile" class="member_link" href="https://scholar.google.com/citations?user=yfpAbS8AAAAJ"><i class="ai ai-google-scholar-square ai-small"></i></a> (Postdoc 2020&ndash;2022)</dd>
                     <dd>Marina Vegu&eacute; Llorente (Postdoc 2020&ndash;2022)</dd>
                     <dd>Guillaume St-Onge <a title="Go to Google Scholar profile" class="member_link" href="https://scholar.google.com/citations?user=UwKTgecAAAAJ"><i class="ai ai-google-scholar-square ai-small"></i></a> (<a title="Go to thesis" class="member_link" href="files/theses/StOnge.2022.PhD.pdf"><i class="fas fa-book"></i></a> PhD 2022)</dd>
@@ -483,7 +464,7 @@
                     <dd>Pierre-Luc Larouche (internship 2021)</dd>
                     <dd>J&eacute;r&eacute;mi Lesage (internship 2021)</dd>
                     <dd>Bastian Raulier (internship 2020)</dd>
-                </p>
+                </div>
 
             </div>
 
@@ -496,8 +477,8 @@
         <!-- Publications -->
         <div class="row" id="publications">
 
-            <!-- <div class="col-md-10 col-md-push-1 col-sm-12 col-xs-12" style="min-height: 100vh;"> -->
-            <div class="col-xs-12" style="min-height: 100vh;">
+            <!-- <div class="col-md-10 col-md-push-1 col-sm-12 col-12" style="min-height: 100vh;"> -->
+            <div class="col-12" style="min-height: 100vh;">
 
                 <h2>Publications</h2>
 
@@ -508,7 +489,7 @@
 
 
 
-                <h4>&mdash; Submitted manuscripts and preprints &mdash;</h4>
+                <h5>&mdash; Submitted manuscripts and preprints &mdash;</h5>
 
                 <a class="anchor" id="CriticalCM"></a>
                 <p>
@@ -568,7 +549,7 @@
 
 
 
-                <h4>&mdash; 2023 &mdash;</h4>
+                <h5>&mdash; 2023 &mdash;</h5>
 
                 <a class="anchor" id="cloSIR"></a>
                 <p>
@@ -700,7 +681,7 @@
 
 
 
-                <h4>&mdash; 2022 &mdash;</h4>
+                <h5>&mdash; 2022 &mdash;</h5>
 
                 <a class="anchor" id="juni"></a>
                 <p>
@@ -739,7 +720,7 @@
 
 
 
-                <h4>&mdash; 2021 &mdash;</h4>
+                <h5>&mdash; 2021 &mdash;</h5>
 
                 <a class="anchor" id="GuillaumeBursty"></a>
                 <p>
@@ -789,7 +770,7 @@
 
 
 
-                <h4>&mdash; 2020 &mdash;</h4>
+                <h5>&mdash; 2020 &mdash;</h5>
 
                 <a class="anchor" id="ACFAS"></a>
                 <p>
@@ -865,7 +846,7 @@
 
 
 
-                <h4>&mdash; 2019 &mdash;</h4>
+                <h5>&mdash; 2019 &mdash;</h5>
 
                 <a class="anchor" id="Mercator"></a>
                 <p>
@@ -906,7 +887,7 @@
 
 
 
-                <h4>&mdash; 2018 &mdash;</h4>
+                <h5>&mdash; 2018 &mdash;</h5>
 
                 <p>
                     <strong>A new approach to international trade from Network Geometry: The World Trade Atlas 1870-2013</strong><br>
@@ -927,7 +908,7 @@
 
 
 
-                <h4>&mdash; 2017 &mdash;</h4>
+                <h5>&mdash; 2017 &mdash;</h5>
 
                 <a class="anchor" id="Allard2017c"></a>
                 <p>
@@ -977,7 +958,7 @@
 
 
 
-                <h4>&mdash; 2016 &mdash;</h4>
+                <h5>&mdash; 2016 &mdash;</h5>
 
                 <a class="anchor" id="Young2016"></a>
                 <p>
@@ -1044,7 +1025,7 @@
 
 
 
-                <h4>&mdash; 2015 &mdash;</h4>
+                <h5>&mdash; 2015 &mdash;</h5>
 
                 <a class="anchor" id="HebertDufresne2015"></a>
                 <p>
@@ -1083,7 +1064,7 @@
 
 
 
-                <h4>&mdash; 2014 &mdash;</h4>
+                <h5>&mdash; 2014 &mdash;</h5>
 
                 <p>
                     <strong>The Social Zombie: Modelling undead outbreaks on social networks</strong><br>
@@ -1132,7 +1113,7 @@
 
 
 
-                <h4>&mdash; 2013 &mdash;</h4>
+                <h5>&mdash; 2013 &mdash;</h5>
 
                 <a class="anchor" id="Hebert-Dufresne2013b"></a>
                 <p>
@@ -1157,7 +1138,7 @@
 
 
 
-                <h4>&mdash; 2012 &mdash;</h4>
+                <h5>&mdash; 2012 &mdash;</h5>
 
                 <p>
                     <strong>Bond percolation on a class of correlated and clustered random graphs</strong><br>
@@ -1199,7 +1180,7 @@
 
 
 
-                <h4>&mdash; 2011 &mdash;</h4>
+                <h5>&mdash; 2011 &mdash;</h5>
 
                 <p>
                     <strong>Structural Preferential Attachment: Network Organization beyond the Link</strong><br>
@@ -1223,7 +1204,7 @@
 
 
 
-                <h4>&mdash; 2010 &mdash;</h4>
+                <h5>&mdash; 2010 &mdash;</h5>
 
                 <p>
                     <strong>Propagation dynamics on networks featuring complex topologies</strong><br>
@@ -1248,7 +1229,7 @@
 
 
 
-                <h4>&mdash; 2009 &mdash;</h4>
+                <h5>&mdash; 2009 &mdash;</h5>
 
                 <p>
                     <strong>Heterogeneous Bond Percolation on Multitype Networks with an Application to Epidemic Dynamics</strong><br>
@@ -1272,7 +1253,7 @@
 
 
 
-                <h4>&mdash; 2008 &mdash;</h4>
+                <h5>&mdash; 2008 &mdash;</h5>
 
                 <p>
                     <strong>Mod&eacute;lisation Math&eacute;matique en Epid&eacute;miologie par R&eacute;seaux de Contacts: Introduction de l'H&eacute;t&eacute;rog&eacute;n&eacute;it&eacute; dans la Transmissibilit&eacute;</strong><br>
