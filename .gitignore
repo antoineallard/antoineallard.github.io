@@ -1,4 +1,4 @@
-*.DS_Store
+**.DS_Store
 
 *.aux
 *.fdb_latexmk
@@ -7,8 +7,8 @@
 *.out
 *.synctex.gz
 
-website_perso.sublime-project
-website_perso.sublime-workspace
+**.sublime-project
+**.sublime-workspace
 
 old_versions/
 
