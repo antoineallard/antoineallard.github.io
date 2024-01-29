@@ -7,6 +7,8 @@
 *.out
 *.synctex.gz
 
+**.code-workspace
+
 **.sublime-project
 **.sublime-workspace
 
