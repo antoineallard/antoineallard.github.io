@@ -68,6 +68,11 @@
         padding-right: 0px;
         padding-bottom: 1rem;
     }
+    .rounded-image {
+        border-radius: 12px;
+        object-fit: cover;
+        display: block; /* avoid inline-image baseline gap */
+    }
     a.anchor {
         display: block;
         position: relative;
@@ -146,7 +151,7 @@
                     <p><b>Associate professor</b></p>
 
                     <!-- <p><a href="files/ChaireATHENA_en.pdf">Director, Sentinelle Nord Research Chair on Applications and Theory of Network Analysis</a></p> -->
-                    <p><a href="https://dynamica.phy.ulaval.ca">Codirector, Dynamica Research Lab on the structure and the dynamics of complex systems</a></p>
+                    <p><a href="https://dynamicalab.github.io">Codirector, Dynamica Research Lab on the structure and the dynamics of complex systems</a></p>
                     <p><a href="https://cimmul.fsg.ulaval.ca">Board member, Centre Interdisciplinaire en Modélisation Mathématique de l’Université Laval (CIMMUL)</a></p>
                     <p><a href="https://cervo.ulaval.ca">Associate researcher, CERVO Brain Research Centre</a></p>
                     <p><a href="https://vermontcomplexsystems.org">External faculty, Vermont Complex Systems Center (University of Vermont)</a></p>
@@ -163,7 +168,9 @@
 
                 <div class="col-lg-3 col-md-4 col-sm-6 order-sm-first">
 
-                    <img class="img-fluid center-block d-none d-sm-block" src="files/images/people/antoine3.png" alt="" style="padding-top: 1rem;"><br>
+                    <div style="padding-top: 1rem;">
+                        <img class="img-fluid center-block d-none d-sm-block rounded-image" src="files/images/people/antoine3.png" alt=""><br>
+                    </div>
 
                     <div class="col-12">
                         <dd><i class="fas fa-envelope-square fa-size"></i> [first].[last]@phy.ulaval.ca</dd>
@@ -621,7 +628,7 @@
                   <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/gabriel.jpg" class="img-fluid center-block">
+                                <img src="files/images/people/gabriel.jpg" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Gabriel Bergeron</strong><br>PhD student</p>
@@ -632,7 +639,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/benjamin.png" class="img-fluid center-block">
+                                <img src="files/images/people/benjamin.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Benjamin Claveau</strong><br>PhD student</p>
@@ -643,7 +650,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Ariane Lizotte</strong> <a title="Go to Google Scholar profile" class="member_link" href="https://scholar.google.com/citations?user=P6OnTrwAAAAJ"><i class="ai ai-google-scholar-square ai-small"></i></a><br>PhD student</p>
@@ -654,7 +661,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/olivier.png" class="img-fluid center-block">
+                                <img src="files/images/people/olivier.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Olivier Ribordy</strong><br>PhD student</p>
@@ -665,7 +672,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/francois.jpg" class="img-fluid center-block">
+                                <img src="files/images/people/francois.jpg" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Fran&ccedil;ois Thibault</strong><br>PhD student</p>
@@ -676,7 +683,7 @@
                     <!-- <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/vincent.png" class="img-fluid center-block">
+                                <img src="files/images/people/vincent.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Vincent Thibeault</strong> <a title="Go to Google Scholar profile" class="member_link" href="https://scholar.google.com/citations?user=jHEI8xcAAAAJ"><i class="ai ai-google-scholar-square ai-small"></i></a><br>PhD student</p>
@@ -687,7 +694,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/behnaz_v2.jpg" class="img-fluid center-block">
+                                <img src="files/images/people/behnaz_v2.jpg" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Zahra Yazdani</strong><br>PhD student</p>
@@ -698,7 +705,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Mai Olivier</strong><br>MSc student</p>
@@ -709,7 +716,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Laila Zahid</strong><br>MSc student</p>
@@ -720,7 +727,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Thomas Piuze</strong><br>MSc student</p>
@@ -731,7 +738,7 @@
                     <div class="col-sm-4 col-12">
                         <div class="row">
                             <div class="col-sm-3 d-none d-md-flex member_photo">
-                                <img src="files/images/people/cerveau.png" class="img-fluid center-block">
+                                <img src="files/images/people/cerveau.png" class="img-fluid center-block rounded-image">
                             </div>
                             <div class="col-md-9 col-12">
                                 <p><strong>Louis Gr&eacute;goire</strong><br>summer intern</p>
